@@ -8,18 +8,208 @@
 
 /* Begin PBXBuildFile section */
 		C60C335928D74B1E00F64A82 /* Friendly_HoldemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60C335828D74B1E00F64A82 /* Friendly_HoldemApp.swift */; };
-		C60C335B28D74B1E00F64A82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60C335A28D74B1E00F64A82 /* ContentView.swift */; };
 		C60C335D28D74B1F00F64A82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60C335C28D74B1F00F64A82 /* Assets.xcassets */; };
 		C60C336028D74B1F00F64A82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60C335F28D74B1F00F64A82 /* Preview Assets.xcassets */; };
+		C65EBD3028D793F100E7D83E /* RawCardSuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD2528D793F000E7D83E /* RawCardSuit.swift */; };
+		C65EBD3128D793F100E7D83E /* GameCtlExt_Agreeing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD2628D793F000E7D83E /* GameCtlExt_Agreeing.swift */; };
+		C65EBD3228D793F100E7D83E /* GameCtlExt_newAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD2728D793F100E7D83E /* GameCtlExt_newAsync.swift */; };
+		C65EBD3328D793F100E7D83E /* GameCtlExt_Quit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD2828D793F100E7D83E /* GameCtlExt_Quit.swift */; };
+		C65EBD3428D793F100E7D83E /* GameTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD2928D793F100E7D83E /* GameTransition.swift */; };
+		C65EBD3528D793F100E7D83E /* RawCardSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD2A28D793F100E7D83E /* RawCardSymbol.swift */; };
+		C65EBD3628D793F100E7D83E /* GCHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD2B28D793F100E7D83E /* GCHelper.swift */; };
+		C65EBD3728D793F100E7D83E /* RawCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD2C28D793F100E7D83E /* RawCard.swift */; };
+		C65EBD3828D793F100E7D83E /* GameCtlExt_Showdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD2D28D793F100E7D83E /* GameCtlExt_Showdown.swift */; };
+		C65EBD3928D793F100E7D83E /* gameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD2E28D793F100E7D83E /* gameController.swift */; };
+		C65EBD3A28D793F100E7D83E /* PreferencesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD2F28D793F100E7D83E /* PreferencesClass.swift */; };
+		C65EBD6E28D7950300E7D83E /* ShowdownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD4028D7950100E7D83E /* ShowdownItem.swift */; };
+		C65EBD6F28D7950300E7D83E /* MatchInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD4128D7950100E7D83E /* MatchInfoView.swift */; };
+		C65EBD7028D7950300E7D83E /* HowToBegin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD4228D7950100E7D83E /* HowToBegin.swift */; };
+		C65EBD7128D7950300E7D83E /* MenuAndMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD4328D7950100E7D83E /* MenuAndMatchView.swift */; };
+		C65EBD7228D7950300E7D83E /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD4428D7950100E7D83E /* DebugView.swift */; };
+		C65EBD7328D7950300E7D83E /* OtherPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD4528D7950100E7D83E /* OtherPlayerView.swift */; };
+		C65EBD7428D7950300E7D83E /* PlayerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD4628D7950100E7D83E /* PlayerInfoView.swift */; };
+		C65EBD7628D7950300E7D83E /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD4828D7950200E7D83E /* CardStackView.swift */; };
+		C65EBD7728D7950300E7D83E /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD4928D7950200E7D83E /* MatchView.swift */; };
+		C65EBD7828D7950300E7D83E /* CardStackIDlessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD4A28D7950200E7D83E /* CardStackIDlessView.swift */; };
+		C65EBD7928D7950300E7D83E /* JoiningTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD4B28D7950200E7D83E /* JoiningTableView.swift */; };
+		C65EBD7A28D7950300E7D83E /* PokerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD4C28D7950200E7D83E /* PokerTableView.swift */; };
+		C65EBD7B28D7950300E7D83E /* Stage2SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD4D28D7950200E7D83E /* Stage2SetupView.swift */; };
+		C65EBD7C28D7950300E7D83E /* VariantLister.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD4E28D7950200E7D83E /* VariantLister.swift */; };
+		C65EBD7F28D7950300E7D83E /* BetRaiseAmountPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD5128D7950200E7D83E /* BetRaiseAmountPicker.swift */; };
+		C65EBD8028D7950300E7D83E /* ActiveActionMenu2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD5228D7950200E7D83E /* ActiveActionMenu2.swift */; };
+		C65EBD8228D7950300E7D83E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD5428D7950200E7D83E /* ContentView.swift */; };
+		C65EBD8328D7950300E7D83E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD5528D7950200E7D83E /* CardView.swift */; };
+		C65EBD8528D7950300E7D83E /* AgreeingStage1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD5728D7950200E7D83E /* AgreeingStage1View.swift */; };
+		C65EBD8628D7950300E7D83E /* MatchMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD5828D7950200E7D83E /* MatchMenuView.swift */; };
+		C65EBD8728D7950300E7D83E /* NumberOfPlayersChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD5928D7950200E7D83E /* NumberOfPlayersChooser.swift */; };
+		C65EBD8928D7950300E7D83E /* FinalShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD5B28D7950200E7D83E /* FinalShowView.swift */; };
+		C65EBD8A28D7950300E7D83E /* Stage3MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD5C28D7950200E7D83E /* Stage3MainMenuView.swift */; };
+		C65EBD8B28D7950300E7D83E /* AgreeingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD5D28D7950200E7D83E /* AgreeingView.swift */; };
+		C65EBD8C28D7950300E7D83E /* CardGameContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD5E28D7950200E7D83E /* CardGameContainer.swift */; };
+		C65EBD8D28D7950300E7D83E /* LogInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD5F28D7950200E7D83E /* LogInfoView.swift */; };
+		C65EBD8E28D7950300E7D83E /* PotInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD6028D7950300E7D83E /* PotInfoView.swift */; };
+		C65EBD8F28D7950300E7D83E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD6128D7950300E7D83E /* WelcomeView.swift */; };
+		C65EBD9328D7950300E7D83E /* AgreeingInactiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD6528D7950300E7D83E /* AgreeingInactiveView.swift */; };
+		C65EBD9428D7950300E7D83E /* OOGTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD6628D7950300E7D83E /* OOGTableView.swift */; };
+		C65EBD9528D7950300E7D83E /* InactiveActionMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD6728D7950300E7D83E /* InactiveActionMenuView.swift */; };
+		C65EBD9628D7950300E7D83E /* MatchDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD6828D7950300E7D83E /* MatchDetailsView.swift */; };
+		C65EBD9728D7950300E7D83E /* gameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD6928D7950300E7D83E /* gameView.swift */; };
+		C65EBD9828D7950300E7D83E /* ShowdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD6A28D7950300E7D83E /* ShowdownView.swift */; };
+		C65EBD9928D7950300E7D83E /* ExistingMatchChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD6B28D7950300E7D83E /* ExistingMatchChooserView.swift */; };
+		C65EBD9A28D7950300E7D83E /* StackGlowFlasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD6C28D7950300E7D83E /* StackGlowFlasher.swift */; };
+		C65EBD9B28D7950300E7D83E /* VariantAddForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD6D28D7950300E7D83E /* VariantAddForm.swift */; };
+		C65EBDA028D7961B00E7D83E /* GameLocalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD9C28D7961B00E7D83E /* GameLocalizer.swift */; };
+		C65EBDA128D7961B00E7D83E /* ParticipantLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD9D28D7961B00E7D83E /* ParticipantLocalization.swift */; };
+		C65EBDA228D7961B00E7D83E /* MatchLocalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD9E28D7961B00E7D83E /* MatchLocalizer.swift */; };
+		C65EBDA328D7961B00E7D83E /* ParticipantLocalization copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD9F28D7961B00E7D83E /* ParticipantLocalization copy.swift */; };
+		C65EBDB828D7968200E7D83E /* GameStartParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDA428D7968100E7D83E /* GameStartParameters.swift */; };
+		C65EBDB928D7968200E7D83E /* PokerCardInterpretation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDA528D7968100E7D83E /* PokerCardInterpretation.swift */; };
+		C65EBDBA28D7968200E7D83E /* PokerGameShowdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDA628D7968100E7D83E /* PokerGameShowdown.swift */; };
+		C65EBDBB28D7968200E7D83E /* InterpretationHandExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDA728D7968100E7D83E /* InterpretationHandExtension.swift */; };
+		C65EBDBC28D7968200E7D83E /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDA828D7968100E7D83E /* CardStack.swift */; };
+		C65EBDBD28D7968200E7D83E /* gameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDA928D7968200E7D83E /* gameState.swift */; };
+		C65EBDBE28D7968200E7D83E /* PokerGameAgreeing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDAA28D7968200E7D83E /* PokerGameAgreeing.swift */; };
+		C65EBDBF28D7968200E7D83E /* PokerPlayerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDAB28D7968200E7D83E /* PokerPlayerAction.swift */; };
+		C65EBDC028D7968200E7D83E /* PokerPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDAC28D7968200E7D83E /* PokerPlayer.swift */; };
+		C65EBDC128D7968200E7D83E /* PokerPot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDAD28D7968200E7D83E /* PokerPot.swift */; };
+		C65EBDC228D7968200E7D83E /* tester1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDAE28D7968200E7D83E /* tester1.swift */; };
+		C65EBDC328D7968200E7D83E /* GameLogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDAF28D7968200E7D83E /* GameLogEntry.swift */; };
+		C65EBDC428D7968200E7D83E /* test4Outcomes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDB028D7968200E7D83E /* test4Outcomes.swift */; };
+		C65EBDC528D7968200E7D83E /* DealShowdownStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDB128D7968200E7D83E /* DealShowdownStatus.swift */; };
+		C65EBDC628D7968200E7D83E /* GameEndStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDB228D7968200E7D83E /* GameEndStatus.swift */; };
+		C65EBDC728D7968200E7D83E /* PokerHandRank.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDB328D7968200E7D83E /* PokerHandRank.swift */; };
+		C65EBDC828D7968200E7D83E /* PokerRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDB428D7968200E7D83E /* PokerRules.swift */; };
+		C65EBDC928D7968200E7D83E /* PokerInterpretationHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDB528D7968200E7D83E /* PokerInterpretationHand.swift */; };
+		C65EBDCA28D7968200E7D83E /* PokerGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDB628D7968200E7D83E /* PokerGame.swift */; };
+		C65EBDCB28D7968200E7D83E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDB728D7968200E7D83E /* Card.swift */; };
+		C65EBDD328D796BE00E7D83E /* BlinkingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDCC28D796BD00E7D83E /* BlinkingButton.swift */; };
+		C65EBDD428D796BE00E7D83E /* InputQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDCD28D796BE00E7D83E /* InputQuery.swift */; };
+		C65EBDD528D796BE00E7D83E /* MinWidthContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDCE28D796BE00E7D83E /* MinWidthContainer.swift */; };
+		C65EBDD628D796BE00E7D83E /* PaddedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDCF28D796BE00E7D83E /* PaddedButton.swift */; };
+		C65EBDD728D796BE00E7D83E /* soundFX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDD028D796BE00E7D83E /* soundFX.swift */; };
+		C65EBDD828D796BE00E7D83E /* groupedAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDD128D796BE00E7D83E /* groupedAsync.swift */; };
+		C65EBDD928D796BE00E7D83E /* InterText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDD228D796BE00E7D83E /* InterText.swift */; };
+		C65EBDEA28D7971E00E7D83E /* CustomAlignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDDA28D7971D00E7D83E /* CustomAlignments.swift */; };
+		C65EBDEB28D7971E00E7D83E /* blurYourself.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDDB28D7971D00E7D83E /* blurYourself.swift */; };
+		C65EBDEC28D7971E00E7D83E /* TaskSleepSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDDC28D7971D00E7D83E /* TaskSleepSeconds.swift */; };
+		C65EBDED28D7971E00E7D83E /* UITurnBasedMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDDD28D7971D00E7D83E /* UITurnBasedMatch.swift */; };
+		C65EBDEE28D7971E00E7D83E /* OrdinalNumberFormatterExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDDE28D7971D00E7D83E /* OrdinalNumberFormatterExt.swift */; };
+		C65EBDEF28D7971E00E7D83E /* MatchFindExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDDF28D7971D00E7D83E /* MatchFindExchange.swift */; };
+		C65EBDF028D7971E00E7D83E /* BlurryBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDE028D7971D00E7D83E /* BlurryBackground.swift */; };
+		C65EBDF128D7971E00E7D83E /* RangeTrim.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDE128D7971D00E7D83E /* RangeTrim.swift */; };
+		C65EBDF228D7971E00E7D83E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDE228D7971D00E7D83E /* StringExtension.swift */; };
+		C65EBDF328D7971E00E7D83E /* ParticipantArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDE328D7971D00E7D83E /* ParticipantArrayExtension.swift */; };
+		C65EBDF428D7971E00E7D83E /* MatchExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDE428D7971D00E7D83E /* MatchExtension.swift */; };
+		C65EBDF528D7971E00E7D83E /* DispatchQueueRelativeAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDE528D7971D00E7D83E /* DispatchQueueRelativeAsync.swift */; };
+		C65EBDF628D7971E00E7D83E /* OptionalToStringOptExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDE628D7971D00E7D83E /* OptionalToStringOptExtension.swift */; };
+		C65EBDF728D7971E00E7D83E /* RelativeDateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDE728D7971E00E7D83E /* RelativeDateFormatterExtension.swift */; };
+		C65EBDF828D7971E00E7D83E /* ArrayNextOthers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDE828D7971E00E7D83E /* ArrayNextOthers.swift */; };
+		C65EBDF928D7971E00E7D83E /* ConditionalAXAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDE928D7971E00E7D83E /* ConditionalAXAction.swift */; };
+		C65EBDFB28D7990F00E7D83E /* JumpingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDFA28D7990F00E7D83E /* JumpingTextView.swift */; };
 		C697F3AB28D7539A0052ABB3 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = C697F3AA28D7539A0052ABB3 /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C60C335528D74B1E00F64A82 /* Friendly Holdem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friendly Holdem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60C335828D74B1E00F64A82 /* Friendly_HoldemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friendly_HoldemApp.swift; sourceTree = "<group>"; };
-		C60C335A28D74B1E00F64A82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C60C335C28D74B1F00F64A82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C60C335F28D74B1F00F64A82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C65EBD2528D793F000E7D83E /* RawCardSuit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawCardSuit.swift; sourceTree = "<group>"; };
+		C65EBD2628D793F000E7D83E /* GameCtlExt_Agreeing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCtlExt_Agreeing.swift; sourceTree = "<group>"; };
+		C65EBD2728D793F100E7D83E /* GameCtlExt_newAsync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCtlExt_newAsync.swift; sourceTree = "<group>"; };
+		C65EBD2828D793F100E7D83E /* GameCtlExt_Quit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCtlExt_Quit.swift; sourceTree = "<group>"; };
+		C65EBD2928D793F100E7D83E /* GameTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTransition.swift; sourceTree = "<group>"; };
+		C65EBD2A28D793F100E7D83E /* RawCardSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawCardSymbol.swift; sourceTree = "<group>"; };
+		C65EBD2B28D793F100E7D83E /* GCHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCHelper.swift; sourceTree = "<group>"; };
+		C65EBD2C28D793F100E7D83E /* RawCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawCard.swift; sourceTree = "<group>"; };
+		C65EBD2D28D793F100E7D83E /* GameCtlExt_Showdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCtlExt_Showdown.swift; sourceTree = "<group>"; };
+		C65EBD2E28D793F100E7D83E /* gameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gameController.swift; sourceTree = "<group>"; };
+		C65EBD2F28D793F100E7D83E /* PreferencesClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesClass.swift; sourceTree = "<group>"; };
+		C65EBD4028D7950100E7D83E /* ShowdownItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowdownItem.swift; sourceTree = "<group>"; };
+		C65EBD4128D7950100E7D83E /* MatchInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchInfoView.swift; sourceTree = "<group>"; };
+		C65EBD4228D7950100E7D83E /* HowToBegin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToBegin.swift; sourceTree = "<group>"; };
+		C65EBD4328D7950100E7D83E /* MenuAndMatchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuAndMatchView.swift; sourceTree = "<group>"; };
+		C65EBD4428D7950100E7D83E /* DebugView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		C65EBD4528D7950100E7D83E /* OtherPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherPlayerView.swift; sourceTree = "<group>"; };
+		C65EBD4628D7950100E7D83E /* PlayerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerInfoView.swift; sourceTree = "<group>"; };
+		C65EBD4828D7950200E7D83E /* CardStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
+		C65EBD4928D7950200E7D83E /* MatchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
+		C65EBD4A28D7950200E7D83E /* CardStackIDlessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackIDlessView.swift; sourceTree = "<group>"; };
+		C65EBD4B28D7950200E7D83E /* JoiningTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoiningTableView.swift; sourceTree = "<group>"; };
+		C65EBD4C28D7950200E7D83E /* PokerTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerTableView.swift; sourceTree = "<group>"; };
+		C65EBD4D28D7950200E7D83E /* Stage2SetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stage2SetupView.swift; sourceTree = "<group>"; };
+		C65EBD4E28D7950200E7D83E /* VariantLister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariantLister.swift; sourceTree = "<group>"; };
+		C65EBD5128D7950200E7D83E /* BetRaiseAmountPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetRaiseAmountPicker.swift; sourceTree = "<group>"; };
+		C65EBD5228D7950200E7D83E /* ActiveActionMenu2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveActionMenu2.swift; sourceTree = "<group>"; };
+		C65EBD5428D7950200E7D83E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C65EBD5528D7950200E7D83E /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C65EBD5728D7950200E7D83E /* AgreeingStage1View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreeingStage1View.swift; sourceTree = "<group>"; };
+		C65EBD5828D7950200E7D83E /* MatchMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchMenuView.swift; sourceTree = "<group>"; };
+		C65EBD5928D7950200E7D83E /* NumberOfPlayersChooser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfPlayersChooser.swift; sourceTree = "<group>"; };
+		C65EBD5B28D7950200E7D83E /* FinalShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalShowView.swift; sourceTree = "<group>"; };
+		C65EBD5C28D7950200E7D83E /* Stage3MainMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stage3MainMenuView.swift; sourceTree = "<group>"; };
+		C65EBD5D28D7950200E7D83E /* AgreeingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreeingView.swift; sourceTree = "<group>"; };
+		C65EBD5E28D7950200E7D83E /* CardGameContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardGameContainer.swift; sourceTree = "<group>"; };
+		C65EBD5F28D7950200E7D83E /* LogInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInfoView.swift; sourceTree = "<group>"; };
+		C65EBD6028D7950300E7D83E /* PotInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PotInfoView.swift; sourceTree = "<group>"; };
+		C65EBD6128D7950300E7D83E /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		C65EBD6528D7950300E7D83E /* AgreeingInactiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgreeingInactiveView.swift; sourceTree = "<group>"; };
+		C65EBD6628D7950300E7D83E /* OOGTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OOGTableView.swift; sourceTree = "<group>"; };
+		C65EBD6728D7950300E7D83E /* InactiveActionMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InactiveActionMenuView.swift; sourceTree = "<group>"; };
+		C65EBD6828D7950300E7D83E /* MatchDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchDetailsView.swift; sourceTree = "<group>"; };
+		C65EBD6928D7950300E7D83E /* gameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gameView.swift; sourceTree = "<group>"; };
+		C65EBD6A28D7950300E7D83E /* ShowdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowdownView.swift; sourceTree = "<group>"; };
+		C65EBD6B28D7950300E7D83E /* ExistingMatchChooserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingMatchChooserView.swift; sourceTree = "<group>"; };
+		C65EBD6C28D7950300E7D83E /* StackGlowFlasher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackGlowFlasher.swift; sourceTree = "<group>"; };
+		C65EBD6D28D7950300E7D83E /* VariantAddForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariantAddForm.swift; sourceTree = "<group>"; };
+		C65EBD9C28D7961B00E7D83E /* GameLocalizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLocalizer.swift; sourceTree = "<group>"; };
+		C65EBD9D28D7961B00E7D83E /* ParticipantLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticipantLocalization.swift; sourceTree = "<group>"; };
+		C65EBD9E28D7961B00E7D83E /* MatchLocalizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchLocalizer.swift; sourceTree = "<group>"; };
+		C65EBD9F28D7961B00E7D83E /* ParticipantLocalization copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ParticipantLocalization copy.swift"; sourceTree = "<group>"; };
+		C65EBDA428D7968100E7D83E /* GameStartParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStartParameters.swift; sourceTree = "<group>"; };
+		C65EBDA528D7968100E7D83E /* PokerCardInterpretation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerCardInterpretation.swift; sourceTree = "<group>"; };
+		C65EBDA628D7968100E7D83E /* PokerGameShowdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerGameShowdown.swift; sourceTree = "<group>"; };
+		C65EBDA728D7968100E7D83E /* InterpretationHandExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterpretationHandExtension.swift; sourceTree = "<group>"; };
+		C65EBDA828D7968100E7D83E /* CardStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
+		C65EBDA928D7968200E7D83E /* gameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gameState.swift; sourceTree = "<group>"; };
+		C65EBDAA28D7968200E7D83E /* PokerGameAgreeing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerGameAgreeing.swift; sourceTree = "<group>"; };
+		C65EBDAB28D7968200E7D83E /* PokerPlayerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerPlayerAction.swift; sourceTree = "<group>"; };
+		C65EBDAC28D7968200E7D83E /* PokerPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerPlayer.swift; sourceTree = "<group>"; };
+		C65EBDAD28D7968200E7D83E /* PokerPot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerPot.swift; sourceTree = "<group>"; };
+		C65EBDAE28D7968200E7D83E /* tester1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tester1.swift; sourceTree = "<group>"; };
+		C65EBDAF28D7968200E7D83E /* GameLogEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLogEntry.swift; sourceTree = "<group>"; };
+		C65EBDB028D7968200E7D83E /* test4Outcomes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test4Outcomes.swift; sourceTree = "<group>"; };
+		C65EBDB128D7968200E7D83E /* DealShowdownStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealShowdownStatus.swift; sourceTree = "<group>"; };
+		C65EBDB228D7968200E7D83E /* GameEndStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEndStatus.swift; sourceTree = "<group>"; };
+		C65EBDB328D7968200E7D83E /* PokerHandRank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerHandRank.swift; sourceTree = "<group>"; };
+		C65EBDB428D7968200E7D83E /* PokerRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerRules.swift; sourceTree = "<group>"; };
+		C65EBDB528D7968200E7D83E /* PokerInterpretationHand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerInterpretationHand.swift; sourceTree = "<group>"; };
+		C65EBDB628D7968200E7D83E /* PokerGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerGame.swift; sourceTree = "<group>"; };
+		C65EBDB728D7968200E7D83E /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C65EBDCC28D796BD00E7D83E /* BlinkingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlinkingButton.swift; sourceTree = "<group>"; };
+		C65EBDCD28D796BE00E7D83E /* InputQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputQuery.swift; sourceTree = "<group>"; };
+		C65EBDCE28D796BE00E7D83E /* MinWidthContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinWidthContainer.swift; sourceTree = "<group>"; };
+		C65EBDCF28D796BE00E7D83E /* PaddedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddedButton.swift; sourceTree = "<group>"; };
+		C65EBDD028D796BE00E7D83E /* soundFX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = soundFX.swift; sourceTree = "<group>"; };
+		C65EBDD128D796BE00E7D83E /* groupedAsync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = groupedAsync.swift; sourceTree = "<group>"; };
+		C65EBDD228D796BE00E7D83E /* InterText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterText.swift; sourceTree = "<group>"; };
+		C65EBDDA28D7971D00E7D83E /* CustomAlignments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlignments.swift; sourceTree = "<group>"; };
+		C65EBDDB28D7971D00E7D83E /* blurYourself.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blurYourself.swift; sourceTree = "<group>"; };
+		C65EBDDC28D7971D00E7D83E /* TaskSleepSeconds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskSleepSeconds.swift; sourceTree = "<group>"; };
+		C65EBDDD28D7971D00E7D83E /* UITurnBasedMatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITurnBasedMatch.swift; sourceTree = "<group>"; };
+		C65EBDDE28D7971D00E7D83E /* OrdinalNumberFormatterExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdinalNumberFormatterExt.swift; sourceTree = "<group>"; };
+		C65EBDDF28D7971D00E7D83E /* MatchFindExchange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchFindExchange.swift; sourceTree = "<group>"; };
+		C65EBDE028D7971D00E7D83E /* BlurryBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurryBackground.swift; sourceTree = "<group>"; };
+		C65EBDE128D7971D00E7D83E /* RangeTrim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeTrim.swift; sourceTree = "<group>"; };
+		C65EBDE228D7971D00E7D83E /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		C65EBDE328D7971D00E7D83E /* ParticipantArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticipantArrayExtension.swift; sourceTree = "<group>"; };
+		C65EBDE428D7971D00E7D83E /* MatchExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchExtension.swift; sourceTree = "<group>"; };
+		C65EBDE528D7971D00E7D83E /* DispatchQueueRelativeAsync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueueRelativeAsync.swift; sourceTree = "<group>"; };
+		C65EBDE628D7971D00E7D83E /* OptionalToStringOptExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalToStringOptExtension.swift; sourceTree = "<group>"; };
+		C65EBDE728D7971E00E7D83E /* RelativeDateFormatterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativeDateFormatterExtension.swift; sourceTree = "<group>"; };
+		C65EBDE828D7971E00E7D83E /* ArrayNextOthers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayNextOthers.swift; sourceTree = "<group>"; };
+		C65EBDE928D7971E00E7D83E /* ConditionalAXAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConditionalAXAction.swift; sourceTree = "<group>"; };
+		C65EBDFA28D7990F00E7D83E /* JumpingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpingTextView.swift; sourceTree = "<group>"; };
 		C697F3AC28D753F60052ABB3 /* Friendly Holdem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Friendly Holdem.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +246,22 @@
 			children = (
 				C697F3AC28D753F60052ABB3 /* Friendly Holdem.entitlements */,
 				C60C335828D74B1E00F64A82 /* Friendly_HoldemApp.swift */,
-				C60C335A28D74B1E00F64A82 /* ContentView.swift */,
+				C65EBD3F28D7944300E7D83E /* Views */,
+				C65EBD3E28D7943C00E7D83E /* Localizers */,
+				C65EBD2E28D793F100E7D83E /* gameController.swift */,
+				C65EBD2628D793F000E7D83E /* GameCtlExt_Agreeing.swift */,
+				C65EBD2728D793F100E7D83E /* GameCtlExt_newAsync.swift */,
+				C65EBD2828D793F100E7D83E /* GameCtlExt_Quit.swift */,
+				C65EBD2D28D793F100E7D83E /* GameCtlExt_Showdown.swift */,
+				C65EBD2928D793F100E7D83E /* GameTransition.swift */,
+				C65EBD2B28D793F100E7D83E /* GCHelper.swift */,
+				C65EBD2F28D793F100E7D83E /* PreferencesClass.swift */,
+				C65EBD3D28D7942400E7D83E /* Poker stuff */,
+				C65EBD2C28D793F100E7D83E /* RawCard.swift */,
+				C65EBD2528D793F000E7D83E /* RawCardSuit.swift */,
+				C65EBD2A28D793F100E7D83E /* RawCardSymbol.swift */,
+				C65EBD3C28D7940D00E7D83E /* Generals */,
+				C65EBD3B28D7940300E7D83E /* Extensions */,
 				C60C335C28D74B1F00F64A82 /* Assets.xcassets */,
 				C60C335E28D74B1F00F64A82 /* Preview Content */,
 			);
@@ -69,6 +274,126 @@
 				C60C335F28D74B1F00F64A82 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C65EBD3B28D7940300E7D83E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C65EBDE828D7971E00E7D83E /* ArrayNextOthers.swift */,
+				C65EBDE028D7971D00E7D83E /* BlurryBackground.swift */,
+				C65EBDDB28D7971D00E7D83E /* blurYourself.swift */,
+				C65EBDE928D7971E00E7D83E /* ConditionalAXAction.swift */,
+				C65EBDDA28D7971D00E7D83E /* CustomAlignments.swift */,
+				C65EBDE528D7971D00E7D83E /* DispatchQueueRelativeAsync.swift */,
+				C65EBDE428D7971D00E7D83E /* MatchExtension.swift */,
+				C65EBDDF28D7971D00E7D83E /* MatchFindExchange.swift */,
+				C65EBDE628D7971D00E7D83E /* OptionalToStringOptExtension.swift */,
+				C65EBDDE28D7971D00E7D83E /* OrdinalNumberFormatterExt.swift */,
+				C65EBDE328D7971D00E7D83E /* ParticipantArrayExtension.swift */,
+				C65EBDE128D7971D00E7D83E /* RangeTrim.swift */,
+				C65EBDE728D7971E00E7D83E /* RelativeDateFormatterExtension.swift */,
+				C65EBDE228D7971D00E7D83E /* StringExtension.swift */,
+				C65EBDDC28D7971D00E7D83E /* TaskSleepSeconds.swift */,
+				C65EBDDD28D7971D00E7D83E /* UITurnBasedMatch.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C65EBD3C28D7940D00E7D83E /* Generals */ = {
+			isa = PBXGroup;
+			children = (
+				C65EBDCC28D796BD00E7D83E /* BlinkingButton.swift */,
+				C65EBDD128D796BE00E7D83E /* groupedAsync.swift */,
+				C65EBDCD28D796BE00E7D83E /* InputQuery.swift */,
+				C65EBDD228D796BE00E7D83E /* InterText.swift */,
+				C65EBDCE28D796BE00E7D83E /* MinWidthContainer.swift */,
+				C65EBDCF28D796BE00E7D83E /* PaddedButton.swift */,
+				C65EBDD028D796BE00E7D83E /* soundFX.swift */,
+			);
+			path = Generals;
+			sourceTree = "<group>";
+		};
+		C65EBD3D28D7942400E7D83E /* Poker stuff */ = {
+			isa = PBXGroup;
+			children = (
+				C65EBDB728D7968200E7D83E /* Card.swift */,
+				C65EBDA828D7968100E7D83E /* CardStack.swift */,
+				C65EBDB128D7968200E7D83E /* DealShowdownStatus.swift */,
+				C65EBDB228D7968200E7D83E /* GameEndStatus.swift */,
+				C65EBDAF28D7968200E7D83E /* GameLogEntry.swift */,
+				C65EBDA428D7968100E7D83E /* GameStartParameters.swift */,
+				C65EBDA928D7968200E7D83E /* gameState.swift */,
+				C65EBDA728D7968100E7D83E /* InterpretationHandExtension.swift */,
+				C65EBDA528D7968100E7D83E /* PokerCardInterpretation.swift */,
+				C65EBDB628D7968200E7D83E /* PokerGame.swift */,
+				C65EBDAA28D7968200E7D83E /* PokerGameAgreeing.swift */,
+				C65EBDA628D7968100E7D83E /* PokerGameShowdown.swift */,
+				C65EBDB328D7968200E7D83E /* PokerHandRank.swift */,
+				C65EBDB528D7968200E7D83E /* PokerInterpretationHand.swift */,
+				C65EBDAC28D7968200E7D83E /* PokerPlayer.swift */,
+				C65EBDAB28D7968200E7D83E /* PokerPlayerAction.swift */,
+				C65EBDAD28D7968200E7D83E /* PokerPot.swift */,
+				C65EBDB428D7968200E7D83E /* PokerRules.swift */,
+				C65EBDB028D7968200E7D83E /* test4Outcomes.swift */,
+				C65EBDAE28D7968200E7D83E /* tester1.swift */,
+			);
+			path = "Poker stuff";
+			sourceTree = "<group>";
+		};
+		C65EBD3E28D7943C00E7D83E /* Localizers */ = {
+			isa = PBXGroup;
+			children = (
+				C65EBD9C28D7961B00E7D83E /* GameLocalizer.swift */,
+				C65EBD9E28D7961B00E7D83E /* MatchLocalizer.swift */,
+				C65EBD9F28D7961B00E7D83E /* ParticipantLocalization copy.swift */,
+				C65EBD9D28D7961B00E7D83E /* ParticipantLocalization.swift */,
+			);
+			path = Localizers;
+			sourceTree = "<group>";
+		};
+		C65EBD3F28D7944300E7D83E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C65EBD5228D7950200E7D83E /* ActiveActionMenu2.swift */,
+				C65EBD6528D7950300E7D83E /* AgreeingInactiveView.swift */,
+				C65EBD5728D7950200E7D83E /* AgreeingStage1View.swift */,
+				C65EBD5D28D7950200E7D83E /* AgreeingView.swift */,
+				C65EBD5128D7950200E7D83E /* BetRaiseAmountPicker.swift */,
+				C65EBD5E28D7950200E7D83E /* CardGameContainer.swift */,
+				C65EBD4A28D7950200E7D83E /* CardStackIDlessView.swift */,
+				C65EBD4828D7950200E7D83E /* CardStackView.swift */,
+				C65EBD5528D7950200E7D83E /* CardView.swift */,
+				C65EBD5428D7950200E7D83E /* ContentView.swift */,
+				C65EBD4428D7950100E7D83E /* DebugView.swift */,
+				C65EBD6B28D7950300E7D83E /* ExistingMatchChooserView.swift */,
+				C65EBD5B28D7950200E7D83E /* FinalShowView.swift */,
+				C65EBD6928D7950300E7D83E /* gameView.swift */,
+				C65EBD4228D7950100E7D83E /* HowToBegin.swift */,
+				C65EBD6728D7950300E7D83E /* InactiveActionMenuView.swift */,
+				C65EBD4B28D7950200E7D83E /* JoiningTableView.swift */,
+				C65EBDFA28D7990F00E7D83E /* JumpingTextView.swift */,
+				C65EBD5F28D7950200E7D83E /* LogInfoView.swift */,
+				C65EBD6828D7950300E7D83E /* MatchDetailsView.swift */,
+				C65EBD4128D7950100E7D83E /* MatchInfoView.swift */,
+				C65EBD5828D7950200E7D83E /* MatchMenuView.swift */,
+				C65EBD4928D7950200E7D83E /* MatchView.swift */,
+				C65EBD4328D7950100E7D83E /* MenuAndMatchView.swift */,
+				C65EBD5928D7950200E7D83E /* NumberOfPlayersChooser.swift */,
+				C65EBD6628D7950300E7D83E /* OOGTableView.swift */,
+				C65EBD4528D7950100E7D83E /* OtherPlayerView.swift */,
+				C65EBD4628D7950100E7D83E /* PlayerInfoView.swift */,
+				C65EBD4C28D7950200E7D83E /* PokerTableView.swift */,
+				C65EBD6028D7950300E7D83E /* PotInfoView.swift */,
+				C65EBD4028D7950100E7D83E /* ShowdownItem.swift */,
+				C65EBD6A28D7950300E7D83E /* ShowdownView.swift */,
+				C65EBD6C28D7950300E7D83E /* StackGlowFlasher.swift */,
+				C65EBD4D28D7950200E7D83E /* Stage2SetupView.swift */,
+				C65EBD5C28D7950200E7D83E /* Stage3MainMenuView.swift */,
+				C65EBD6D28D7950300E7D83E /* VariantAddForm.swift */,
+				C65EBD4E28D7950200E7D83E /* VariantLister.swift */,
+				C65EBD6128D7950300E7D83E /* WelcomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +473,103 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C60C335B28D74B1E00F64A82 /* ContentView.swift in Sources */,
+				C65EBDF428D7971E00E7D83E /* MatchExtension.swift in Sources */,
+				C65EBDEC28D7971E00E7D83E /* TaskSleepSeconds.swift in Sources */,
+				C65EBD3728D793F100E7D83E /* RawCard.swift in Sources */,
+				C65EBD8628D7950300E7D83E /* MatchMenuView.swift in Sources */,
+				C65EBD7028D7950300E7D83E /* HowToBegin.swift in Sources */,
+				C65EBD3928D793F100E7D83E /* gameController.swift in Sources */,
+				C65EBDC528D7968200E7D83E /* DealShowdownStatus.swift in Sources */,
+				C65EBDD928D796BE00E7D83E /* InterText.swift in Sources */,
+				C65EBDC928D7968200E7D83E /* PokerInterpretationHand.swift in Sources */,
+				C65EBDC828D7968200E7D83E /* PokerRules.swift in Sources */,
+				C65EBD8528D7950300E7D83E /* AgreeingStage1View.swift in Sources */,
+				C65EBD7A28D7950300E7D83E /* PokerTableView.swift in Sources */,
+				C65EBD9528D7950300E7D83E /* InactiveActionMenuView.swift in Sources */,
+				C65EBDA228D7961B00E7D83E /* MatchLocalizer.swift in Sources */,
+				C65EBD9628D7950300E7D83E /* MatchDetailsView.swift in Sources */,
+				C65EBDEE28D7971E00E7D83E /* OrdinalNumberFormatterExt.swift in Sources */,
+				C65EBD3528D793F100E7D83E /* RawCardSymbol.swift in Sources */,
+				C65EBD3828D793F100E7D83E /* GameCtlExt_Showdown.swift in Sources */,
+				C65EBDC728D7968200E7D83E /* PokerHandRank.swift in Sources */,
+				C65EBDF828D7971E00E7D83E /* ArrayNextOthers.swift in Sources */,
+				C65EBD3A28D793F100E7D83E /* PreferencesClass.swift in Sources */,
+				C65EBD8E28D7950300E7D83E /* PotInfoView.swift in Sources */,
+				C65EBDB828D7968200E7D83E /* GameStartParameters.swift in Sources */,
+				C65EBD8928D7950300E7D83E /* FinalShowView.swift in Sources */,
+				C65EBDF728D7971E00E7D83E /* RelativeDateFormatterExtension.swift in Sources */,
+				C65EBDA128D7961B00E7D83E /* ParticipantLocalization.swift in Sources */,
+				C65EBDCA28D7968200E7D83E /* PokerGame.swift in Sources */,
+				C65EBDBF28D7968200E7D83E /* PokerPlayerAction.swift in Sources */,
+				C65EBDD328D796BE00E7D83E /* BlinkingButton.swift in Sources */,
+				C65EBDD428D796BE00E7D83E /* InputQuery.swift in Sources */,
+				C65EBDD528D796BE00E7D83E /* MinWidthContainer.swift in Sources */,
+				C65EBDBE28D7968200E7D83E /* PokerGameAgreeing.swift in Sources */,
+				C65EBD8C28D7950300E7D83E /* CardGameContainer.swift in Sources */,
+				C65EBD9928D7950300E7D83E /* ExistingMatchChooserView.swift in Sources */,
+				C65EBDD728D796BE00E7D83E /* soundFX.swift in Sources */,
+				C65EBD3428D793F100E7D83E /* GameTransition.swift in Sources */,
+				C65EBD7728D7950300E7D83E /* MatchView.swift in Sources */,
+				C65EBDEA28D7971E00E7D83E /* CustomAlignments.swift in Sources */,
+				C65EBD7428D7950300E7D83E /* PlayerInfoView.swift in Sources */,
+				C65EBD7F28D7950300E7D83E /* BetRaiseAmountPicker.swift in Sources */,
+				C65EBDBB28D7968200E7D83E /* InterpretationHandExtension.swift in Sources */,
+				C65EBDF028D7971E00E7D83E /* BlurryBackground.swift in Sources */,
+				C65EBD7B28D7950300E7D83E /* Stage2SetupView.swift in Sources */,
+				C65EBD8328D7950300E7D83E /* CardView.swift in Sources */,
+				C65EBD6F28D7950300E7D83E /* MatchInfoView.swift in Sources */,
+				C65EBDD628D796BE00E7D83E /* PaddedButton.swift in Sources */,
+				C65EBDC428D7968200E7D83E /* test4Outcomes.swift in Sources */,
+				C65EBD7C28D7950300E7D83E /* VariantLister.swift in Sources */,
+				C65EBD7928D7950300E7D83E /* JoiningTableView.swift in Sources */,
 				C60C335928D74B1E00F64A82 /* Friendly_HoldemApp.swift in Sources */,
+				C65EBDC228D7968200E7D83E /* tester1.swift in Sources */,
+				C65EBD9728D7950300E7D83E /* gameView.swift in Sources */,
+				C65EBDEB28D7971E00E7D83E /* blurYourself.swift in Sources */,
+				C65EBD8028D7950300E7D83E /* ActiveActionMenu2.swift in Sources */,
+				C65EBDF328D7971E00E7D83E /* ParticipantArrayExtension.swift in Sources */,
+				C65EBD8B28D7950300E7D83E /* AgreeingView.swift in Sources */,
+				C65EBDC128D7968200E7D83E /* PokerPot.swift in Sources */,
+				C65EBD9328D7950300E7D83E /* AgreeingInactiveView.swift in Sources */,
+				C65EBD8728D7950300E7D83E /* NumberOfPlayersChooser.swift in Sources */,
+				C65EBDFB28D7990F00E7D83E /* JumpingTextView.swift in Sources */,
+				C65EBDF128D7971E00E7D83E /* RangeTrim.swift in Sources */,
+				C65EBDCB28D7968200E7D83E /* Card.swift in Sources */,
+				C65EBDC028D7968200E7D83E /* PokerPlayer.swift in Sources */,
+				C65EBDBD28D7968200E7D83E /* gameState.swift in Sources */,
+				C65EBD8D28D7950300E7D83E /* LogInfoView.swift in Sources */,
+				C65EBD3328D793F100E7D83E /* GameCtlExt_Quit.swift in Sources */,
+				C65EBD7628D7950300E7D83E /* CardStackView.swift in Sources */,
+				C65EBDF628D7971E00E7D83E /* OptionalToStringOptExtension.swift in Sources */,
+				C65EBDEF28D7971E00E7D83E /* MatchFindExchange.swift in Sources */,
+				C65EBD8228D7950300E7D83E /* ContentView.swift in Sources */,
+				C65EBD9428D7950300E7D83E /* OOGTableView.swift in Sources */,
+				C65EBDB928D7968200E7D83E /* PokerCardInterpretation.swift in Sources */,
+				C65EBD9828D7950300E7D83E /* ShowdownView.swift in Sources */,
+				C65EBD3028D793F100E7D83E /* RawCardSuit.swift in Sources */,
+				C65EBD7228D7950300E7D83E /* DebugView.swift in Sources */,
+				C65EBDA328D7961B00E7D83E /* ParticipantLocalization copy.swift in Sources */,
+				C65EBDED28D7971E00E7D83E /* UITurnBasedMatch.swift in Sources */,
+				C65EBD3628D793F100E7D83E /* GCHelper.swift in Sources */,
+				C65EBDC628D7968200E7D83E /* GameEndStatus.swift in Sources */,
+				C65EBDC328D7968200E7D83E /* GameLogEntry.swift in Sources */,
+				C65EBDBA28D7968200E7D83E /* PokerGameShowdown.swift in Sources */,
+				C65EBD7328D7950300E7D83E /* OtherPlayerView.swift in Sources */,
+				C65EBD7828D7950300E7D83E /* CardStackIDlessView.swift in Sources */,
+				C65EBDA028D7961B00E7D83E /* GameLocalizer.swift in Sources */,
+				C65EBDF928D7971E00E7D83E /* ConditionalAXAction.swift in Sources */,
+				C65EBDF228D7971E00E7D83E /* StringExtension.swift in Sources */,
+				C65EBD3128D793F100E7D83E /* GameCtlExt_Agreeing.swift in Sources */,
+				C65EBD3228D793F100E7D83E /* GameCtlExt_newAsync.swift in Sources */,
+				C65EBD9B28D7950300E7D83E /* VariantAddForm.swift in Sources */,
+				C65EBD6E28D7950300E7D83E /* ShowdownItem.swift in Sources */,
+				C65EBDBC28D7968200E7D83E /* CardStack.swift in Sources */,
+				C65EBD7128D7950300E7D83E /* MenuAndMatchView.swift in Sources */,
+				C65EBDF528D7971E00E7D83E /* DispatchQueueRelativeAsync.swift in Sources */,
+				C65EBD8A28D7950300E7D83E /* Stage3MainMenuView.swift in Sources */,
+				C65EBD8F28D7950300E7D83E /* WelcomeView.swift in Sources */,
+				C65EBDD828D796BE00E7D83E /* groupedAsync.swift in Sources */,
+				C65EBD9A28D7950300E7D83E /* StackGlowFlasher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
