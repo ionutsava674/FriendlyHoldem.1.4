@@ -60,8 +60,8 @@ struct MenuAndMatchView: View {
                             }
                         } //btn
                             Button("set for") {
-                                guard let game = gch.currentGame,
-                                      let lpi = match.localParticipantIndex()
+                                guard let _ = gch.currentGame,
+                                      let _ = match.localParticipantIndex()
                                 else {
                                     return
                                 }
