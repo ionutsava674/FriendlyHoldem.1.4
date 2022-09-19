@@ -10,6 +10,7 @@
 		C60C335928D74B1E00F64A82 /* Friendly_HoldemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60C335828D74B1E00F64A82 /* Friendly_HoldemApp.swift */; };
 		C60C335D28D74B1F00F64A82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60C335C28D74B1F00F64A82 /* Assets.xcassets */; };
 		C60C336028D74B1F00F64A82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60C335F28D74B1F00F64A82 /* Preview Assets.xcassets */; };
+		C621D24928D7AB4900DB785D /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = C621D24828D7AB4900DB785D /* Algorithms */; };
 		C65EBD3028D793F100E7D83E /* RawCardSuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD2528D793F000E7D83E /* RawCardSuit.swift */; };
 		C65EBD3128D793F100E7D83E /* GameCtlExt_Agreeing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD2628D793F000E7D83E /* GameCtlExt_Agreeing.swift */; };
 		C65EBD3228D793F100E7D83E /* GameCtlExt_newAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBD2728D793F100E7D83E /* GameCtlExt_newAsync.swift */; };
@@ -106,7 +107,6 @@
 		C65EBDF828D7971E00E7D83E /* ArrayNextOthers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDE828D7971E00E7D83E /* ArrayNextOthers.swift */; };
 		C65EBDF928D7971E00E7D83E /* ConditionalAXAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDE928D7971E00E7D83E /* ConditionalAXAction.swift */; };
 		C65EBDFB28D7990F00E7D83E /* JumpingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDFA28D7990F00E7D83E /* JumpingTextView.swift */; };
-		C697F3AB28D7539A0052ABB3 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = C697F3AA28D7539A0052ABB3 /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -218,7 +218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C697F3AB28D7539A0052ABB3 /* Algorithms in Frameworks */,
+				C621D24928D7AB4900DB785D /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +413,7 @@
 			);
 			name = "Friendly Holdem";
 			packageProductDependencies = (
-				C697F3AA28D7539A0052ABB3 /* Algorithms */,
+				C621D24828D7AB4900DB785D /* Algorithms */,
 			);
 			productName = "Friendly Holdem";
 			productReference = C60C335528D74B1E00F64A82 /* Friendly Holdem.app */;
@@ -445,7 +445,7 @@
 			);
 			mainGroup = C60C334C28D74B1E00F64A82;
 			packageReferences = (
-				C697F3A928D7539A0052ABB3 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				C621D24728D7AB4900DB785D /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = C60C335628D74B1E00F64A82 /* Products */;
 			projectDirPath = "";
@@ -778,7 +778,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C697F3A928D7539A0052ABB3 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+		C621D24728D7AB4900DB785D /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-algorithms.git";
 			requirement = {
@@ -789,9 +789,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C697F3AA28D7539A0052ABB3 /* Algorithms */ = {
+		C621D24828D7AB4900DB785D /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C697F3A928D7539A0052ABB3 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			package = C621D24728D7AB4900DB785D /* XCRemoteSwiftPackageReference "swift-algorithms" */;
 			productName = Algorithms;
 		};
 /* End XCSwiftPackageProductDependency section */
