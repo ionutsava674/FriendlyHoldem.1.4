@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C605422328D9998B0078AD38 /* sfx2 in Resources */ = {isa = PBXBuildFile; fileRef = C605422228D9998B0078AD38 /* sfx2 */; };
+		C605422328D9998B0078AD38 /* sfx in Resources */ = {isa = PBXBuildFile; fileRef = C605422228D9998B0078AD38 /* sfx */; };
 		C60C335928D74B1E00F64A82 /* Friendly_HoldemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60C335828D74B1E00F64A82 /* Friendly_HoldemApp.swift */; };
 		C60C335D28D74B1F00F64A82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60C335C28D74B1F00F64A82 /* Assets.xcassets */; };
 		C60C336028D74B1F00F64A82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60C335F28D74B1F00F64A82 /* Preview Assets.xcassets */; };
@@ -111,7 +111,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C605422228D9998B0078AD38 /* sfx2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sfx2; sourceTree = "<group>"; };
+		C605422228D9998B0078AD38 /* sfx */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sfx; sourceTree = "<group>"; };
 		C60C335528D74B1E00F64A82 /* Friendly Holdem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friendly Holdem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60C335828D74B1E00F64A82 /* Friendly_HoldemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friendly_HoldemApp.swift; sourceTree = "<group>"; };
 		C60C335C28D74B1F00F64A82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -262,7 +262,7 @@
 				C65EBD2C28D793F100E7D83E /* RawCard.swift */,
 				C65EBD2528D793F000E7D83E /* RawCardSuit.swift */,
 				C65EBD2A28D793F100E7D83E /* RawCardSymbol.swift */,
-				C605422228D9998B0078AD38 /* sfx2 */,
+				C605422228D9998B0078AD38 /* sfx */,
 				C65EBD3C28D7940D00E7D83E /* Generals */,
 				C65EBD3B28D7940300E7D83E /* Extensions */,
 				C60C335C28D74B1F00F64A82 /* Assets.xcassets */,
@@ -466,7 +466,7 @@
 			files = (
 				C60C336028D74B1F00F64A82 /* Preview Assets.xcassets in Resources */,
 				C60C335D28D74B1F00F64A82 /* Assets.xcassets in Resources */,
-				C605422328D9998B0078AD38 /* sfx2 in Resources */,
+				C605422328D9998B0078AD38 /* sfx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
