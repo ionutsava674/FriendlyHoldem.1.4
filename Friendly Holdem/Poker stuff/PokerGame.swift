@@ -63,7 +63,8 @@ class HoldemGame: ObservableObject, Codable {
     @Published var lastShowdownStatus:  DealShowdownStatus
     lazy var endStatus: GameEndStatus = updateEndStatus()
     
-    static let cardMoveSound: GameSound? = try? GameSound(soundFile: "sfx2/deal1.mp3", maxNrOfPlayers: 5)
+    //static let cardMoveSound: GameSound? = try? GameSound(soundFile: "sfx2/deal1.mp3", maxNrOfPlayers: 5)
+    static let cardMoveSound: GameSound? = try? GameSound(soundFile: "deal1.mp3", maxNrOfPlayers: 5)
     static let cardTurnSound: GameSound? = try? GameSound(soundFile: "sfx2/swush1.mp3", maxNrOfPlayers: 5)
     static let smallBlindSound: GameSound? = try? GameSound(soundFile: "sfx2/coins/Bag-of-Coins-A.mp3", maxNrOfPlayers: 5)
     static let bigBlindSound: GameSound? = try? GameSound(soundFile: "sfx2/coins/Bag-of-Coins-B.mp3", maxNrOfPlayers: 5)

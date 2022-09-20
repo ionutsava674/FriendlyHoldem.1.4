@@ -83,6 +83,7 @@ struct JoiningTableView: View {
             .background(.black)
             Spacer()
             Button("show events") {
+                HoldemGame.cardMoveSound?.prepareAndPlay()
                 withAnimation {
                     self.showingOverlayedGameLog = true
                 }
