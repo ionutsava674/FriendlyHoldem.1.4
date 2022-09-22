@@ -57,9 +57,9 @@ struct LogInfoView: View {
             } //svr
             if dismissable {
                 Button {
-                    withAnimation(.easeIn(duration: 4)) {
+                    //withAnimation(.easeIn(duration: 4)) {
                         self.isPresented = false
-                    }
+                    //}
                 } label: {
                     Text("OK")
                         .font(.title.bold())
@@ -71,12 +71,9 @@ struct LogInfoView: View {
             } //if
         } //vs
         .foregroundColor(.white)
-        //.frame(maxHeight: 250, alignment: .center)
+        .frame(maxHeight: 450, alignment: .center)
         .padding(18)
-        //.background(.blue.bright(amount: 0.4))
-        .roundedDoubelBorder(.white, radius: 20, lineWidth: 1.5)
-        .background(.blue.bright(amount: 0.6))
-        .clipShape(RoundedRectangle(cornerRadius: 23))
+        .roundedDoubleBorder(.white, radius: 8, lineWidth: 1.5, withBackground: .blue.bright(amount: 0.6))
     } //body
     
     func lastActionIndex( of player: PokerPlayer) -> Int? {

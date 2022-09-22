@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C603F2AE28D9A2C000BDD90D /* LastActionLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603F2AD28D9A2C000BDD90D /* LastActionLine.swift */; };
+		C603F2B028DB28E400BDD90D /* ViewBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C603F2AF28DB28E400BDD90D /* ViewBorder.swift */; };
 		C605422328D9998B0078AD38 /* sfx2 in Resources */ = {isa = PBXBuildFile; fileRef = C605422228D9998B0078AD38 /* sfx2 */; };
 		C60C335928D74B1E00F64A82 /* Friendly_HoldemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60C335828D74B1E00F64A82 /* Friendly_HoldemApp.swift */; };
 		C60C335D28D74B1F00F64A82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60C335C28D74B1F00F64A82 /* Assets.xcassets */; };
@@ -111,6 +113,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C603F2AD28D9A2C000BDD90D /* LastActionLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastActionLine.swift; sourceTree = "<group>"; };
+		C603F2AF28DB28E400BDD90D /* ViewBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBorder.swift; sourceTree = "<group>"; };
 		C605422228D9998B0078AD38 /* sfx2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sfx2; sourceTree = "<group>"; };
 		C60C335528D74B1E00F64A82 /* Friendly Holdem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friendly Holdem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60C335828D74B1E00F64A82 /* Friendly_HoldemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friendly_HoldemApp.swift; sourceTree = "<group>"; };
@@ -284,6 +288,7 @@
 			children = (
 				C65EBDE828D7971E00E7D83E /* ArrayNextOthers.swift */,
 				C65EBDE028D7971D00E7D83E /* BlurryBackground.swift */,
+				C603F2AF28DB28E400BDD90D /* ViewBorder.swift */,
 				C65EBDDB28D7971D00E7D83E /* blurYourself.swift */,
 				C65EBDE928D7971E00E7D83E /* ConditionalAXAction.swift */,
 				C65EBDDA28D7971D00E7D83E /* CustomAlignments.swift */,
@@ -373,6 +378,7 @@
 				C65EBD6928D7950300E7D83E /* gameView.swift */,
 				C65EBD4228D7950100E7D83E /* HowToBegin.swift */,
 				C65EBD6728D7950300E7D83E /* InactiveActionMenuView.swift */,
+				C603F2AD28D9A2C000BDD90D /* LastActionLine.swift */,
 				C65EBD4B28D7950200E7D83E /* JoiningTableView.swift */,
 				C65EBDFA28D7990F00E7D83E /* JumpingTextView.swift */,
 				C65EBD5F28D7950200E7D83E /* LogInfoView.swift */,
@@ -502,6 +508,7 @@
 				C65EBDB828D7968200E7D83E /* GameStartParameters.swift in Sources */,
 				C65EBD8928D7950300E7D83E /* FinalShowView.swift in Sources */,
 				C65EBDF728D7971E00E7D83E /* RelativeDateFormatterExtension.swift in Sources */,
+				C603F2AE28D9A2C000BDD90D /* LastActionLine.swift in Sources */,
 				C65EBDA128D7961B00E7D83E /* ParticipantLocalization.swift in Sources */,
 				C65EBDCA28D7968200E7D83E /* PokerGame.swift in Sources */,
 				C65EBDBF28D7968200E7D83E /* PokerPlayerAction.swift in Sources */,
@@ -527,6 +534,7 @@
 				C65EBD7C28D7950300E7D83E /* VariantLister.swift in Sources */,
 				C65EBD7928D7950300E7D83E /* JoiningTableView.swift in Sources */,
 				C60C335928D74B1E00F64A82 /* Friendly_HoldemApp.swift in Sources */,
+				C603F2B028DB28E400BDD90D /* ViewBorder.swift in Sources */,
 				C65EBDC228D7968200E7D83E /* tester1.swift in Sources */,
 				C65EBD9728D7950300E7D83E /* gameView.swift in Sources */,
 				C65EBDEB28D7971E00E7D83E /* blurYourself.swift in Sources */,

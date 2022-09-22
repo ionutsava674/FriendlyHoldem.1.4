@@ -26,5 +26,8 @@ extension String {
     static let newLine = "\r\n"
     func toText() -> Text {
         Text(self)
-    }
+    } //func
+    func capitalizingFirst() -> String {
+        prefix(1).capitalized + dropFirst()
+    } //func
 } //ext

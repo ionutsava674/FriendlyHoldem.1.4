@@ -124,8 +124,8 @@ struct MatchMenuView: View {
                     .font(.title.bold())
                     .padding(32)
                     .foregroundColor(.primary)
-                    .roundedDoubelBorder(Color.primary, radius: 4)
-                    .background( Color( uiColor: .secondarySystemBackground))
+                    .roundedDoubleBorder(Color.primary, radius: 4, lineWidth: 1.5, withBackground: Color( uiColor: .secondarySystemBackground) )
+                    //.background( Color( uiColor: .secondarySystemBackground))
                     .accessibilityAddTraits(.isModal)
                     .transition(.scale.applyReduceMotion( reduceMotion: shouldReduceMotion, allowFade: true))
             }

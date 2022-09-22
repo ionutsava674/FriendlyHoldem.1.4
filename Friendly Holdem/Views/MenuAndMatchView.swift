@@ -30,7 +30,7 @@ struct MenuAndMatchView: View {
         GeometryReader { geo in
         VStack {
             HStack {
-                Button( showingMenu ? "Close menu" : "menu") {
+                Button( showingMenu ? "Close menu" : "Menu") {
                     self.animateMenu( visible: !self.showingMenu)
                 } //btn
                 .font(.body.bold())

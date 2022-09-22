@@ -14,12 +14,20 @@ struct JoiningTableView: View {
     @ObservedObject var viewedBy: PokerPlayer
     @ObservedObject var match: GKTurnBasedMatch
     @Namespace private var cardAnim_ns
+    
     @Environment(\.accessibilityReduceMotion) private var shouldReduceMotion
     @AccessibilityFocusState private var playerAxFocus: Int?
     
     @State private var amountPickerToShow: BetRaiseAmountPickerSeed?
     @State private var showingPotInfo = false
     @State private var showingOverlayedGameLog = false
+    private var combineStates: Int {
+        (
+            showingPotInfo ? 1 : 0
+        ) |
+        (showingOverlayedGameLog ? 2 : 0) |
+        ((amountPickerToShow == nil) ? 4: 0)
+    }
 
     var body: some View {
         GeometryReader { geo in
@@ -31,7 +39,7 @@ struct JoiningTableView: View {
                 Color( red: 0.1, green: 0.45, blue: 0.2)
             ], center: UnitPoint(x: 0.3, y: 0.8), startRadius: 0.2 * 1000.0, endRadius: 0.6 * 1000.0)
                 .brightness( 0.112)
-            Color.pink
+            //Color.pink
         VStack(alignment: .center, spacing: 0) { //main vs //others and tokens
             HStack(alignment: .center, spacing: 0) {
                 let otherPlayers = game.allPlayers.nextOthersOf( mpIndex: viewedBy.matchParticipantIndex, includeAtEnd: false) ?? game.allPlayers
@@ -42,7 +50,7 @@ struct JoiningTableView: View {
             } //top hs
             //.padding([.top], 4)
             .frame(minHeight: geo.size.height * 0.20, idealHeight: geo.size.height * 0.21, maxHeight: geo.size.height * 0.22, alignment: .top)
-            .background(.black)
+            // .background(.black)
             Spacer()
             HStack(alignment: .center, spacing: 0) { //mid
                 if game.dealerStackVisible {
@@ -59,36 +67,40 @@ struct JoiningTableView: View {
                             .accessibilityAction( named: Text( GameController.nowItsWhosReallyTurn(in: game, and: match) ?? "the current turn is unknown" ), {
                                 self.setFocusToFirstActing()
                             }) //act
-                        
-                        JumpingText(text: "🪙 \(game.totalPotSize)", uniqueId: "\(match.matchID)PotSize")
+                        VStack {
+                            Text("Total:")
+                            JumpingText(text: "🪙 \(game.totalPotSize)", uniqueId: "\(match.matchID)PotSize")
+                        } //gr
+                        .accessibilityElement( children: .combine)
                             .accessibilityLabel(Text("Total pot"))
                             .accessibilityValue( Text("\(game.totalPotSize) chips."))
                             .onTapGesture {
                                 self.showingPotInfo = true
                             }
+                            // .background(.yellow)
                 } //vs
                     .frame(width: geo.size.width * 0.33, alignment: .center)
+                    // .background(.black)
                 } //if
                 //GeometryReader { flopGeo in
-                    //List {
-                        CardStackView(stack: game.flop, anim_ns: cardAnim_ns, desiredCardWidth: 92, desiredXSpacing: 110, desiredYSpacing: 0, fitInRect: true, holdAtAngle: .zero, asSeenBy: match.localParticipantIndex() ?? -1)
-                    //.conditionalAxValue( !game.flop.cards.isEmpty, valueDescription: Text(", this is a flop card"))
+                CardStackView(stack: game.flop, anim_ns: cardAnim_ns, desiredCardWidth: 92, desiredXSpacing: 110, desiredYSpacing: 0, fitInRect: true, holdAtAngle: .zero, asSeenBy: viewedBy.matchParticipantIndex)
                     .conditionalAxContent( !game.flop.cards.isEmpty, key: AccessibilityCustomContentKey(Text("On the table, facing up"), id: "location"), contentValue: Text(""))
                     .accessibilityFocused($playerAxFocus, equals: 40)
-                        // .background(Color.red)
-                    //} //ls
+                        // .background(.red)
                 //} //geo
             } //mid hs
             .frame(minHeight: geo.size.height * 0.21, idealHeight: geo.size.height * 0.24, maxHeight: geo.size.height * 0.26, alignment: .center)
-            .background(.black)
+            // .background(.black)
             Spacer()
-            Button("show events") {
-                HoldemGame.cardMoveSound?.prepareAndPlay()
-                withAnimation {
-                    self.showingOverlayedGameLog = true
-                }
-            }
-            //if match.isLocalPlayersTurn() && game.isActingPlayer( viewedBy) {
+            LastActionLine(gameModel: game, viewedBy: viewedBy, match: match)
+                .padding(.bottom, 4)
+                .onTapGesture {
+                    HoldemGame.cardMoveSound?.prepareAndPlay()
+                    //withAnimation {
+                        self.showingOverlayedGameLog = true
+                    //} //wa
+                } //tap
+                // .background(.black)
             if GameController.isLocalTurnDoubleCheck(in: game, and: match) {
                     //AxActionMenuView(gameModel: game, match: match)
                     ActiveActionMenu2(gameModel: game, match: match, gotAmountPickerSeed: $amountPickerToShow)
@@ -101,6 +113,7 @@ struct JoiningTableView: View {
                 .accessibilityCustomContent( AccessibilityCustomContentKey(Text(""), id: "game status"), Text( game.gameState.shortDescription ))
                 .accessibilityCustomContent( AccessibilityCustomContentKey(Text("is acting as current dealer"), id: "current dealer"), Text( GameController.playerAlias( of: game.actAsDealer, in: match, unknownIndexDefault: "unknown") ))
                 .accessibilityCustomContent( AccessibilityCustomContentKey(Text("is now in turn"), id: "now in turn"), Text( GameController.playerAlias(of: game.actingOrder.first, in: match, unknownIndexDefault: "unknown") ))
+                // .background(.black)
             } //else
                 VStack(alignment: .center, spacing: 0) { //me and token
                     JumpingText(text: "🪙 \(viewedBy.placedInBet)", uniqueId: "\(match.matchID)YourBet")
@@ -123,30 +136,41 @@ struct JoiningTableView: View {
                         .accessibilityCustomContent("this card is in your hand", Text(""))                        .padding(.bottom, 8)
                 } //vs cards and token
             .frame(minHeight: geo.size.height * 0.3, idealHeight: geo.size.height * 0.379, maxHeight: geo.size.height * 0.407, alignment: .bottom)
-            .background(.black)
+            // .background(.black)
         } //main vs
         .foregroundColor(.white)
-            
-            if let seed = amountPickerToShow,
-               viewedBy === amountPickerToShow?.actor,
-               game.ActingPlayaMenu.contains( where: { act in
-                   act.id == amountPickerToShow?.action.id
-               })
-            {
-                BetRaiseAmountPicker(isPresented: $amountPickerToShow, match: match, game: game, actor: seed.actor, action: seed.action, onSubmit: seed.onSubmit)
-                    .accessibility(addTraits: .isModal)
-            } //if
-            if showingOverlayedGameLog {
-                LogInfoView(isPresented: $showingOverlayedGameLog, dismissable: true, game: game, match: match, viewedBy: viewedBy)
-                    .accessibility(addTraits: .isModal)
+            VStack {
+                if let seed = amountPickerToShow,
+                   viewedBy === amountPickerToShow?.actor,
+                   game.ActingPlayaMenu.contains( where: { act in
+                       act.id == amountPickerToShow?.action.id
+                   })
+                {
+                    BetRaiseAmountPicker(isPresented: $amountPickerToShow, match: match, game: game, actor: seed.actor, action: seed.action, onSubmit: seed.onSubmit)
+                        .accessibility(addTraits: .isModal)
+                        .transition(.scale.applyReduceMotion( reduceMotion: shouldReduceMotion, allowFade: true))
+                } //if
+                if showingPotInfo {
+                    PotInfoView( isPresented: $showingPotInfo, game: game, match: match)
+                        .accessibility(addTraits: .isModal)
+                        .transition(.scale.applyReduceMotion( reduceMotion: shouldReduceMotion, allowFade: true))
+                } //if
+                if showingOverlayedGameLog {
+                    LogInfoView(isPresented: $showingOverlayedGameLog.animation(), dismissable: true, game: game, match: match, viewedBy: viewedBy)
+                        .accessibility(addTraits: .isModal)
                     .transition(.scale.applyReduceMotion( reduceMotion: shouldReduceMotion, allowFade: true))
-                    // .animation(.easeIn, value: showingOverlayedGameLog)
-            } //if
+                        // .transition(.asymmetric(
+                            //insertion: .move (edge: .bottom).applyReduceMotion( reduceMotion: shouldReduceMotion, allowFade: true),
+                            //removal: .move (edge: .bottom).applyReduceMotion( reduceMotion: shouldReduceMotion, allowFade: true)) )
+                } //if
+            } //vs
+            // .animation(.default, value: showingOverlayedGameLog || showingPotInfo || (amountPickerToShow != nil))
+            .animation(.default, value: combineStates)
         } //zs
         } //geo
-        .sheet(isPresented: $showingPotInfo, content: {
-            PotInfoView( game: game, match: match)
-        })
+        //.sheet(isPresented: $showingPotInfo, content: {
+            //PotInfoView( game: game, match: match)
+        //})
     } //body
     func setFocusToFirstActing() -> Void {
         if match.isLocalPlayersTurn() {

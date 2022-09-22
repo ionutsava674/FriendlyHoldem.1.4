@@ -9,7 +9,8 @@ import SwiftUI
 import GameKit
 
 struct PotInfoView: View {
-    @Environment(\.dismiss) private var dism
+    @Binding var isPresented: Bool
+    //@Environment(\.dismiss) private var dism
     @ObservedObject var game: HoldemGame
     @ObservedObject var match: GKTurnBasedMatch
     
@@ -56,52 +57,24 @@ struct PotInfoView: View {
                 .font(.title.bold())
                 .padding()
             Button {
-                dism()
+                //dism()
+                //withAnimation {
+                    self.isPresented = false
+                //}
             } label: {
                 Text("OK")
+                    .font(.title.bold())
+                    .padding(.horizontal)
+                    .padding()
+                    .accessibilityElement(children: .combine)
             }
             .padding(.bottom)
 
         } //vs
-        .foregroundColor(.black)
-        .doubelBorder(.white)
-        .padding(1)
-        .background(.cyan)
+        .foregroundColor(.white)
+        .doubleBorder(.white, lineWidth: 2, withBackground: .clear)
+        .padding(2)
+        .background(.cyan.bright( amount: 0.8))
     } //body
 } //str
 
-extension View {
-    @ViewBuilder
-    func doubelBorder<T: ShapeStyle>(_ style: T) -> some View {
-        self
-            .border( style, width: 1)
-            .padding(2)
-            .border( style, width: 1)
-    } //func
-    func roundedDoubelBorder<T: ShapeStyle>(_ style: T, radius: CGFloat, lineWidth: CGFloat = 1.0) -> some View {
-        self
-            .overlay(content: {
-                RoundedRectangle(cornerRadius: radius, style: .circular)
-                    .stroke( style, lineWidth: lineWidth)
-            })
-            .padding(2 * lineWidth)
-            .overlay(content: {
-                RoundedRectangle(cornerRadius: radius + (2 * lineWidth), style: .circular)
-                    .stroke( style, lineWidth: lineWidth)
-            })
-            .clipShape(RoundedRectangle(cornerRadius: radius + (2 * lineWidth), style: .circular) )
-    } //func
-    func insetRoundedDoubelBorder<T: ShapeStyle>(_ style: T, radius: CGFloat) -> some View {
-        self
-            .overlay(content: {
-                RoundedRectangle(cornerRadius: radius - 2, style: .circular)
-                    .stroke( style, lineWidth: 1)
-                    .padding(2)
-                    .overlay(content: {
-                        RoundedRectangle(cornerRadius: radius, style: .circular)
-                            .stroke( style, lineWidth: 1)
-                    }) //o2
-            }) //o1
-            .clipShape(RoundedRectangle(cornerRadius: radius, style: .circular) )
-    } //func
-} //ext
