@@ -9,7 +9,89 @@ import Foundation
 import GameKit
 import SwiftUI
 
-extension GameController {
+enum GameLocalizer {
+    static func localizedInGameStatus( for player: PokerPlayer, in match: GKTurnBasedMatch, isLocal: Bool) -> String {
+        guard player.joiningGame else {
+            var res = LocalizednoJoinReason( for: player, in: match, withName: true, isLocal: isLocal)
+            if player.placedInBet > 0 {
+                res += isLocal
+                ? ", had \( player.placedInBet ) chips in the pot"
+                : ", you had \( player.placedInBet ) chips in the pot"
+            }
+            return res
+        } //gua
+        guard !player.dropped else {
+            return isLocal
+            ? "you threw the hand, with \(player.placedInBet) chips in the pot"
+            : "\( playerAlias(of: player, in: match) ) threw the hand, with \( player.placedInBet ) chips in the pot"
+        }
+        return isLocal
+        ? "you bet \(player.placedInBet) chips"
+        : "\( playerAlias(of: player, in: match) ) bet \( player.placedInBet ) chips"
+    } //func
+    static func LocalizedShowdownStatus( for player: PokerPlayer, in match: GKTurnBasedMatch?, withName: Bool, isLocal: Bool) -> String {
+        guard player.joiningGame else {
+            return LocalizednoJoinReason( for: player, in: match, withName: withName, isLocal: isLocal)
+        } //gua
+        if player.dropped {
+            return withName ?
+            ( isLocal ?
+            NSLocalizedString("you threw the hand", comment: "")
+              : String.localizedStringWithFormat(NSLocalizedString("%@ threw the hand", comment: ""), playerAlias(of: player, in: match)) )
+            : NSLocalizedString("threw the hand", comment: "")
+        } //if
+        return withName ?
+        ( isLocal ?
+        NSLocalizedString("", comment: "")
+          : String.localizedStringWithFormat(NSLocalizedString("%@", comment: ""), playerAlias(of: player, in: match)) )
+        : NSLocalizedString("", comment: "")
+    } //func
+    static func LocalizednoJoinReason( for player: PokerPlayer, in match: GKTurnBasedMatch?, withName: Bool, isLocal: Bool) -> String {
+        switch player.notJoiningReason {
+        case .none:
+            return withName ?
+            ( isLocal ?
+            NSLocalizedString("", comment: "")
+              : String.localizedStringWithFormat(NSLocalizedString("%@", comment: ""), playerAlias(of: player, in: match)) )
+            : NSLocalizedString("", comment: "")
+        case .quit:
+            return withName ?
+            ( isLocal ?
+            NSLocalizedString("you quit", comment: "")
+              : String.localizedStringWithFormat(NSLocalizedString("%@ quit", comment: ""), playerAlias(of: player, in: match)) )
+            : NSLocalizedString("quit", comment: "")
+        case .lost:
+            return withName ?
+            ( isLocal ?
+            NSLocalizedString("you lost", comment: "")
+              : String.localizedStringWithFormat(NSLocalizedString("%@ lost", comment: ""), playerAlias(of: player, in: match)) )
+            : NSLocalizedString("lost", comment: "")
+        case .timeOut:
+            return withName ?
+            ( isLocal ?
+            NSLocalizedString("you timed out", comment: "")
+              : String.localizedStringWithFormat(NSLocalizedString("%@ timed out", comment: ""), playerAlias(of: player, in: match)) )
+            : NSLocalizedString("timed out", comment: "")
+        case .tied:
+            return withName ?
+            ( isLocal ?
+            NSLocalizedString("you tied", comment: "")
+              : String.localizedStringWithFormat(NSLocalizedString("%@ tied", comment: ""), playerAlias(of: player, in: match)) )
+            : NSLocalizedString("tied", comment: "")
+        case .first:
+            return withName ?
+            ( isLocal ?
+            NSLocalizedString("you finished first", comment: "")
+              : String.localizedStringWithFormat(NSLocalizedString("%@ finished first", comment: ""), playerAlias(of: player, in: match)) )
+            : NSLocalizedString("finished first", comment: "")
+        case .won:
+            return withName ?
+            ( isLocal ?
+            NSLocalizedString("you won", comment: "")
+              : String.localizedStringWithFormat(NSLocalizedString("%@ won", comment: ""), playerAlias(of: player, in: match)) )
+            : NSLocalizedString("won", comment: "")
+        } //swi
+    } //func
     static func listAliases( of playerList: [PokerPlayer], in match: GKTurnBasedMatch?) -> String {
         let names = playerList.map({
             playerAlias( of: $0, in: match)
@@ -133,68 +215,5 @@ extension GameController {
         return player.matchParticipantIndex == match.localParticipantIndex()
         ? "it's your turn"
         : "it's their turn"
-    } //func
-    static func LocalizedStatus( for player: PokerPlayer, in match: GKTurnBasedMatch?, withName: Bool, isLocal: Bool) -> String {
-        guard player.joiningGame else {
-            return LocalizednoJoinReason( for: player, in: match, withName: withName, isLocal: isLocal)
-        } //gua
-        if player.dropped {
-            return withName ?
-            ( isLocal ?
-            NSLocalizedString("you threw the hand", comment: "")
-              : String.localizedStringWithFormat(NSLocalizedString("%@ threw the hand", comment: ""), playerAlias(of: player, in: match)) )
-            : NSLocalizedString("threw the hand", comment: "")
-        } //if
-        return withName ?
-        ( isLocal ?
-        NSLocalizedString("", comment: "")
-          : String.localizedStringWithFormat(NSLocalizedString("%@", comment: ""), playerAlias(of: player, in: match)) )
-        : NSLocalizedString("", comment: "")
-    } //func
-    static func LocalizednoJoinReason( for player: PokerPlayer, in match: GKTurnBasedMatch?, withName: Bool, isLocal: Bool) -> String {
-        switch player.notJoiningReason {
-        case .none:
-            return withName ?
-            ( isLocal ?
-            NSLocalizedString("", comment: "")
-              : String.localizedStringWithFormat(NSLocalizedString("%@", comment: ""), playerAlias(of: player, in: match)) )
-            : NSLocalizedString("", comment: "")
-        case .quit:
-            return withName ?
-            ( isLocal ?
-            NSLocalizedString("you quit", comment: "")
-              : String.localizedStringWithFormat(NSLocalizedString("%@ quit", comment: ""), playerAlias(of: player, in: match)) )
-            : NSLocalizedString("quit", comment: "")
-        case .lost:
-            return withName ?
-            ( isLocal ?
-            NSLocalizedString("you lost", comment: "")
-              : String.localizedStringWithFormat(NSLocalizedString("%@ lost", comment: ""), playerAlias(of: player, in: match)) )
-            : NSLocalizedString("lost", comment: "")
-        case .timeOut:
-            return withName ?
-            ( isLocal ?
-            NSLocalizedString("you timed out", comment: "")
-              : String.localizedStringWithFormat(NSLocalizedString("%@ timed out", comment: ""), playerAlias(of: player, in: match)) )
-            : NSLocalizedString("timed out", comment: "")
-        case .tied:
-            return withName ?
-            ( isLocal ?
-            NSLocalizedString("you tied", comment: "")
-              : String.localizedStringWithFormat(NSLocalizedString("%@ tied", comment: ""), playerAlias(of: player, in: match)) )
-            : NSLocalizedString("tied", comment: "")
-        case .first:
-            return withName ?
-            ( isLocal ?
-            NSLocalizedString("you finished first", comment: "")
-              : String.localizedStringWithFormat(NSLocalizedString("%@ finished first", comment: ""), playerAlias(of: player, in: match)) )
-            : NSLocalizedString("finished first", comment: "")
-        case .won:
-            return withName ?
-            ( isLocal ?
-            NSLocalizedString("you won", comment: "")
-              : String.localizedStringWithFormat(NSLocalizedString("%@ won", comment: ""), playerAlias(of: player, in: match)) )
-            : NSLocalizedString("won", comment: "")
-        } //swi
     } //func
 } //ext

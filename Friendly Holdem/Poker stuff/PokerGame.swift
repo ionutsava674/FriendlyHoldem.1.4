@@ -760,7 +760,7 @@ class HoldemGame: ObservableObject, Codable {
         if shouldNotBeMyTurn( for: localPlayer) {
             debugMsg_("me \(localPlayer.matchParticipantIndex)")
             debugMsg_("old order " + actingOrder.map({ "\($0)" }).joined(separator: ", ") )
-            debugMsg_("old order " + actingOrder.map({ GameController.LocalizednoJoinReason(for: allPlayers[$0], in: nil, withName: false, isLocal: false) }).joined(separator: ", ") )
+            debugMsg_("old order " + actingOrder.map({ GameLocalizer.LocalizednoJoinReason(for: allPlayers[$0], in: nil, withName: false, isLocal: false) }).joined(separator: ", ") )
             adjustActingOrder( from: localPlayer)
             debugMsg_("new order " + actingOrder.map({ "\($0)" }).joined(separator: ", ") )
             changed = true

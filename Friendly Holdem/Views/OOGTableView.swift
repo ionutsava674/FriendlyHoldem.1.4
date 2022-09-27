@@ -29,7 +29,7 @@ struct NonJoTableView: View {
                 let otherPlayers = game.allPlayers.nextOthersOf(mpIndex: match.localParticipantIndex() ?? -1, includeAtEnd: false) ?? game.allPlayers
                 ForEach(otherPlayers, id: \.matchParticipantIndex) { otherPlayer in
                     VStack(alignment: .center, spacing: 0) {
-                        let otherAlias = GameController.playerAlias( of: otherPlayer, in: match)
+                        let otherAlias = GameLocalizer.playerAlias( of: otherPlayer, in: match)
                         Text(otherAlias)
                             .accessibilityHidden(true)
                         CardStackView(stack: otherPlayer.hand, anim_ns: cardAnim_ns, desiredCardWidth: 50, desiredXSpacing: 40, desiredYSpacing: 0, fitInRect: true, holdAtAngle: .degrees(-5), asSeenBy: otherPlayer.matchParticipantIndex)
@@ -37,17 +37,17 @@ struct NonJoTableView: View {
                             .modifier(StackGlowFlasher2(activeState: game.actingOrder.first == otherPlayer.matchParticipantIndex, radius: 27, color: .white) )
                             //.accessibilityElement(children: .ignore)
                             //.accessibilityLabel( otherAlias)
-                            //.accessibilityValue(" (\( GameController.dealerStatus( of: otherPlayer, in: game) )")
+                            //.accessibilityValue(" (\( gameloca.dealerStatus( of: otherPlayer, in: game) )")
                             .accessibilityFocused($playerAxFocus, equals: 20 + otherPlayer.matchParticipantIndex)
                         DealerToken( forPlayer: otherPlayer, game: game, tokenSize: 17)
                         if otherPlayer.joiningGame {
                             JumpingText( text: "🪙 \(otherPlayer.placedInBet)", uniqueId: "\(match.matchID)BetFrom\(otherAlias)")
                                 .font(otherPlayer.dropped ? .subheadline : .subheadline.italic())
                                 .accessibilityLabel("\(otherPlayer.placedInBet) chips bet by \(otherAlias)")
-                                .accessibilityValue("(\( GameController.itsHisTurn( of: otherPlayer, in: game, and: match) ))")
+                                .accessibilityValue("(\( GameLocalizer.itsHisTurn( of: otherPlayer, in: game, and: match) ))")
                         } else {
-                            Text(  GameController.LocalizednoJoinReason(for: otherPlayer, in: match, withName: false, isLocal: false) )
-                                .accessibilityLabel( GameController.LocalizednoJoinReason(for: otherPlayer, in: match, withName: true, isLocal: false) )
+                            Text(  GameLocalizer.LocalizednoJoinReason( for: otherPlayer, in: match, withName: false, isLocal: false) )
+                                .accessibilityLabel( GameLocalizer.LocalizednoJoinReason( for: otherPlayer, in: match, withName: true, isLocal: false) )
                         } //chips or info
                     } //vs
                 } //fe
@@ -60,14 +60,14 @@ struct NonJoTableView: View {
                     VStack {
                         CardStackView(stack: game.dealerStack, anim_ns: cardAnim_ns, desiredCardWidth: 58, desiredXSpacing: 58 / 5 / 54, desiredYSpacing: 58 / 5 / 54, fitInRect: true, holdAtAngle: .zero, onlyLastAccessible: true, asSeenBy: viewedBy.matchParticipantIndex, backFacingText: "Cards facing down, … ", onlyShow: 10)
                             .accessibilityLabel(game.gameState.longDescription)
-                            .accessibilityAction(named: Text( GameController.thereAreCardsOnTheTable(in: game) ), {
+                            .accessibilityAction(named: Text( GameLocalizer.thereAreCardsOnTheTable(in: game) ), {
                                 self.playerAxFocus = 40
                             }) //act
                             .accessibilityAction(named: GameController.isLocalTurnDoubleCheck(in: game, and: match)
-                                                 ? Text( GameController.yourChipsStatus(in: game, of: viewedBy) )
-                                                 : Text( GameController.whenItsYourTurn(in: game, and: match) ), {
+                                                 ? Text( GameLocalizer.yourChipsStatus(in: game, of: viewedBy) )
+                                                 : Text( GameLocalizer.whenItsYourTurn(in: game, and: match) ), {
                             }) //act
-                            .accessibilityAction(named: Text( GameController.nowItsWhosReallyTurn(in: game, and: match) ?? "the current turn is unknown" ), {
+                            .accessibilityAction(named: Text( GameLocalizer.nowItsWhosReallyTurn(in: game, and: match) ?? "the current turn is unknown" ), {
                                 if match.isLocalPlayersTurn() {
                                     self.playerAxFocus = 30
                                 } else {

@@ -14,18 +14,22 @@ struct OtherPlayerView: View {
     @ObservedObject var viewedBy: PokerPlayer
     @ObservedObject var match: GKTurnBasedMatch
     let anim_ns: Namespace.ID
+    let desiredCardWidth: CGFloat
 
     var body: some View {
-        let otherAlias = GameController.playerAlias( of: otherPlayer, in: match)
+        let otherAlias = GameLocalizer.playerAlias( of: otherPlayer, in: match)
         VStack(alignment: .center, spacing: 0) {
-            Text(otherAlias)
-                .accessibilityHidden(true)
+            Text(otherAlias.capitalizingFirst())
+                //.accessibilityHidden(true)
+            /*
         CardStackView( stack: otherPlayer.hand, anim_ns: anim_ns,
-                       desiredCardWidth: 50, desiredXSpacing: 40, desiredYSpacing: 0,
+                       desiredCardWidth: desiredCardWidth, desiredXSpacing: desiredCardWidth * 0.8, desiredYSpacing: 0,
                        fitInRect: true, holdAtAngle: .degrees(-5),
                        asSeenBy: viewedBy.matchParticipantIndex)
-                .rotation3DEffect(otherPlayer.dropped ? .degrees(70) : .zero, axis: (x: 1, y: 0, z: 0), anchor: .bottom, anchorZ: 0, perspective: 1)
-                .modifier(StackGlowFlasher2(activeState: game.actingOrder.first == otherPlayer.matchParticipantIndex, radius: 27, color: .white) )
+             */
+            Text("A").font(.largeTitle.bold())
+        .rotation3DEffect(otherPlayer.dropped ? .degrees(70) : .zero, axis: (x: 1, y: 0, z: 0), anchor: .bottom, anchorZ: 0, perspective: 1)
+                //.modifier(StackGlowFlasher2(activeState: game.actingOrder.first == otherPlayer.matchParticipantIndex, radius: 27, color: .white) )
             
             DealerToken( forPlayer: otherPlayer, game: game, tokenSize: 17)
             
@@ -33,15 +37,13 @@ struct OtherPlayerView: View {
                 JumpingText( text: "🪙 \(otherPlayer.placedInBet)", uniqueId: "\(match.matchID)BetFrom\(otherAlias)")
                     .font( otherPlayer.dropped ? .subheadline : .subheadline.italic())
             } else {
-                //let outcome = GameController.noJoinReason(for: otherPlayer, in: match, withName: true, isLocal: false)
-                Text(  GameController.LocalizednoJoinReason( for: otherPlayer, in: match, withName: false, isLocal: false) )
+                Text(  GameLocalizer.LocalizednoJoinReason( for: otherPlayer, in: match, withName: false, isLocal: false).capitalizingFirst() )
             } //chips or info
         } //vs
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel( otherPlayer.joiningGame ? otherAlias : GameController.LocalizednoJoinReason( for: otherPlayer, in: match, withName: true, isLocal: false))
-        .conditionalAxValue( otherPlayer.joiningGame, valueDescription: Text( " bet \( "\(otherPlayer.placedInBet)" ) chips." +
-                                   ", \( GameController.itsHisTurn( of: otherPlayer, in: game, and: match) )" ))
-        .conditionalAxAction( condition:  game.actAsDealer == otherPlayer.matchParticipantIndex,
-                             named: Text( "\( GameController.dealerStatus( of: otherPlayer, in: game) )" ), { })
+        .accessibilityLabel( GameLocalizer.localizedInGameStatus( for: otherPlayer, in: match, isLocal: false) )
+        .conditionalAxValue( otherPlayer.joiningGame, valueDescription: Text(" \( GameLocalizer.itsHisTurn( of: otherPlayer, in: game, and: match) ) " ))
+        //.conditionalAxAction( condition:  game.actAsDealer == otherPlayer.matchParticipantIndex,
+                             //named: Text( "\( GameLocalizer.dealerStatus( of: otherPlayer, in: game) )" ), { })
     } //body
 } //str

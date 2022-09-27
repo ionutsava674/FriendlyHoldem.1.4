@@ -18,7 +18,7 @@ struct InactiveActionMenuView: View {
     var body: some View {
         VStack {
             if viewedBy.joiningGame {
-                Text( GameController.nowItsWhosReallyTurn(in: gameModel, and: match) ?? "the current turn is unknown" )
+                Text( GameLocalizer.nowItsWhosReallyTurn( in: gameModel, and: match) ?? "the current turn is unknown" )
             } //if
             else {
                 Text("You are no longer in the game \(viewedBy.chips) left")

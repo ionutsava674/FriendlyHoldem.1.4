@@ -37,7 +37,7 @@ func debugMsg_(_ msg: String) {
         return
     }
     print( msg)
-    GCHelper.helper.outMsg += String.newLine + msg
+    //GCHelper.helper.outMsg += String.newLine + msg
 } //msg func
 
 extension GKTurnBasedMatch {

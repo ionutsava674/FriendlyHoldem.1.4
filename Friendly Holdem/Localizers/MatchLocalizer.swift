@@ -116,17 +116,17 @@ enum MatchLocalizer {
             return nil
         }
         guard let cpp = mcp.player else {
-            let forWhom = GameController.playerAlias(of: mcp, in: match, preferredDefault: nil, unknownIndexDefault: NSLocalizedString("auto selected player", comment: ""))
+            let forWhom = GameLocalizer.playerAlias(of: mcp, in: match, preferredDefault: nil, unknownIndexDefault: NSLocalizedString("auto selected player", comment: ""))
             return String.localizedStringWithFormat(NSLocalizedString("waiting for %@", comment: ""), forWhom)
         }
         if cpp == GKLocalPlayer.local {
             return NSLocalizedString("It's your turn", comment: "")
         }
         if mcp.status == .invited {
-            let forWhom = GameController.playerAlias(of: mcp, in: match, preferredDefault: nil, unknownIndexDefault: NSLocalizedString("auto selected player", comment: ""))
+            let forWhom = GameLocalizer.playerAlias(of: mcp, in: match, preferredDefault: nil, unknownIndexDefault: NSLocalizedString("auto selected player", comment: ""))
             return String.localizedStringWithFormat(NSLocalizedString("waiting for %@ to accept", comment: ""), forWhom)
         }
-        let forWhom = GameController.playerAlias(of: mcp, in: match, preferredDefault: nil, unknownIndexDefault: NSLocalizedString("auto selected player", comment: ""))
+        let forWhom = GameLocalizer.playerAlias(of: mcp, in: match, preferredDefault: nil, unknownIndexDefault: NSLocalizedString("auto selected player", comment: ""))
         return String.localizedStringWithFormat(NSLocalizedString("It's %@'s turn", comment: ""), forWhom)
     } //func
 } //enum

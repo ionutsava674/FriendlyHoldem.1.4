@@ -21,7 +21,7 @@ class GameLogEntry: Codable {
     
     func print( for gameModel: HoldemGame, and match: GKTurnBasedMatch) -> String {
         let names: [String] = actors?.map({
-            GameController.playerAlias( of: $0, in: match, unknownIndexDefault: "unknown player")
+            GameLocalizer.playerAlias( of: $0, in: match, unknownIndexDefault: "unknown player")
         }) ?? []
         let combined = ListFormatter.localizedString( byJoining: names)
         switch action {

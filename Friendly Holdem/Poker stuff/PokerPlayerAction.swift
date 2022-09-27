@@ -19,8 +19,8 @@ class PokerPlayerAction: Codable, Identifiable {
     private(set) var id: UUID = UUID()
     let type: ActionType
     
-    func displayName() -> String {
-        type.displayName()
+    func localizedDisplayName() -> String {
+        type.localizedDisplayName()
     } //func
     
     init(_ type: ActionType) {
@@ -29,22 +29,22 @@ class PokerPlayerAction: Codable, Identifiable {
     enum ActionType: String, Codable {
     case drop, check, call, bet, raise, allInBet, stay
         
-        func displayName() -> String {
+        func localizedDisplayName() -> String {
             switch self {
             case .drop:
-                return NSLocalizedString("throw", comment: "")
+                return NSLocalizedString("throw", comment: "action name")
             case .check:
-                return NSLocalizedString("Check", comment: "")
+                return NSLocalizedString("check", comment: "action name")
             case .call:
-                return NSLocalizedString("Call", comment: "")
+                return NSLocalizedString("call", comment: "action name")
             case .bet:
-                return NSLocalizedString("Bet", comment: "")
+                return NSLocalizedString("bet", comment: "action name")
             case .raise:
-                return NSLocalizedString("Raise", comment: "")
+                return NSLocalizedString("raise", comment: "action name")
             case .allInBet:
-                return NSLocalizedString("Bet all", comment: "")
+                return NSLocalizedString("bet all", comment: "action name")
             case .stay:
-                return NSLocalizedString("Stay all in", comment: "")
+                return NSLocalizedString("stay all in", comment: "action name")
             } //swi
         } //func
     } //enum //enum

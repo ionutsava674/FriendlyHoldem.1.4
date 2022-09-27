@@ -29,10 +29,10 @@ struct PotInfoView: View {
                 ForEach(game.joiningPlayers, id: \.matchParticipantIndex) { player in
                     VStack {
                         if player.dropped {
-                            Text("\( GameController.playerAlias(of: player, in: match) ) threw the hand. Had bet \(player.placedInBet) chips.")
+                            Text("\( GameLocalizer.playerAlias(of: player, in: match) ) threw the hand. Had bet \(player.placedInBet) chips.")
                         } else {
                             VStack {
-                                Text("\( GameController.playerAlias(of: player, in: match) ) bet \(player.placedInBet) chips.")
+                                Text("\( GameLocalizer.playerAlias(of: player, in: match) ) bet \(player.placedInBet) chips.")
                                 VStack {
                                     if player.isAllIn {
                                         Text("all in")
@@ -48,7 +48,7 @@ struct PotInfoView: View {
                     .padding(3)
                 } //fe
                 ForEach(quittersWhoBet, id: \.matchParticipantIndex) { quitter in
-                    Text(  GameController.LocalizednoJoinReason( for: quitter, in: match, withName: true, isLocal: false) )
+                    Text(  GameLocalizer.LocalizednoJoinReason( for: quitter, in: match, withName: true, isLocal: false) )
                     Text("had bet \(quitter.placedInBet) chips.")
                 .offset(x: 10, y: 0)
                 } //fe 2

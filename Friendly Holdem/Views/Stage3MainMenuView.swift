@@ -37,7 +37,7 @@ struct Stage3MainMenuView: View {
                         HStack {
                             Button("TestO") {
                                 //test4Outcomes().testOutcomes( numberOfPlayers: 3)
-                                BetRaiseAmountPicker.testSomeIntervals()
+                                //BetRaiseAmountPicker.testSomeIntervals()
                             }
                             Button("Load") {
                                 guard !savedMatch.isEmpty else {

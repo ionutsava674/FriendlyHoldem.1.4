@@ -28,7 +28,10 @@ struct GameView: View {
         case .finalShow:
             FinalShowView(game: gameModel, viewedBy: viewedBy, match: match)
         case  .fresh, .startingGame, .startingDeal, .dealinghands, .round1, .dealingFlop, .round2, .dealingTurn, .round3, .dealingRiver, .round4:
-            CardGameContainerView( gameModel: gameModel, viewedBy: viewedBy, match: match)
+            PokerTableView(game: gameModel, viewedBy: viewedBy, match: match)
+                //.matchedGeometryEffect(id: "cgclsvid\( match.matchID)", in: self.ns_cgcviewid)
+                //.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            //CardGameContainerView( gameModel: gameModel, viewedBy: viewedBy, match: match)
         } //swi
         } //vs
     } //body

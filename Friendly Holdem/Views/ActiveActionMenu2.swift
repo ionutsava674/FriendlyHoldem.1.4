@@ -18,23 +18,30 @@ struct ActiveActionMenu2: View {
         
         var body: some View {
             let newMenu = compileClosureToupleList(for: gameModel.ActingPlayaMenu)
-            HStack {
+            HStack(alignment: .top, spacing: 0) {
                 ForEach(gameModel.ActingPlayaMenu) { action in
                     if action.id != gameModel.ActingPlayaMenu.first?.id {
-                        //Spacer()
-                        //Color.clear
                         Spacer()
-                            .frame(maxWidth: 32, maxHeight: 1, alignment: .center)
-                    }
-                    //Button(action.displayName() , action: tapClosure( for: action))
+                            .frame(minWidth: 1, idealWidth: 32, maxWidth: 32, minHeight: 1, idealHeight: 1, maxHeight: 1, alignment: .top)
+                    } //if not first
                     Button(action: tapClosure( for: action)) {
-                        Text(action.displayName())
-                            .font(.headline)
-                            .padding(2)
-                    }
+                        Text(action.localizedDisplayName().capitalizingFirst())
+                            .fixedSize()
+                            .lineLimit(1)
+                            .minimumScaleFactor(1.0)
+                            // .font(.headline)
+                            .padding(.vertical, 4)
+                            .padding(.horizontal, 8)
+                            .background(
+                                RoundedRectangle(cornerRadius: 4, style: RoundedCornerStyle.circular)
+                                    .fill(.black)
+                                    .blur(radius: 4, opaque: false)
+                                    .opacity(0.75)
+                            )//bg
+                    } //btn
                 } //fe
             } //hs
-            .padding(.vertical, 2)
+            // .padding(.vertical, 2)
             .accessibilityElement(children: .ignore)
             .accessibilityLabel(Text( "please select an action" ))
             .accessibilityAction {

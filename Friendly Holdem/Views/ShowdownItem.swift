@@ -18,7 +18,7 @@ struct ShowdownItem: View {
     @AccessibilityFocusState private var titleFocused: Bool
 
     func listAliases( of playerList: [PokerPlayer]) -> String {
-        GameController.listAliases(of: playerList, in: match)
+        GameLocalizer.listAliases(of: playerList, in: match)
     } //func
     
     var body: some View {
@@ -43,7 +43,7 @@ struct ShowdownItem: View {
                 ForEach( resultPlace, id: \.matchParticipantIndex) { eachPlayer in
                     VStack(alignment: .leading, spacing: 8) {
                         if moreThanOnePlayers {
-                            Text("\( GameController.playerAlias(of: eachPlayer, in: match) )'s hand. \( eachPlayer.lastFinishingResult?.rank.name ?? "no result" )")
+                            Text("\( GameLocalizer.playerAlias( of: eachPlayer, in: match) )'s hand. \( eachPlayer.lastFinishingResult?.rank.name ?? "no result" )")
                                 .font(.body.bold())
                         }
                         CardStackIDlessView(stack: eachPlayer.lastFinishingResult?.bestCombo ?? CardStack.emptyStackForViewing, anim_ns: stackNS, desiredCardWidth: 92, desiredXSpacing: 92, desiredYSpacing: 0, fitInRect: true, holdAtAngle: .zero, asSeenBy: eachPlayer.matchParticipantIndex)

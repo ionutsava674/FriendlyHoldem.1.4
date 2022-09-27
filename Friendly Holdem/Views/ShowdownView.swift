@@ -30,7 +30,7 @@ struct ShowdownView: View {
     } //cv
     
     func listAliases( of playerList: [PokerPlayer]) -> String {
-        GameController.listAliases(of: playerList, in: match)
+        GameLocalizer.listAliases(of: playerList, in: match)
     } //func
     var body: some View {
         ZStack {
@@ -52,7 +52,7 @@ struct ShowdownView: View {
                         ShowdownItem( resultPlace: eachRank, placeIndex: rankIndex, match: match)
                     } //fe
                     ForEach( restOfPlayers, id: \.matchParticipantIndex) { remainingPlayer in
-                        Text( GameController.LocalizedStatus(for: remainingPlayer, in: match, withName: true, isLocal: false))
+                        Text( GameLocalizer.LocalizedShowdownStatus( for: remainingPlayer, in: match, withName: true, isLocal: false))
                     } //fe2
                     Section {
                         let multiPots = game.lastShowdownStatus.pots.count > 1

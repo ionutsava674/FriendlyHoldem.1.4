@@ -26,7 +26,7 @@ struct FinalShowView: View {
     } //cv
     
     func listAliases( of playerList: [PokerPlayer]) -> String {
-        GameController.listAliases( of: playerList, in: match)
+        GameLocalizer.listAliases( of: playerList, in: match)
     } //func
     var body: some View {
         ZStack {
@@ -73,22 +73,22 @@ struct FinalShowRow: View {
                 if let first = row.first {
                     switch first.notJoiningReason {
                     case .won:
-                        Text("The winner is \( GameController.playerAlias(of: first, in: match) ) with \( first.chips ) chips")
+                        Text("The winner is \( GameLocalizer.playerAlias(of: first, in: match) ) with \( first.chips ) chips")
                     case .first:
-                        Text("\( GameController.playerAlias(of: first, in: match) ), \( first.chips ) chips left")
+                        Text("\( GameLocalizer.playerAlias(of: first, in: match) ), \( first.chips ) chips left")
                     case .lost:
-                        Text("\( GameController.playerAlias(of: first, in: match) ) lost, with \( first.chips ) chips left")
+                        Text("\( GameLocalizer.playerAlias(of: first, in: match) ) lost, with \( first.chips ) chips left")
                     case .timeOut:
-                        Text("\( GameController.playerAlias(of: first, in: match) ) did not act in time and was kicked out. \( first.chips ) chips left")
+                        Text("\( GameLocalizer.playerAlias(of: first, in: match) ) did not act in time and was kicked out. \( first.chips ) chips left")
                     case .quit:
-                        Text("\( GameController.playerAlias(of: first, in: match) ) quit, with \( first.chips ) chips left")
+                        Text("\( GameLocalizer.playerAlias(of: first, in: match) ) quit, with \( first.chips ) chips left")
                     default:
-                        Text("\( GameController.playerAlias(of: first, in: match) ), \( first.chips ) chips")
+                        Text("\( GameLocalizer.playerAlias(of: first, in: match) ), \( first.chips ) chips")
                     } //swi
                 }//
             } //single
             else {
-                Text("\(NumberFormatter.ordinalString(rowIndex + 1) ?? "") place, \( GameController.listAliases(of: row, in: match) ), with \( row.first?.chips ?? 0 )")
+                Text("\(NumberFormatter.ordinalString(rowIndex + 1) ?? "") place, \( GameLocalizer.listAliases( of: row, in: match) ), with \( row.first?.chips ?? 0 )")
             } //more
         } //vs
         .padding(4)

@@ -15,7 +15,7 @@ extension View {
         })
                                       if let (realAction, realClosure) = found {
             self
-                                              .accessibilityAction(named: Text( realAction.displayName() ), realClosure)
+                                              .accessibilityAction(named: Text( realAction.localizedDisplayName() ), realClosure)
         } else {
             self
         }
