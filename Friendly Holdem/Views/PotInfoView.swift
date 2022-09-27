@@ -25,6 +25,9 @@ struct PotInfoView: View {
             Text("The bet is now \(game.currentBetSize) chips.")
                 .font(.title.bold())
                 .padding()
+            Text("The total pot is \(game.totalPotSize) chips.")
+                .font(.title.bold())
+                .padding()
             VStack(alignment: .leading, spacing: 4) {
                 ForEach(game.joiningPlayers, id: \.matchParticipantIndex) { player in
                     VStack {
@@ -43,19 +46,20 @@ struct PotInfoView: View {
                                 } //sub vs
                                     .offset(x: 10, y: 0)
                             } //evs
+                            .accessibilityElement(children: .combine)
                         } //else
                     } //fe vs
                     .padding(3)
                 } //fe
                 ForEach(quittersWhoBet, id: \.matchParticipantIndex) { quitter in
-                    Text(  GameLocalizer.LocalizednoJoinReason( for: quitter, in: match, withName: true, isLocal: false) )
-                    Text("had bet \(quitter.placedInBet) chips.")
-                .offset(x: 10, y: 0)
+                    VStack {
+                        Text(  GameLocalizer.LocalizednoJoinReason( for: quitter, in: match, withName: true, isLocal: false) )
+                        Text("had bet \(quitter.placedInBet) chips.")
+                            .offset(x: 10, y: 0)
+                    } //vs
+                    .accessibilityElement(children: .combine)
                 } //fe 2
             } //vs
-            Text("The total pot is \(game.totalPotSize) chips.")
-                .font(.title.bold())
-                .padding()
             Button {
                 //dism()
                 //withAnimation {

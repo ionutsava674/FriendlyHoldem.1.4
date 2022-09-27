@@ -46,7 +46,7 @@ struct JoiningTableView: View {
                 Color( red: 0.1, green: 0.2, blue: 0.45),
                 Color( red: 0.1, green: 0.45, blue: 0.2)
             ], center: UnitPoint(x: 0.3, y: 0.8), startRadius: 0.2 * 1000.0, endRadius: 0.6 * 1000.0)
-                .brightness( 0.0)
+                .brightness( 0.2)
             //Color.pink
         VStack(alignment: .center, spacing: 0) { //main vs //others and tokens
             HStack(alignment: .center, spacing: 0) {
@@ -112,6 +112,7 @@ struct JoiningTableView: View {
                                     // .background(.orange)
                                 } //ls
                                 .environment(\.defaultMinListRowHeight, 0)
+                                .listRowBackground(Color.clear)
                                 .listStyle(PlainListStyle() )
                                 .accessibilityLabel("flop")
                             } //flopGeo
@@ -146,11 +147,12 @@ struct JoiningTableView: View {
                             .accessibilityCustomContent( AccessibilityCustomContentKey(Text("is acting as current dealer"), id: "current dealer"), Text( GameLocalizer.playerAlias( of: game.actAsDealer, in: match, unknownIndexDefault: "unknown") ))
                             .accessibilityCustomContent( AccessibilityCustomContentKey(Text("is now in turn"), id: "now in turn"), Text( GameLocalizer.playerAlias(of: game.actingOrder.first, in: match, unknownIndexDefault: "unknown") ))
                     } //else
-                    JumpingText(text: "🪙 \(viewedBy.placedInBet)", uniqueId: "\(match.matchID)YourBet")
+                    JumpingText(text: "🪙 \(viewedBy.placedInBet) / \(viewedBy.chips)", uniqueId: "\(match.matchID)YourBet")
                         .padding(.horizontal)
-                        .accessibilityLabel("your bet, \(viewedBy.placedInBet) chips. ")
-                        .accessibilityValue(" (\( GameLocalizer.itsHisTurn( of: viewedBy, in: game, and: match) ))")
-                        .accessibilityCustomContent(AccessibilityCustomContentKey(Text(""), id: "quickSummary"), Text( GameLocalizer.quickStatus( of: game, and: match, for: viewedBy).joined(separator: ". \n") ) )
+                        .accessibilityLabel("your bet, \(viewedBy.placedInBet) chips, of \(viewedBy.chips). ")
+                        .accessibilityValue(" \( GameLocalizer.itsHisTurn( of: viewedBy, in: game, and: match) )")
+                        .accessibilityAction( named: Text( GameLocalizer.yourChipsStatus( in: game, of: viewedBy) ), { })
+                        //.accessibilityCustomContent(AccessibilityCustomContentKey(Text(""), id: "quickSummary"), Text( GameLocalizer.quickStatus( of: game, and: match, for: viewedBy).joined(separator: ". \n") ) )
                     DealerToken(forPlayer: viewedBy, game: game, tokenSize: 26)
                     
                     CardStackView(stack: viewedBy.hand, anim_ns: cardAnim_ns,

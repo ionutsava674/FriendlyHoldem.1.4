@@ -111,6 +111,7 @@
 		C65EBDF928D7971E00E7D83E /* ConditionalAXAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDE928D7971E00E7D83E /* ConditionalAXAction.swift */; };
 		C65EBDFB28D7990F00E7D83E /* JumpingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDFA28D7990F00E7D83E /* JumpingTextView.swift */; };
 		C66CF76928DCCE8900D2C11C /* SwappableBiStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66CF76828DCCE8900D2C11C /* SwappableBiStack.swift */; };
+		C6B0201728E33AD800498CAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6B0201528E33AD800498CAE /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -219,6 +220,7 @@
 		C65EBDFA28D7990F00E7D83E /* JumpingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpingTextView.swift; sourceTree = "<group>"; };
 		C66CF76828DCCE8900D2C11C /* SwappableBiStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwappableBiStack.swift; sourceTree = "<group>"; };
 		C697F3AC28D753F60052ABB3 /* Friendly Holdem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Friendly Holdem.entitlements"; sourceTree = "<group>"; };
+		C6B0201628E33AD800498CAE /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +254,7 @@
 		C60C335728D74B1E00F64A82 /* Friendly Holdem */ = {
 			isa = PBXGroup;
 			children = (
+				C6B0201528E33AD800498CAE /* Localizable.strings */,
 				C697F3AC28D753F60052ABB3 /* Friendly Holdem.entitlements */,
 				C60C335828D74B1E00F64A82 /* Friendly_HoldemApp.swift */,
 				C65EBD3F28D7944300E7D83E /* Views */,
@@ -474,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C60C336028D74B1F00F64A82 /* Preview Assets.xcassets in Resources */,
+				C6B0201728E33AD800498CAE /* Localizable.strings in Resources */,
 				C60C335D28D74B1F00F64A82 /* Assets.xcassets in Resources */,
 				C605422328D9998B0078AD38 /* sfx2 in Resources */,
 			);
@@ -590,6 +594,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6B0201528E33AD800498CAE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6B0201628E33AD800498CAE /* ro */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C60C336128D74B1F00F64A82 /* Debug */ = {
