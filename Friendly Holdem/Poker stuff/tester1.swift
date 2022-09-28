@@ -218,7 +218,7 @@ extension RawCard {
         guard shortId.count > 1 else {
             return false
         }
-        if shortId.prefix(1) != suit.id.lowercased().prefix(1) {
+        if shortId.prefix(1) != suit.originalName.lowercased().prefix(1) {
             return false
         }
         //let rest = shortId.substring(from: shortId.index(after: shortId.startIndex) ).uppercased()

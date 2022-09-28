@@ -178,6 +178,9 @@
 /* No comment provided by engineer. */
 "Close menu" = "Închide meniul";
 
+/* clubs suit */
+"clubs.suit" = "treflă";
+
 /* No comment provided by engineer. */
 "Continue a game that was already started" = "Continuă un joc deja început";
 
@@ -192,6 +195,9 @@
 
 /* No comment provided by engineer. */
 "details" = "detalii";
+
+/* clubs suit */
+"diamonds.suit" = "caro";
 
 /* No comment provided by engineer. */
 "Don't show this again" = "Nu mai afișa asta";
@@ -288,6 +294,9 @@
 
 /* No comment provided by engineer. */
 "had bet %lld chips." = "pariase %lld cipuri.";
+
+/* clubs suit */
+"hearts.suit" = "inimă roșie";
 
 /* No comment provided by engineer. */
 "Hide details" = "Ascunde detaliile";
@@ -477,6 +486,9 @@
 
 /* No comment provided by engineer. */
 "Small blind bet" = "Pariul blind mic";
+
+/* clubs suit */
+"spades.suit" = "inimă neagră";
 
 /* No comment provided by engineer. */
 "start chips" = "Câte cipuri la început";
