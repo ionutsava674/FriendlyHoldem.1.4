@@ -17,7 +17,7 @@ extension GKTurnBasedParticipant {
             return def
         }
         if let index = match.participants.firstIndex( of: self) {
-            return String.localizedStringWithFormat("player %d", index + 1)
+            return String.localizedStringWithFormat(NSLocalizedString("player %lld", comment: ""), index + 1)
         }
         return NSLocalizedString("unknown player", comment: "unknown player alias")
     } //func

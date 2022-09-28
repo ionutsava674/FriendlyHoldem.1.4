@@ -35,6 +35,9 @@
 "%@ lost, with %lld chips left" = "%@ a pierdut, cu %lld cipuri rămase";
 
 /* No comment provided by engineer. */
+"%@ of %@" = "%@ de %@";
+
+/* No comment provided by engineer. */
 "%@ place, %@, with %@" = "locul %@, %@, cu %@";
 
 /* No comment provided by engineer. */
@@ -105,6 +108,9 @@
 
 /* No comment provided by engineer. */
 "%lld remaining auto selected players" = "%lld jucători auto selectați rămași";
+
+/* card name */
+"ace.card" = "as";
 
 /* No comment provided by engineer. */
 "Active games, (%lld" = "Jocuri active, (%lld";
@@ -323,6 +329,9 @@
 "ignore" = "ignoră";
 
 /* No comment provided by engineer. */
+"In %lld turns after %@, it'll be your turn" = "În %1$lld ture după %2$@, va fi rândul tău";
+
+/* No comment provided by engineer. */
 "In your hand." = "La tine în mână";
 
 /* No comment provided by engineer. */
@@ -332,13 +341,28 @@
 "is now in turn" = "e acum la rând";
 
 /* No comment provided by engineer. */
+"it was %@'s turn, now it's your turn" = "a fost rândul lui %@, acum e rândul tău";
+
+/* No comment provided by engineer. */
+"it was %1$@'s turn, now it's %2$@'s turn" = "a fost rândul lui %1$@, acum e rândul lui %2$@";
+
+/* No comment provided by engineer. */
+"it was your turn, now it's %@'s turn" = "a fost rândul tău, acum e rândul lui %@";
+
+/* No comment provided by engineer. */
 "It's %@'s turn" = "E rândul lui %@";
 
 /* No comment provided by engineer. */
 "It's your turn" = "E rândul tău";
 
+/* card name */
+"jack.card" = "valet";
+
 /* No comment provided by engineer. */
 "Jump to latest" = "Sări la ultima";
+
+/* card name */
+"king.card" = "popă";
 
 /* No comment provided by engineer. */
 "Last activity: " = "Ultima activitate: ";
@@ -387,6 +411,12 @@
 "no opponents" = "nici un oponent";
 
 /* No comment provided by engineer. */
+"Now it's %@'s turn" = "Acum este rândul lui %@";
+
+/* No comment provided by engineer. */
+"now it's your turn" = "acum e rândul tău";
+
+/* No comment provided by engineer. */
 "OK" = "În regulă";
 
 /* No comment provided by engineer. */
@@ -409,6 +439,9 @@
 
 /* No comment provided by engineer. */
 "or, you can type the value below:" = "sau, poți introduce valoarea mai jos:";
+
+/* No comment provided by engineer. */
+"player %lld" = "jucătorul %lld";
 
 /* No comment provided by engineer. */
 "players" = "jucători";
@@ -443,6 +476,9 @@
 
 /* No comment provided by engineer. */
 "Propose a different structure" = "Propune o structură diferită";
+
+/* card name */
+"queen.card" = "damă";
 
 /* he quit
    you quit */
@@ -533,6 +569,9 @@
 "Then, when another player searches for a game for 3, they will be automatically selected to the remaining slots." = "După aceea, când un alt jucător caută un joc pentru 3, jucătorul respectiv va fi automat selectat într-un slot rămas.";
 
 /* No comment provided by engineer. */
+"there are %lld common cards facing up, in the flop" = "sunt %lld cărți comune cu fața în sus, în flop";
+
+/* No comment provided by engineer. */
 "There are %lld more free slots for players." = "Mai sunt %lld sloturi pentru jucători.";
 
 /* No comment provided by engineer. */
@@ -602,6 +641,9 @@
 "won %@ chips. Now has %@." = "a câștigat %@ cipuri. Acum are %@.";
 
 /* No comment provided by engineer. */
+"you are next, after %@" = "tu urmezi, după %@";
+
+/* No comment provided by engineer. */
 "You are no longer in the game %lld left" = "Nu mai ești în joc %lld rămase";
 
 /* No comment provided by engineer. */
@@ -612,6 +654,9 @@
 
 /* No comment provided by engineer. */
 "you finished first" = "ai terminat primul";
+
+/* No comment provided by engineer. */
+"you have a total of %@ chips, of which you have bet %@" = "ai un total de %1$@ cipuri, din care ai pariat %2$@";
 
 /* No comment provided by engineer. */
 "you lost" = "ai pierdut";

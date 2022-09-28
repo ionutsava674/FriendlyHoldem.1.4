@@ -12,10 +12,11 @@ class RawCard: Codable {
     let symbol: RawCardSymbol
     //lazy var emoji: String = {""}() //later
     lazy var id: String = {
-        "\(suit.id)_\(symbol.id)"
+        print("\(suit.originalName)_\(symbol.id.rawValue)")
+        return "\(suit.originalName)_\(symbol.id.rawValue)"
     }()
     lazy var readableName: String = {
-        "\(symbol.name) of \(suit.name)"
+        String(localized: "\(symbol.name) of \(suit.name)")
     }()
     init(suit: RawCardSuit, symbol: RawCardSymbol) {
         self.suit = suit

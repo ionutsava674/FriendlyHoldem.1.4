@@ -139,10 +139,10 @@ enum GameLocalizer {
             return "now it is your turn"
         case 1:
             let beforeYou = playerAlias( of: reOrderedGameOrder[ yourPlaceInReOrdered - 1 ], in: match)
-            return String.localizedStringWithFormat("you are next, after %@", beforeYou)
+            return String.localizedStringWithFormat(NSLocalizedString("you are next, after %@", comment: ""), beforeYou)
         default:
             let beforeYou = playerAlias( of: reOrderedGameOrder[ yourPlaceInReOrdered - 1 ], in: match)
-            return String.localizedStringWithFormat("In %d turns after %@, it'll be your turn", yourPlaceInReOrdered, beforeYou)
+            return String.localizedStringWithFormat(NSLocalizedString("In %lld turns after %@, it'll be your turn", comment: ""), yourPlaceInReOrdered, beforeYou)
         } //swi
     } //func
     static func nowItsWhosReallyTurn( in game: HoldemGame, and match: GKTurnBasedMatch) -> String? {
@@ -160,12 +160,12 @@ enum GameLocalizer {
         let oldName = playerAlias( of: gci, in: match)
         let newName = playerAlias( of: mci, in: match)
         if mci == match.localParticipantIndex() {
-            return String.localizedStringWithFormat("it was %@'s turn, now it's your turn", oldName)
+            return String.localizedStringWithFormat(NSLocalizedString("it was %@'s turn, now it's your turn", comment: ""), oldName)
         }
         if gci == match.localParticipantIndex() {
-            return String.localizedStringWithFormat("it was your turn, now it's %@'s turn", newName)
+            return String.localizedStringWithFormat(NSLocalizedString("it was your turn, now it's %@'s turn", comment: ""), newName)
         }
-        return String.localizedStringWithFormat("it was %1$@'s turn, now it's %2$@'s turn", oldName, newName)
+        return String.localizedStringWithFormat(NSLocalizedString("it was %1$@'s turn, now it's %2$@'s turn", comment: ""), oldName, newName)
     } //func
             static func nowItsWhosGameTurn( in game: HoldemGame, and match: GKTurnBasedMatch) -> String? {
                 guard let mcp = match.currentParticipant,
@@ -177,12 +177,12 @@ enum GameLocalizer {
                 }
                 let gci = game.actingOrder.first ?? mci
         if match.localParticipantIndex() == gci {
-            return "now it's your turn"
+            return String(localized: "now it's your turn")
         }
         guard let name = mcp.player?.alias else {
             return nil
         }
-        return String.localizedStringWithFormat("Now it's %@'s turn", name)
+        return String.localizedStringWithFormat(NSLocalizedString("Now it's %@'s turn", comment: ""), name)
     } //func
     static func whoIsCurrentDealer( in game: HoldemGame, and match: GKTurnBasedMatch) -> String {
         if game.actAsDealer == match.localParticipantIndex() {

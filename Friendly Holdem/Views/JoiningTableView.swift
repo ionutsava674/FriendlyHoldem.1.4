@@ -254,14 +254,14 @@ extension GameLocalizer {
         //f.formatterBehavior = .behavior10_4
         f.minimumFractionDigits = 0
         f.maximumFractionDigits = 2
-        return String.localizedStringWithFormat("you have a total of %@ chips, of which you have bet %@", f.string(from: NSNumber(value: viewer.chips)) ?? "unknown", f.string(from: NSNumber(value: viewer.placedInBet)) ?? "unknown")
+        return String.localizedStringWithFormat(NSLocalizedString("you have a total of %@ chips, of which you have bet %@", comment: ""), f.string(from: NSNumber(value: viewer.chips)) ?? "unknown", f.string(from: NSNumber(value: viewer.placedInBet)) ?? "unknown")
     } //func
     static func thereAreCardsOnTheTable(in game: HoldemGame) -> String {
         switch game.flop.cards.count {
         case 0:
             return "there are no common cards facing up, on the flop"
         default:
-            return String.localizedStringWithFormat("there are %d common cards facing up, in the flop", game.flop.cards.count)
+            return String.localizedStringWithFormat(NSLocalizedString("there are %lld common cards facing up, in the flop", comment: ""), game.flop.cards.count)
         } //swi
     } //func
     static func quickStatus( of game: HoldemGame, and match: GKTurnBasedMatch, for player: PokerPlayer) -> [String] {
