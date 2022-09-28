@@ -21,13 +21,10 @@ struct OtherPlayerView: View {
         VStack(alignment: .center, spacing: 0) {
             Text(otherAlias.capitalizingFirst())
                 //.accessibilityHidden(true)
-            /*
         CardStackView( stack: otherPlayer.hand, anim_ns: anim_ns,
                        desiredCardWidth: desiredCardWidth, desiredXSpacing: desiredCardWidth * 0.8, desiredYSpacing: 0,
                        fitInRect: true, holdAtAngle: .degrees(-5),
                        asSeenBy: viewedBy.matchParticipantIndex)
-             */
-            Text("A").font(.largeTitle.bold())
         .rotation3DEffect(otherPlayer.dropped ? .degrees(70) : .zero, axis: (x: 1, y: 0, z: 0), anchor: .bottom, anchorZ: 0, perspective: 1)
                 //.modifier(StackGlowFlasher2(activeState: game.actingOrder.first == otherPlayer.matchParticipantIndex, radius: 27, color: .white) )
             

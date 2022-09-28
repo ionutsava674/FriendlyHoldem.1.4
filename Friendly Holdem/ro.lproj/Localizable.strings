@@ -1,9 +1,636 @@
 /* No comment provided by engineer. */
+" After that, if different variants were proposed, everyone gets to choose again from these Structures." = "După aceea, dacă mai multe varieante au fost propuse, fiecare mai alege o dată dintre acestea.";
+
+/* No comment provided by engineer. */
+" At first, each one gets to propose a game structure, consisting of initial amount and bet sizes." = " La început, fiecare propune o structură de joc, care constă în cipurile de început și mărimea pariulilor.";
+
+/* No comment provided by engineer. */
+" If still there are different choices, the most popular variant is automatically selected." = " Dacă încă sunt alegeri diferite, varianta cea mai populară este selectată automat.";
+
+/* No comment provided by engineer. */
+" This game is entertainment only, no actual money is involved." = "Acest joc este doar pentru divertisment, fără sume reale de bani.";
+
+/* No comment provided by engineer. */
 "%@ bet %@" = "%1$@ a pariat %2$@";
 
 /* No comment provided by engineer. */
-"%@ bet %lld chips." = "%@ a pariat %lld chips.";
+"%@ bet %lld chips." = "%@ a pariat %lld cipuri.";
 
 /* No comment provided by engineer. */
 "%@ called at %@" = "%1$@ a pus cu sec %2$@";
+
+/* No comment provided by engineer. */
+"%@ checked" = "%@ a pasat";
+
+/* No comment provided by engineer. */
+"%@ did not act in time and was kicked out. %lld chips left" = "%@ a întârziat și a fost dat afară. %lld cipuri rămase";
+
+/* No comment provided by engineer. */
+"%@ finished first" = "%@ a terminat primul";
+
+/* No comment provided by engineer. */
+"%@ lost" = "%@ a pierdut";
+
+/* No comment provided by engineer. */
+"%@ lost, with %lld chips left" = "%@ a pierdut, cu %lld cipuri rămase";
+
+/* No comment provided by engineer. */
+"%@ place, %@, with %@" = "locul %@, %@, cu %@";
+
+/* No comment provided by engineer. */
+"%@ place, %@, with %lld" = "Locul %@, %@, cu %lld";
+
+/* No comment provided by engineer. */
+"%@ placed big blind bet, %@" = "%1$@ a pus big blind, %2$@";
+
+/* No comment provided by engineer. */
+"%@ placed small blind bet, %@" = "%1$@ a pus small blind, %2$@";
+
+/* No comment provided by engineer. */
+"%@ quit" = "%@ a abandonat";
+
+/* No comment provided by engineer. */
+"%@ quit, with %lld chips left" = "%@ a abandonat, cu %lld cipuri rămase";
+
+/* No comment provided by engineer. */
+"%@ raised bet to %@" = "%1$@ a plusat la %2$@";
+
+/* No comment provided by engineer. */
+"%@ stays all in with %@" = "%1$@ fămâne all in cu %2$@";
+
+/* No comment provided by engineer. */
+"%@ threw the hand" = "%@ a aruncat mâna";
+
+/* No comment provided by engineer. */
+"%@ threw the hand, with %@ chips in the pot" = "%1$@ a aruncat mâna, cu %2$@ cipuri în pot";
+
+/* No comment provided by engineer. */
+"%@ threw the hand. Had bet %lld chips." = "%@ a aruncat mâna. Pariase %lld cipuri.";
+
+/* No comment provided by engineer. */
+"%@ tied" = "%@ a făcut egal";
+
+/* No comment provided by engineer. */
+"%@ timed out" = "%@ a întârziat";
+
+/* No comment provided by engineer. */
+"%@ went all in with %@" = "%1$@ a pariat totul, %2$@";
+
+/* No comment provided by engineer. */
+"%@ won" = "%@ a câștigat";
+
+/* No comment provided by engineer. */
+"%@, %lld chips" = "%@, %lld cipuri";
+
+/* No comment provided by engineer. */
+"%@, %lld chips left" = "%@, %lld cipuri rămase";
+
+/* No comment provided by engineer. */
+"%@'s hand. %@" = "mâna lui %@. %@";
+
+/* No comment provided by engineer. */
+"%lld auto selected players" = "%lld jucători auto selectați";
+
+/* No comment provided by engineer. */
+"%lld chips bet by %@" = "%lld cipuri pariate de %@";
+
+/* No comment provided by engineer. */
+"%lld chips pot, %lld x %lld chips bet by %@." = "pot de %lld cipuri, %lld x %lld cipuri pariate de %@.";
+
+/* No comment provided by engineer. */
+"%lld chips." = "%lld cipuri.";
+
+/* No comment provided by engineer. */
+"%lld players" = "%lld jucători";
+
+/* No comment provided by engineer. */
+"%lld remaining auto selected players" = "%lld jucători auto selectați rămași";
+
+/* No comment provided by engineer. */
+"Active games, (%lld" = "Jocuri active, (%lld";
+
+/* No comment provided by engineer. */
+"After the new game is opened, you get to choose the game stakes." = "După ce se deschide noul joc, poți să alegi miza jocului.";
+
+/* No comment provided by engineer. */
+"Alright, we can continue" = "În regulă, putem continua";
+
+/* No comment provided by engineer. */
+"an auto selected player" = "un jucător auto selectat";
+
+/* No comment provided by engineer. */
+"and minimum raise of  %@" = "și plusarea minimă de  %@";
+
+/* No comment provided by engineer. */
+"And will put you in that slot." = "Și te va pune în acel slot.";
+
+/* No comment provided by engineer. */
+"Are you really really sure you want to quit this game?" = "Ești sigur sigur că vrei să abandonezi acest joc?";
+
+/* No comment provided by engineer. */
+"Attention" = "Atenție";
+
+/* No comment provided by engineer. */
+"auto selected player" = "jucător auto selectat";
+
+/* No comment provided by engineer. */
+"Back" = "Înapoi";
+
+/* action name */
+"bet" = "pariază";
+
+/* No comment provided by engineer. */
+"Bet %@ chips, got %@." = "A pariat %@ cipuri, a luat %@.";
+
+/* action name */
+"bet all" = "pariază tot";
+
+/* No comment provided by engineer. */
+"Bet all in" = "A pariat tot";
+
+/* No comment provided by engineer. */
+"big blind bet" = "pariul blind mare";
+
+/* No comment provided by engineer. */
+"Big blind bet" = "Pariul mare";
+
+/* action name */
+"call" = "sec";
+
+/* No comment provided by engineer. */
+"Call at %@" = "Sec, %@";
+
+/* No comment provided by engineer. */
+"Cancel" = "Anulează";
+
+/* No comment provided by engineer. */
+"cards" = "cărți";
+
+/* action name */
+"check" = "pas";
+
+/* No comment provided by engineer. */
+"Chip recipients" = "Recipienți cipuri";
+
+/* No comment provided by engineer. */
+"Choosing the game stakes" = "Alegem miza jocului";
+
+/* No comment provided by engineer. */
+"Close menu" = "Închide meniul";
+
+/* No comment provided by engineer. */
+"Continue a game that was already started" = "Continuă un joc deja început";
+
+/* No comment provided by engineer. */
+"dealt flop cards" = "s-au pus cărțile în flop";
+
+/* No comment provided by engineer. */
+"dealt river card" = "s-a pus cartea river";
+
+/* No comment provided by engineer. */
+"dealt turn card" = "s-a pus cartea turn";
+
+/* No comment provided by engineer. */
+"details" = "detalii";
+
+/* No comment provided by engineer. */
+"Don't show this again" = "Nu mai afișa asta";
+
+/* No comment provided by engineer. */
+"each player starts with %@ chips" = "fiecare jucător începe cu %@ cipuri";
+
+/* No comment provided by engineer. */
+"Each player will start with" = "Fiecare jucător va începe cu";
+
+/* No comment provided by engineer. */
+"Enter below the game stakes you would like to propose" = "Introdu miza jocului pe care vrei să o propui";
+
+/* No comment provided by engineer. */
+"Find a new game" = "Găsește un joc nou";
+
+/* No comment provided by engineer. */
+"Find new game" = "Găsește joc nou";
+
+/* No comment provided by engineer. */
+"Finding a game works like this" = "Găsirea unui joc funcționează astfel";
+
+/* No comment provided by engineer. */
+"finished first" = "e pe primul loc";
+
+/* No comment provided by engineer. */
+"Finished games:" = "Jocuri terminate:";
+
+/* No comment provided by engineer. */
+"First, tap \"Find a new game\" and then select the number of players you wish the game to have." = "Mai întâi, apasă \"Găsește joc nou\" și apoi selectează numărul de jucători pe care vrei ca jocul să îl aibă.";
+
+/* No comment provided by engineer. */
+"First, we need to agree on the stakes of the game." = "Mai întâi, trebuie să stabilim miza jocului.";
+
+/* No comment provided by engineer. */
+"flop" = "flop";
+
+/* No comment provided by engineer. */
+"For example, let's say you chose 3" = "De exemplu, să spunem că ai ales 3";
+
+/* No comment provided by engineer. */
+"game #%@" = "jocul #%@";
+
+/* No comment provided by engineer. */
+"Game began %@ ago." = "Jocul a început acum %@.";
+
+/* No comment provided by engineer. */
+"Game began: " = "Jocul a început: ";
+
+/* No comment provided by engineer. */
+"game between %@" = "Joc între %@";
+
+/* No comment provided by engineer. */
+"game between %1$@. %2$lld initial players" = "Joc între %1$@. %2$lld jucători inițiali";
+
+/* No comment provided by engineer. */
+"Game Center will search for a game for 3, with at least one free slot" = "Game Center va căuta un joc pentru 3, cu cel puțin un slot liber";
+
+/* No comment provided by engineer. */
+"game over" = "joc terminat";
+
+/* No comment provided by engineer. */
+"Game over" = "Joc Terminat";
+
+/* No comment provided by engineer. */
+"Game stage: Choosing the betting stakes." = "Stadiu joc: Se alege miza jocului.";
+
+/* No comment provided by engineer. */
+"game with %@" = "Joc cu %@";
+
+/* No comment provided by engineer. */
+"game with %1$@. %2$lld initial players" = "Joc cu %1$@. %2$lld jucători inițiali";
+
+/* No comment provided by engineer. */
+"game with 1 remaining player: %@" = "Joc cu 1 participant rămas: %@";
+
+/* No comment provided by engineer. */
+"game with 1 remaining player: %1$@. %2$lld initial players" = "Joc cu 1 participant rămas: %1$@. %2$lld jucători inițiali";
+
+/* No comment provided by engineer. */
+"game with no more active players. %lld initial players" = "Joc fără jucători activi. %lld jucători inițiali";
+
+/* No comment provided by engineer. */
+"game with no more opponents. %lld initial players" = "Joc fără oponenți rămași. %lld jucători inițiali";
+
+/* No comment provided by engineer. */
+"game with no opponents." = "joc fără oponenți.";
+
+/* No comment provided by engineer. */
+"game without active players." = "joc fără participanți activi.";
+
+/* No comment provided by engineer. */
+"Games in which you are no longer participating:" = "Jocuri la care nu mai participi:";
+
+/* No comment provided by engineer. */
+"had bet %lld chips." = "pariase %lld cipuri.";
+
+/* No comment provided by engineer. */
+"Hide details" = "Ascunde detaliile";
+
+/* No comment provided by engineer. */
+"How many players" = "Câți jucători";
+
+/* No comment provided by engineer. */
+"How many players?" = "Câți jucători?";
+
+/* No comment provided by engineer. */
+"How much do you want to raise the bet to?" = "La cât vrei să plusezi?";
+
+/* No comment provided by engineer. */
+"How to begin a game" = "Cum se începe un joc nou";
+
+/* No comment provided by engineer. */
+"How to start, step by step" = "Cum să începi, pas cu pas";
+
+/* No comment provided by engineer. */
+"If no existing game was found, a new game is created and you will fill the first slot." = "Dacă nu s-a găsit un joc existent, unul nou se crează și vei ocupa primul slot.";
+
+/* No comment provided by engineer. */
+"ignore" = "ignoră";
+
+/* No comment provided by engineer. */
+"In your hand." = "La tine în mână";
+
+/* No comment provided by engineer. */
+"is acting as current dealer" = "are rolul de dilăr";
+
+/* No comment provided by engineer. */
+"is now in turn" = "e acum la rând";
+
+/* No comment provided by engineer. */
+"It's %@'s turn" = "E rândul lui %@";
+
+/* No comment provided by engineer. */
+"It's your turn" = "E rândul tău";
+
+/* No comment provided by engineer. */
+"Jump to latest" = "Sări la ultima";
+
+/* No comment provided by engineer. */
+"Last activity: " = "Ultima activitate: ";
+
+/* No comment provided by engineer. */
+"Leave game" = "Părăsește jocul";
+
+/* No comment provided by engineer. */
+"Loading" = "Se încarcă";
+
+/* No comment provided by engineer. */
+"Looking for a new game" = "Se caută un joc nou";
+
+/* has lost
+   you lost */
+"lost" = "a pierdut";
+
+/* No comment provided by engineer. */
+"lost %@ chips. Now has %@." = "a pierdut %@ cipuri. Acum are %@.";
+
+/* No comment provided by engineer. */
+"Menu" = "Meniu";
+
+/* No comment provided by engineer. */
+"min raise amount" = "minimul de plusat";
+
+/* No comment provided by engineer. */
+"Minimum bet raise" = "Minimul de plusat";
+
+/* No comment provided by engineer. */
+"new game began" = "a început joc nou";
+
+/* No comment provided by engineer. */
+"Next" = "Mai departe";
+
+/* No comment provided by engineer. */
+"no action" = "nici o acțiune";
+
+/* No comment provided by engineer. */
+"No active games" = "Nici un joc activ";
+
+/* no limit */
+"no limit" = "fără limită";
+
+/* No comment provided by engineer. */
+"no opponents" = "nici un oponent";
+
+/* No comment provided by engineer. */
+"OK" = "În regulă";
+
+/* No comment provided by engineer. */
+"ok, we can continue" = "ok, putem continua";
+
+/* No comment provided by engineer. */
+"On the table, facing up" = "Pe masă, cu fața în sus";
+
+/* No comment provided by engineer. */
+"one remaining auto selected player" = "un jucător auto selectat rămas";
+
+/* No comment provided by engineer. */
+"Only after this, GameCenter will select players for the free slots." = "Abia după aceea, GameCenter va selecta jucători pentru sloturile libere.";
+
+/* No comment provided by engineer. */
+"Only after you choose the stakes, others can join the game. This is so that, when you join a game, you get to interract immediately." = "Doar după ce alegi o miză, alții pot veni în joc. Aceasta este pentru că atunci când intri într-un joc, să poți interacționa imediat.";
+
+/* No comment provided by engineer. */
+"or, you can" = "sau, poți";
+
+/* No comment provided by engineer. */
+"or, you can type the value below:" = "sau, poți introduce valoarea mai jos:";
+
+/* No comment provided by engineer. */
+"players" = "jucători";
+
+/* No comment provided by engineer. */
+"Players:" = "Jucătorii:";
+
+/* is playing
+   you are playing */
+"playing" = "joacă";
+
+/* No comment provided by engineer. */
+"Please propose a variant for the game stakes." = "Te rugăm propune o variantă pentru miza jocului.";
+
+/* No comment provided by engineer. */
+"Please select a variant for the game stakes." = "Te rugăm selectează o variantă de miză a jocului.";
+
+/* No comment provided by engineer. */
+"please select an action" = "selectează o acțiune";
+
+/* No comment provided by engineer. */
+"Please select or propose a variant for the game stakes." = "Te rugăm selectează sau propune o variantă pentru miza jocului.";
+
+/* No comment provided by engineer. */
+"Proposal %@:" = "Propunerea %@:";
+
+/* No comment provided by engineer. */
+"Proposal %lld:" = "Propunerea %lld:";
+
+/* No comment provided by engineer. */
+"Propose" = "Propune";
+
+/* No comment provided by engineer. */
+"Propose a different structure" = "Propune o structură diferită";
+
+/* he quit
+   you quit */
+"quit" = "a abandonat";
+
+/* No comment provided by engineer. */
+"Quit this game" = "Abandonează acest joc";
+
+/* action name */
+"raise" = "plusează";
+
+/* No comment provided by engineer. */
+"raise the bet to" = "plusează la";
+
+/* No comment provided by engineer. */
+"Raise to %@" = "Plusează la %@";
+
+/* No comment provided by engineer. */
+"Received event for a different game" = "A apărut un evenimentîntr-un joc diferit ";
+
+/* No comment provided by engineer. */
+"Retrieving game list" = "Se încarcă lista de jocuri";
+
+/* No comment provided by engineer. */
+"Select a game from below." = "Selectează un joc de mai jos.";
+
+/* No comment provided by engineer. */
+"Select from below a game structure that has been proposed" = "Selectează o structură de joc propusă";
+
+/* No comment provided by engineer. */
+"Show details" = "Arată detalii";
+
+/* No comment provided by engineer. */
+"Signing in to game center." = "Se autentifică game center.";
+
+/* No comment provided by engineer. */
+"small and big blind:  %@ and %@," = "pariul mic și mare de:  %@ și %@,";
+
+/* No comment provided by engineer. */
+"small blind bet" = "pariul blind mic";
+
+/* No comment provided by engineer. */
+"Small blind bet" = "Pariul blind mic";
+
+/* No comment provided by engineer. */
+"start chips" = "Câte cipuri la început";
+
+/* action name */
+"stay all in" = "rămâi all in";
+
+/* No comment provided by engineer. */
+"Stay in the game" = "Rămâi în joc";
+
+/* No comment provided by engineer. */
+"still needs to bet" = "âncă trebuie să parieze";
+
+/* No comment provided by engineer. */
+"switch" = "schimbă";
+
+/* No comment provided by engineer. */
+"Take action" = "Acționează";
+
+/* No comment provided by engineer. */
+"The bet is now %lld chips." = "Pariul este acum %lld cipuri.";
+
+/* No comment provided by engineer. */
+"The game %@ has received an update. %@. Would you like to switch to it?" = "Jocul %@ a primit o actualizare. %@. Doriti să mergeți la acest joc?";
+
+/* No comment provided by engineer. */
+"The total amount of %lld chips is made of %lld pots:" = "Totalul de %lld cipuri se compune din %lld poturi:";
+
+/* No comment provided by engineer. */
+"The total pot is %lld chips." = "Potul total este %lld cipuri.";
+
+/* No comment provided by engineer. */
+"The winner is %@ with %lld chips" = "Câștigătorul este %@ cu %lld cipuri";
+
+/* No comment provided by engineer. */
+"The winner is %@, with %@" = "Câștigătorul este %@ cu %@";
+
+/* No comment provided by engineer. */
+"The winners are %@, with %@" = "Câștigătorii sunt %@, cu %@";
+
+/* No comment provided by engineer. */
+"Then, when another player searches for a game for 3, they will be automatically selected to the remaining slots." = "După aceea, când un alt jucător caută un joc pentru 3, jucătorul respectiv va fi automat selectat într-un slot rămas.";
+
+/* No comment provided by engineer. */
+"There are %lld more free slots for players." = "Mai sunt %lld sloturi pentru jucători.";
+
+/* No comment provided by engineer. */
+"There is one more free slot for a player." = "Mai e un slot liber pentru un jucător.";
+
+/* No comment provided by engineer. */
+"There was a problem loading the game data." = "A apărut o problemă la încărcarea jocului";
+
+/* No comment provided by engineer. */
+"this card is in the flop" = "cartea e în flop";
+
+/* No comment provided by engineer. */
+"this card is in your hand" = "cartea e în mâna ta";
+
+/* No comment provided by engineer. */
+"This game is with %@." = "Acest joc este cu %@.";
+
+/* No comment provided by engineer. */
+"This is what happened so far in the game:" = "Ce s-a întâmplat până acum în joc:";
+
+/* No comment provided by engineer. */
+"threw the hand" = "a aruncat mâna";
+
+/* action name */
+"throw" = "aruncă";
+
+/* he tied
+   you tied */
+"tied" = "a făcut egal";
+
+/* he timed out
+   you timed out */
+"timed out" = "a întârziat";
+
+/* No comment provided by engineer. */
+"Total pot: %lld chips." = "Total pot: %lld cipuri.";
+
+/* No comment provided by engineer. */
+"unknown" = "necunoscut";
+
+/* unknown player alias */
+"unknown player" = "jucător necunoscut";
+
+/* No comment provided by engineer. */
+"waiting for %@" = "așteptăm %@";
+
+/* No comment provided by engineer. */
+"waiting for %@ to accept" = "așteptăm ca %@ să accepte";
+
+/* No comment provided by engineer. */
+"We are sorry. There are restrictions in your account. This game is not available." = "Ne pare rău. Sunt restricții în contul dumneavoastră. Acest joc nu este disponibil.";
+
+/* No comment provided by engineer. */
+"welcome, %@" = "bun venit, %@";
+
+/* No comment provided by engineer. */
+"What would you like to do?" = "Ce ai dori să faci?";
+
+/* No comment provided by engineer. */
+"When someone joins your game, or when it's your turn to act, you will be notified." = "Când cineva intră în joc, sau când e rândul tău să joci, vei fi notificat.";
+
+/* he won
+   you won */
+"won" = "a câștigat";
+
+/* No comment provided by engineer. */
+"won %@ chips. Now has %@." = "a câștigat %@ cipuri. Acum are %@.";
+
+/* No comment provided by engineer. */
+"You are no longer in the game %lld left" = "Nu mai ești în joc %lld rămase";
+
+/* No comment provided by engineer. */
+"You are not currently participating in any game." = "Momentan nu participi la nici un joc.";
+
+/* No comment provided by engineer. */
+"You don't have enough to bet this much." = "Nu ai suficient să pariezo atât.";
+
+/* No comment provided by engineer. */
+"you finished first" = "ai terminat primul";
+
+/* No comment provided by engineer. */
+"you lost" = "ai pierdut";
+
+/* No comment provided by engineer. */
+"You need to be signed in to Game Center." = "Trebuie să fii autentificat în Game Center.";
+
+/* No comment provided by engineer. */
+"You need to enter a valid amount of chips." = "Trebuie să introduci un număr corect de cipuri.";
+
+/* No comment provided by engineer. */
+"You need to raise the bet to at least %@." = "Trebuie să plusezi cel puțin până la %@.";
+
+/* No comment provided by engineer. */
+"you quit" = "ai abandonat";
+
+/* No comment provided by engineer. */
+"you threw the hand" = "ai aruncat mâna";
+
+/* No comment provided by engineer. */
+"you tied" = "ai făcut egal";
+
+/* No comment provided by engineer. */
+"you timed out" = "ai întârziat";
+
+/* No comment provided by engineer. */
+"you won" = "ai câștigat";
+
+/* No comment provided by engineer. */
+"your bet, %lld chips, of %lld. " = "ai pariat, %lld cipuri, din %lld. ";
+
+/* No comment provided by engineer. */
+"Your last action" = "Ultima ta acțiune";
 
