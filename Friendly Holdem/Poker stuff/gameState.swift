@@ -28,44 +28,44 @@ enum GameStateType: String, Codable, CaseIterable {
     static let stableStates: Set<GameStateType> = Set([.fresh, .negotiatingStructure, .presentingShowdown, .finalShow]).union( roundStates)
     
     static let longDescriptions: Dictionary<GameStateType, String> = [
-        .fresh:  "the game just started",
-        .negotiatingStructure: "we are agreeing on a game betting stakes",
-        .startingGame: "the game is ready to start",
-        .startingDeal: "a new deal is starting",
-        .dealinghands: "dealing the hand cards",
-        .round1: "we are in round 1, the pre-flop betting round",
-        .dealingFlop: "dealing the flop cards",
-        .round2: "we are in round 2, the flop betting round",
-        .dealingTurn: "dealing the turn card",
-        .round3: "we are in round 3, the turn betting round",
-        .dealingRiver: "dealing the river card",
-        .round4: "we are in round 4, the river betting round",
-        .computingShowdown: "preparing for showdown",
-        .presentingShowdown: "this is the showdown",
-        .finalShow: "the game has ended"
+        .fresh:  String(localized: "the game just started"),
+        .negotiatingStructure: String(localized: "we are agreeing on a game betting stakes"),
+        .startingGame: String(localized: "the game is ready to start"),
+        .startingDeal: String(localized: "a new deal is starting"),
+        .dealinghands: String(localized: "dealing the hand cards"),
+        .round1: String(localized: "we are in round 1, the pre-flop betting round"),
+        .dealingFlop: String(localized: "dealing the flop cards"),
+        .round2: String(localized: "we are in round 2, the flop betting round"),
+        .dealingTurn: String(localized: "dealing the turn card"),
+        .round3: String(localized: "we are in round 3, the turn betting round"),
+        .dealingRiver: String(localized: "dealing the river card"),
+        .round4: String(localized: "we are in round 4, the river betting round"),
+        .computingShowdown: String(localized: "preparing for showdown"),
+        .presentingShowdown: String(localized: "this is the showdown"),
+        .finalShow: String(localized: "the game has ended")
     ] //dict
     static let shortDescriptions: Dictionary<GameStateType, String> = [
-        .fresh:  "just started",
-        .negotiatingStructure: "agreeing on the betting stakes",
-        .startingGame: "preparing game",
-        .startingDeal: "starting deal",
-        .dealinghands: "dealing hands",
-        .round1: "pre-flop round",
-        .dealingFlop: "dealing flop",
-        .round2: "flop round",
-        .dealingTurn: "dealing turn",
-        .round3: "turn round",
-        .dealingRiver: "dealing river",
-        .round4: "river round",
-        .computingShowdown: "preparing showdown",
-        .presentingShowdown: "showdown",
-        .finalShow: "game over"
+        .fresh:  String(localized: "just started"),
+        .negotiatingStructure: String(localized: "agreeing on the betting stakes"),
+        .startingGame: String(localized: "preparing game"),
+        .startingDeal: String(localized: "starting deal"),
+        .dealinghands: String(localized: "dealing hands"),
+        .round1: String(localized: "pre-flop round"),
+        .dealingFlop: String(localized: "dealing flop"),
+        .round2: String(localized: "flop round"),
+        .dealingTurn: String(localized: "dealing turn"),
+        .round3: String(localized: "turn round"),
+        .dealingRiver: String(localized: "dealing river"),
+        .round4: String(localized: "river round"),
+        .computingShowdown: String(localized: "preparing showdown"),
+        .presentingShowdown: String(localized: "showdown"),
+        .finalShow: String(localized: "game over")
     ] //dict
     var longDescription: String {
-        Self.longDescriptions[ self] ?? "the game is in an unknown state"
+        Self.longDescriptions[ self] ?? String(localized: "the game is in an unknown state")
     } //func
     var shortDescription: String {
-        Self.shortDescriptions[ self] ?? "unknown state"
+        Self.shortDescriptions[ self] ?? String(localized: "unknown state")
     } //func
     func isRoundState() -> Bool {
         Self.roundStates.contains( self)

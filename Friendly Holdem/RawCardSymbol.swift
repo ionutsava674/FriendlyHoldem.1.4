@@ -8,21 +8,25 @@
 import Foundation
 
 struct RawCardSymbol: Equatable, Codable {
-    enum symbolID: String, Codable {
-    case ace = "A"
-        case v2 = "2"
-        case v3 = "3"
-        case v4 = "4"
-        case v5 = "5"
-        case v6 = "6"
-        case v7 = "7"
-        case v8 = "8"
-        case v9 = "9"
-        case v10 = "10"
-        case jack = "J"
-        case queen = "Q"
-        case king = "K"
-        case joker = "R"
+    enum symbolID: String, Codable, CustomStringConvertible {
+    case ace = "A",
+         v2 = "2",
+         v3 = "3",
+         v4 = "4",
+         v5 = "5",
+         v6 = "6",
+         v7 = "7",
+         v8 = "8",
+         v9 = "9",
+         v10 = "10",
+         jack = "J",
+         queen = "Q",
+         king = "K",
+         joker = "R"
+
+        var description: String {
+            rawValue
+        } //cv
     } //enum
     let id: symbolID
     var display: String {
@@ -41,10 +45,26 @@ struct RawCardSymbol: Equatable, Codable {
         case .joker:
             return String(localized: "joker.card", defaultValue: "joker", comment: "card name")
         default:
+            return display
+        } //swi
+    } //cv
+    var originalName: String {
+        switch id {
+        case .ace:
+            return "ace"
+        case .jack:
+            return "jack"
+        case .queen:
+            return "queen"
+        case .king:
+            return "king"
+        case .joker:
+            return "joker"
+        default:
             return id.rawValue
         } //swi
     } //cv
-        
+
     static let ace = RawCardSymbol(id: .ace)
     static let _2 = RawCardSymbol(id: .v2)
     static let _3 = RawCardSymbol(id: .v3)

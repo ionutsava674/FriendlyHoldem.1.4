@@ -61,15 +61,18 @@ struct ShowdownView: View {
                         }
                         ForEach(game.lastShowdownStatus.pots, id: \.cutPoint) { eachPot in
                             Text("\(eachPot.shouldAccumulate) chips pot, \(eachPot.contributers.count) x \(eachPot.actualSize) chips bet by \(listAliases( of: eachPot.contributers)).")
-                            Text("won by \(listAliases( of: eachPot.recipients ?? []))." +
-                                 (((eachPot.recipients?.count ?? 0) > 1) ? " Each gets \(eachPot.shouldDistributeEach)." : "") )
+                            Text(String(localized: "won by \(listAliases( of: eachPot.recipients ?? [])).") +
+                                 (((eachPot.recipients?.count ?? 0) > 1)
+                                  ? String(localized: " Each gets \(eachPot.shouldDistributeEach).")
+                                  : "") )
                             Divider()
-                        }
+                        } //fe
                     } header: {
                         Text("Chip recipients")
                     } //sect
                 } //ls
-                Text(game.lastShowdownStatus.printack())
+                //Text(game.lastShowdownStatus.printack())
+NeedToAcknowledgeView(game: game, viewedBy: viewedBy, match: match)
                 if viewedBy.joiningGame {
                     HStack {
                         //if let mt = match {

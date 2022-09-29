@@ -151,6 +151,9 @@ extension HoldemGame {
         } //for
     } //run func
     
+    func whoNeedsToAcknowledge() -> [PokerPlayer] {
+        joiningPlayers
+    } //func
     func allJoiningAcknowledged( in results: DealShowdownStatus) -> Bool {
         let mapped = joiningPlayers.map({
             results.acknowledgedBy( $0.matchParticipantIndex)

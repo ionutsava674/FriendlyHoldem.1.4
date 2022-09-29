@@ -5,13 +5,25 @@
 " At first, each one gets to propose a game structure, consisting of initial amount and bet sizes." = " La început, fiecare propune o structură de joc, care constă în cipurile de început și mărimea pariulilor.";
 
 /* No comment provided by engineer. */
+" Each gets %lld." = " fiecare ia %lld.";
+
+/* No comment provided by engineer. */
 " If still there are different choices, the most popular variant is automatically selected." = " Dacă încă sunt alegeri diferite, varianta cea mai populară este selectată automat.";
 
 /* No comment provided by engineer. */
 " This game is entertainment only, no actual money is involved." = "Acest joc este doar pentru divertisment, fără sume reale de bani.";
 
 /* No comment provided by engineer. */
+", had %lld chips in the pot" = ", a avut %lld cipuri în pot";
+
+/* No comment provided by engineer. */
+", you had %lld chips in the pot" = ", ai avut %lld cipuri în pot";
+
+/* No comment provided by engineer. */
 "%@ bet %@" = "%1$@ a pariat %2$@";
+
+/* No comment provided by engineer. */
+"%@ bet %lld chips" = "%@ a pariat %lld cipuri";
 
 /* No comment provided by engineer. */
 "%@ bet %lld chips." = "%@ a pariat %lld cipuri.";
@@ -27,6 +39,9 @@
 
 /* No comment provided by engineer. */
 "%@ finished first" = "%@ a terminat primul";
+
+/* No comment provided by engineer. */
+"%@ is ready to continue" = "%@ e gata să continuăm";
 
 /* No comment provided by engineer. */
 "%@ lost" = "%@ a pierdut";
@@ -66,6 +81,9 @@
 
 /* No comment provided by engineer. */
 "%@ threw the hand, with %@ chips in the pot" = "%1$@ a aruncat mâna, cu %2$@ cipuri în pot";
+
+/* No comment provided by engineer. */
+"%@ threw the hand, with %lld chips in the pot" = "%@ a aruncat mâna, cu %lld cipuri în pot";
 
 /* No comment provided by engineer. */
 "%@ threw the hand. Had bet %lld chips." = "%@ a aruncat mâna. Pariase %lld cipuri.";
@@ -109,6 +127,9 @@
 /* No comment provided by engineer. */
 "%lld remaining auto selected players" = "%lld jucători auto selectați rămași";
 
+/* No comment provided by engineer. */
+"a new deal is starting" = "începe o mână nouă";
+
 /* card name */
 "ace.card" = "as";
 
@@ -117,6 +138,9 @@
 
 /* No comment provided by engineer. */
 "After the new game is opened, you get to choose the game stakes." = "După ce se deschide noul joc, poți să alegi miza jocului.";
+
+/* No comment provided by engineer. */
+"agreeing on the betting stakes" = "stabilim miza jocului";
 
 /* No comment provided by engineer. */
 "Alright, we can continue" = "În regulă, putem continua";
@@ -191,6 +215,30 @@
 "Continue a game that was already started" = "Continuă un joc deja început";
 
 /* No comment provided by engineer. */
+"dealing flop" = "se așează cărțile de flop";
+
+/* No comment provided by engineer. */
+"dealing hands" = "se împart cărțile de mână";
+
+/* No comment provided by engineer. */
+"dealing river" = "se așează cartea river";
+
+/* No comment provided by engineer. */
+"dealing the flop cards" = "se așează cărțile de flop";
+
+/* No comment provided by engineer. */
+"dealing the hand cards" = "se împart cărțile de mână";
+
+/* No comment provided by engineer. */
+"dealing the river card" = "se așează cartea river";
+
+/* No comment provided by engineer. */
+"dealing the turn card" = "se așează cartea turn";
+
+/* No comment provided by engineer. */
+"dealing turn" = "se așează cartea turn";
+
+/* No comment provided by engineer. */
 "dealt flop cards" = "s-au pus cărțile în flop";
 
 /* No comment provided by engineer. */
@@ -240,6 +288,9 @@
 
 /* No comment provided by engineer. */
 "flop" = "flop";
+
+/* No comment provided by engineer. */
+"flop round" = "runda flop";
 
 /* No comment provided by engineer. */
 "For example, let's say you chose 3" = "De exemplu, să spunem că ai ales 3";
@@ -347,10 +398,22 @@
 "it was %1$@'s turn, now it's %2$@'s turn" = "a fost rândul lui %1$@, acum e rândul lui %2$@";
 
 /* No comment provided by engineer. */
+"it was their turn" = "a fost rândul lui";
+
+/* No comment provided by engineer. */
+"it was your turn" = "a fost rândul tău";
+
+/* No comment provided by engineer. */
 "it was your turn, now it's %@'s turn" = "a fost rândul tău, acum e rândul lui %@";
 
 /* No comment provided by engineer. */
 "It's %@'s turn" = "E rândul lui %@";
+
+/* No comment provided by engineer. */
+"it's their turn" = "e rândul lui";
+
+/* No comment provided by engineer. */
+"it's your turn" = "e rândul tău";
 
 /* No comment provided by engineer. */
 "It's your turn" = "E rândul tău";
@@ -360,6 +423,9 @@
 
 /* No comment provided by engineer. */
 "Jump to latest" = "Sări la ultima";
+
+/* No comment provided by engineer. */
+"just started" = "joc abia început";
 
 /* card name */
 "king.card" = "popă";
@@ -411,6 +477,9 @@
 "no opponents" = "nici un oponent";
 
 /* No comment provided by engineer. */
+"not ready yet" = "încă nu e gata";
+
+/* No comment provided by engineer. */
 "Now it's %@'s turn" = "Acum este rândul lui %@";
 
 /* No comment provided by engineer. */
@@ -441,6 +510,9 @@
 "or, you can type the value below:" = "sau, poți introduce valoarea mai jos:";
 
 /* No comment provided by engineer. */
+"Player" = "Jucător";
+
+/* No comment provided by engineer. */
 "player %lld" = "jucătorul %lld";
 
 /* No comment provided by engineer. */
@@ -464,6 +536,18 @@
 
 /* No comment provided by engineer. */
 "Please select or propose a variant for the game stakes." = "Te rugăm selectează sau propune o variantă pentru miza jocului.";
+
+/* No comment provided by engineer. */
+"pre-flop round" = "runda pre flop";
+
+/* No comment provided by engineer. */
+"preparing for showdown" = "se pregătește showdownul";
+
+/* No comment provided by engineer. */
+"preparing game" = "se pregătește jocul";
+
+/* No comment provided by engineer. */
+"preparing showdown" = "se pregătește showdownul";
 
 /* No comment provided by engineer. */
 "Proposal %@:" = "Propunerea %@:";
@@ -497,10 +581,16 @@
 "Raise to %@" = "Plusează la %@";
 
 /* No comment provided by engineer. */
+"ready to continue" = "gata să continuăm";
+
+/* No comment provided by engineer. */
 "Received event for a different game" = "A apărut un evenimentîntr-un joc diferit ";
 
 /* No comment provided by engineer. */
 "Retrieving game list" = "Se încarcă lista de jocuri";
+
+/* No comment provided by engineer. */
+"river round" = "runda river";
 
 /* No comment provided by engineer. */
 "Select a game from below." = "Selectează un joc de mai jos.";
@@ -529,6 +619,9 @@
 /* No comment provided by engineer. */
 "start chips" = "Câte cipuri la început";
 
+/* No comment provided by engineer. */
+"starting deal" = "începe o mână nouă";
+
 /* action name */
 "stay all in" = "rămâi all in";
 
@@ -549,6 +642,18 @@
 
 /* No comment provided by engineer. */
 "The game %@ has received an update. %@. Would you like to switch to it?" = "Jocul %@ a primit o actualizare. %@. Doriti să mergeți la acest joc?";
+
+/* No comment provided by engineer. */
+"the game has ended" = "jocul s-a terminat";
+
+/* No comment provided by engineer. */
+"the game is in an unknown state" = "jocul e într-o stare necunoscută";
+
+/* No comment provided by engineer. */
+"the game is ready to start" = "jocul e gata de început";
+
+/* No comment provided by engineer. */
+"the game just started" = "jocul abia a început";
 
 /* No comment provided by engineer. */
 "The total amount of %lld chips is made of %lld pots:" = "Totalul de %lld cipuri se compune din %lld poturi:";
@@ -575,6 +680,9 @@
 "There are %lld more free slots for players." = "Mai sunt %lld sloturi pentru jucători.";
 
 /* No comment provided by engineer. */
+"there are no common cards facing up, on the flop" = "nu sunt cărți cu fața în sus, în flop";
+
+/* No comment provided by engineer. */
 "There is one more free slot for a player." = "Mai e un slot liber pentru un jucător.";
 
 /* No comment provided by engineer. */
@@ -588,6 +696,9 @@
 
 /* No comment provided by engineer. */
 "This game is with %@." = "Acest joc este cu %@.";
+
+/* No comment provided by engineer. */
+"this is the showdown" = "aici e showdownul";
 
 /* No comment provided by engineer. */
 "This is what happened so far in the game:" = "Ce s-a întâmplat până acum în joc:";
@@ -610,16 +721,37 @@
 "Total pot: %lld chips." = "Total pot: %lld cipuri.";
 
 /* No comment provided by engineer. */
+"turn round" = "runda turn";
+
+/* No comment provided by engineer. */
 "unknown" = "necunoscut";
 
 /* unknown player alias */
 "unknown player" = "jucător necunoscut";
 
 /* No comment provided by engineer. */
+"unknown state" = "stare necunoscută";
+
+/* No comment provided by engineer. */
 "waiting for %@" = "așteptăm %@";
 
 /* No comment provided by engineer. */
 "waiting for %@ to accept" = "așteptăm ca %@ să accepte";
+
+/* No comment provided by engineer. */
+"we are agreeing on a game betting stakes" = "stabilim miza jocului";
+
+/* No comment provided by engineer. */
+"we are in round 1, the pre-flop betting round" = "suntem în runda 1 de pariuri, runda pre flop";
+
+/* No comment provided by engineer. */
+"we are in round 2, the flop betting round" = "suntem în runda a doua de pariuri, runda flop";
+
+/* No comment provided by engineer. */
+"we are in round 3, the turn betting round" = "suntem în runda a treia de pariuri, runda turn";
+
+/* No comment provided by engineer. */
+"we are in round 4, the river betting round" = "suntem în runda a patra de pariuri, runda river";
 
 /* No comment provided by engineer. */
 "We are sorry. There are restrictions in your account. This game is not available." = "Ne pare rău. Sunt restricții în contul dumneavoastră. Acest joc nu este disponibil.";
@@ -641,6 +773,9 @@
 "won %@ chips. Now has %@." = "a câștigat %@ cipuri. Acum are %@.";
 
 /* No comment provided by engineer. */
+"won by %@." = "câștigat de %@.";
+
+/* No comment provided by engineer. */
 "you are next, after %@" = "tu urmezi, după %@";
 
 /* No comment provided by engineer. */
@@ -648,6 +783,9 @@
 
 /* No comment provided by engineer. */
 "You are not currently participating in any game." = "Momentan nu participi la nici un joc.";
+
+/* No comment provided by engineer. */
+"you bet %lld chips" = "ai pariat %lld cipuri";
 
 /* No comment provided by engineer. */
 "You don't have enough to bet this much." = "Nu ai suficient să pariezo atât.";
@@ -675,6 +813,9 @@
 
 /* No comment provided by engineer. */
 "you threw the hand" = "ai aruncat mâna";
+
+/* No comment provided by engineer. */
+"you threw the hand, with %lld chips in the pot" = "ai aruncat mâna, cu %lld cipuri în pot";
 
 /* No comment provided by engineer. */
 "you tied" = "ai făcut egal";

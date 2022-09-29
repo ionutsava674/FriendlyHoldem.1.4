@@ -111,6 +111,7 @@
 		C65EBDF928D7971E00E7D83E /* ConditionalAXAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDE928D7971E00E7D83E /* ConditionalAXAction.swift */; };
 		C65EBDFB28D7990F00E7D83E /* JumpingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EBDFA28D7990F00E7D83E /* JumpingTextView.swift */; };
 		C66CF76928DCCE8900D2C11C /* SwappableBiStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66CF76828DCCE8900D2C11C /* SwappableBiStack.swift */; };
+		C6A6989B28E5DF1C0050A7FE /* NeedToAcknowledgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A6989A28E5DF1C0050A7FE /* NeedToAcknowledgeView.swift */; };
 		C6B0201728E33AD800498CAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6B0201528E33AD800498CAE /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -220,6 +221,7 @@
 		C65EBDFA28D7990F00E7D83E /* JumpingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpingTextView.swift; sourceTree = "<group>"; };
 		C66CF76828DCCE8900D2C11C /* SwappableBiStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwappableBiStack.swift; sourceTree = "<group>"; };
 		C697F3AC28D753F60052ABB3 /* Friendly Holdem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Friendly Holdem.entitlements"; sourceTree = "<group>"; };
+		C6A6989A28E5DF1C0050A7FE /* NeedToAcknowledgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedToAcknowledgeView.swift; sourceTree = "<group>"; };
 		C6B0201628E33AD800498CAE /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -401,6 +403,7 @@
 				C65EBD6028D7950300E7D83E /* PotInfoView.swift */,
 				C65EBD4028D7950100E7D83E /* ShowdownItem.swift */,
 				C65EBD6A28D7950300E7D83E /* ShowdownView.swift */,
+				C6A6989A28E5DF1C0050A7FE /* NeedToAcknowledgeView.swift */,
 				C65EBD6C28D7950300E7D83E /* StackGlowFlasher.swift */,
 				C65EBD4D28D7950200E7D83E /* Stage2SetupView.swift */,
 				C65EBD5C28D7950200E7D83E /* Stage3MainMenuView.swift */,
@@ -557,6 +560,7 @@
 				C65EBDC028D7968200E7D83E /* PokerPlayer.swift in Sources */,
 				C66CF76928DCCE8900D2C11C /* SwappableBiStack.swift in Sources */,
 				C65EBDBD28D7968200E7D83E /* gameState.swift in Sources */,
+				C6A6989B28E5DF1C0050A7FE /* NeedToAcknowledgeView.swift in Sources */,
 				C65EBD8D28D7950300E7D83E /* LogInfoView.swift in Sources */,
 				C65EBD3328D793F100E7D83E /* GameCtlExt_Quit.swift in Sources */,
 				C65EBD7628D7950300E7D83E /* CardStackView.swift in Sources */,

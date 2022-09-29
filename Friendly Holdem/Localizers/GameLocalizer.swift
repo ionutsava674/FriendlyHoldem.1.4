@@ -15,19 +15,19 @@ enum GameLocalizer {
             var res = LocalizednoJoinReason( for: player, in: match, withName: true, isLocal: isLocal)
             if player.placedInBet > 0 {
                 res += isLocal
-                ? ", had \( player.placedInBet ) chips in the pot"
-                : ", you had \( player.placedInBet ) chips in the pot"
+                ? String(localized: ", had \( player.placedInBet ) chips in the pot")
+                : String(localized: ", you had \( player.placedInBet ) chips in the pot")
             }
             return res
         } //gua
         guard !player.dropped else {
             return isLocal
-            ? "you threw the hand, with \(player.placedInBet) chips in the pot"
-            : "\( playerAlias(of: player, in: match) ) threw the hand, with \( player.placedInBet ) chips in the pot"
+            ? String(localized: "you threw the hand, with \(player.placedInBet) chips in the pot")
+            : String(localized: "\( playerAlias(of: player, in: match) ) threw the hand, with \( player.placedInBet ) chips in the pot")
         }
         return isLocal
-        ? "you bet \(player.placedInBet) chips"
-        : "\( playerAlias(of: player, in: match) ) bet \( player.placedInBet ) chips"
+        ? String(localized: "you bet \(player.placedInBet) chips")
+        : String(localized: "\( playerAlias(of: player, in: match) ) bet \( player.placedInBet ) chips")
     } //func
     static func LocalizedShowdownStatus( for player: PokerPlayer, in match: GKTurnBasedMatch?, withName: Bool, isLocal: Bool) -> String {
         guard player.joiningGame else {
@@ -207,13 +207,13 @@ enum GameLocalizer {
         guard player.matchParticipantIndex == mci else {
             if player.matchParticipantIndex == gcio {
                 return player.matchParticipantIndex == match.localParticipantIndex()
-                ? "it was your turn"
-                : "it was their turn"
+                ? String(localized: "it was your turn")
+                : String(localized: "it was their turn")
             }
             return ""
         } //gua
         return player.matchParticipantIndex == match.localParticipantIndex()
-        ? "it's your turn"
-        : "it's their turn"
+        ? String(localized: "it's your turn")
+        : String(localized: "it's their turn")
     } //func
 } //ext

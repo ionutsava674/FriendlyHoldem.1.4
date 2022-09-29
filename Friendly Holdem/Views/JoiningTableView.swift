@@ -98,24 +98,26 @@ struct JoiningTableView: View {
                                 .frame(width: midGeo.size.width * 0.3, alignment: .center)
                                 // .background(.black)
                             } //if
-                            GeometryReader { flopGeo in
-                                List {
-                                    CardStackView(stack: game.flop, anim_ns: cardAnim_ns, desiredCardWidth: FLOP_STACK_CARD_WIDTH, desiredXSpacing: FLOP_STACK_CARD_WIDTH * 1.2, desiredYSpacing: 0, fitInRect: true, holdAtAngle: .zero, asSeenBy: viewedBy.matchParticipantIndex)
-                                        .conditionalAxContent( !game.flop.cards.isEmpty, key: AccessibilityCustomContentKey(Text("On the table, facing up"), id: "location"), contentValue: Text(""))
-                                        .accessibilityFocused($playerAxFocus, equals: 40)
-                                        .frame(width: flopGeo.size.width
-                                               , height: flopGeo.size.height
-                                               , alignment: .center)
+                            //if !game.flop.cards.isEmpty {
+                                GeometryReader { flopGeo in
+                                    List {
+                                        CardStackView(stack: game.flop, anim_ns: cardAnim_ns, desiredCardWidth: FLOP_STACK_CARD_WIDTH, desiredXSpacing: FLOP_STACK_CARD_WIDTH * 1.2, desiredYSpacing: 0, fitInRect: true, holdAtAngle: .zero, asSeenBy: viewedBy.matchParticipantIndex)
+                                            .conditionalAxContent( !game.flop.cards.isEmpty, key: AccessibilityCustomContentKey(Text("On the table, facing up"), id: "location"), contentValue: Text(""))
+                                            .accessibilityFocused($playerAxFocus, equals: 40)
+                                            .frame(width: flopGeo.size.width
+                                                   , height: flopGeo.size.height
+                                                   , alignment: .center)
                                         // .background(.blue)
-                                        .listRowInsets(EdgeInsets())
-                                        .listRowBackground(Color.clear)
-                                    // .background(.orange)
-                                } //ls
-                                .environment(\.defaultMinListRowHeight, 0)
-                                .listRowBackground(Color.clear)
-                                .listStyle(PlainListStyle() )
-                                .accessibilityLabel("flop")
-                            } //flopGeo
+                                            .listRowInsets(EdgeInsets())
+                                            .listRowBackground(Color.clear)
+                                        // .background(.orange)
+                                    } //ls
+                                    .environment(\.defaultMinListRowHeight, 0)
+                                    .listRowBackground(Color.clear)
+                                    .listStyle(PlainListStyle() )
+                                    .accessibilityLabel("flop")
+                                } //flopGeo
+                            //} //if nempty
                         } //mid hs
                     } //midGeo
                 } secondContent: {
@@ -259,7 +261,7 @@ extension GameLocalizer {
     static func thereAreCardsOnTheTable(in game: HoldemGame) -> String {
         switch game.flop.cards.count {
         case 0:
-            return "there are no common cards facing up, on the flop"
+            return String(localized: "there are no common cards facing up, on the flop")
         default:
             return String.localizedStringWithFormat(NSLocalizedString("there are %lld common cards facing up, in the flop", comment: ""), game.flop.cards.count)
         } //swi

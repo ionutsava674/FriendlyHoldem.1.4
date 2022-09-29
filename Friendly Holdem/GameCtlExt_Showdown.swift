@@ -18,7 +18,7 @@ extension GameController {
             return
         }
         do {
-            try await match.sendExchange( to: [curPart], data: exchangeData, localizableMessageKey: "this is the showdown acknowledge", arguments: [], timeout: GKExchangeTimeoutNone)
+            try await match.sendExchange( to: [curPart], data: exchangeData, localizableMessageKey: "%@ is ready to continue", arguments: [ GameLocalizer.playerAlias(of: player, in: match, preferredDefault: nil, unknownIndexDefault: String(localized: "Player")) ], timeout: GKExchangeTimeoutNone)
             game.objectWillChange.send()
         } catch {
             debugMsg_("exchange send error")
