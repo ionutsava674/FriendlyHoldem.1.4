@@ -8,18 +8,26 @@
 import SwiftUI
 
 struct WelcomeView: View {
-    @AppStorage( wrappedValue: Glop.skipWelcomeScreen.defaultValue, Glop.skipWelcomeScreen.name) private var skipWelcome
+    //@AppStorage( wrappedValue: Glop.skipWelcomeScreen.defaultValue, Glop.skipWelcomeScreen.name) private var skipWelcome
+    @ObservedObject private var glop = GlobalPreferences2.global
+
     var whenClickedContinue: (() -> Void)?
     var body: some View {
         VStack(alignment: .center, spacing: 32) {
-            /*
-            if bbv {
-                BlinkingButton( back1: Color.init( red: 0, green: 0.4, blue: 0), back2: .yellow, animDuration: 0.6 )
-            }
-             */
-            Text("Welcome to friendly hold'em. Your very accessible game of Texas Hold'em")
-                .font(.title.bold())
-            Toggle("Don't show this again", isOn: self.$skipWelcome)
+            GeometryReader {geo in
+                VStack(alignment: .center, spacing: 12) {
+                    Text("Welcome to friendly hold'em.")
+                        .font(.largeTitle.bold())
+                    Text("Your very accessible game of Texas Hold'em")
+                        .font(.title.bold())
+                        .multilineTextAlignment(.center)
+                    //Text("Welcome to friendly hold'em. Your very accessible game of Texas Hold'em")
+                        //.font(.title.bold())
+                } //vs
+                .accessibilityElement(children: .combine)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            } //geo
+            Toggle("Don't show this again", isOn: self.$glop.skipWelcome)
                 .font(.title)
             Button {
                 self.whenClickedContinue?()

@@ -66,8 +66,12 @@ extension GameController {
         }
         let transition = previousState ?? .newEmptyTransition()
         transition.toState = newGameData
-        debugMsg_("dst players " + players.map({ "\($0)" }).joined(separator: " "))
-        return await GCHelper.helper.sendGameTransitionBackAsync( transition, matchCheck: match, to: players, timeOut: GKTurnTimeoutNone)
+        //debugMsg_("dst players " + players.map({ "\($0)" }).joined(separator: " "))
+        if await GCHelper.helper.sendGameTransitionBackAsync( transition, matchCheck: match, to: players, timeOut: GKTurnTimeoutNone) {
+            match.objectWillChange.send()
+            return true
+        }
+        return false
     } //func
     @MainActor func resolveCompletedExchanges( in match: GKTurnBasedMatch, and game: HoldemGame) async -> Void {
         guard let completed = match.completedExchanges else {

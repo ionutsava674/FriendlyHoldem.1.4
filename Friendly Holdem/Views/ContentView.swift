@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var mainScreen: MainScreenType = .blank
-    @AppStorage( wrappedValue: Glop.skipWelcomeScreen.defaultValue, Glop.skipWelcomeScreen.name) private var skipWelcome
+    //@AppStorage( wrappedValue: Glop.skipWelcomeScreen.defaultValue, Glop.skipWelcomeScreen.name) private var skipWelcome
+    @ObservedObject private var glop = GlobalPreferences2.global
+
     @Environment(\.accessibilityEnabled) var accEna
     var voiceOverEna: Bool { accEna && UIAccessibility.isVoiceOverRunning }
     //@ObservedObject var gameTester: Tester1 = Tester1.getInstance
@@ -33,7 +35,8 @@ struct ContentView: View {
                 .onAppear {
                     //blank below for test
                     DispatchQueue.main.async {
-                        mainScreen = skipWelcome ? .setup : .welcome
+                        //glop.restoreDefaults()
+                        mainScreen = glop.skipWelcome ? .setup : .welcome
                     }
                 }
         } //swi

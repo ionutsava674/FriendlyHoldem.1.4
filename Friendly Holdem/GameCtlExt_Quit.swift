@@ -36,7 +36,7 @@ extension GameController {
         guard match.isLocalPlayersTurn()
               //let localIdx = match.localParticipantIndex()
         else {
-            debugMsg_("nocond")
+            debugMsg_("no quit cond")
             return false
         }
         let nextParts = (match.participants.nextOthers( ofPlayer: GKLocalPlayer.local, includeAtEnd: false) ?? match.participants)

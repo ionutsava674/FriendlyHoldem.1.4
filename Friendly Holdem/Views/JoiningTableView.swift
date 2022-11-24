@@ -46,7 +46,7 @@ struct JoiningTableView: View {
                 Color( red: 0.1, green: 0.2, blue: 0.45),
                 Color( red: 0.1, green: 0.45, blue: 0.2)
             ], center: UnitPoint(x: 0.3, y: 0.8), startRadius: 0.2 * 1000.0, endRadius: 0.6 * 1000.0)
-                .brightness( 0.2)
+                .brightness( 0.02)
             //Color.pink
         VStack(alignment: .center, spacing: 0) { //main vs //others and tokens
             HStack(alignment: .center, spacing: 0) {

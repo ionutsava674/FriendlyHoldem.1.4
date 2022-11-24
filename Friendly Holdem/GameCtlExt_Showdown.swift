@@ -18,8 +18,7 @@ extension GameController {
             return
         }
         do {
-            //try await match.sendExchange( to: [curPart], data: exchangeData, localizableMessageKey: "%@ is ready to continue", arguments: [ GameLocalizer.playerAlias(of: player, in: match, preferredDefault: nil, unknownIndexDefault: String(localized: "Player")) ], timeout: GKExchangeTimeoutNone)
-            try await match.sendExchange( to: [curPart], data: exchangeData, localizableMessageKey: "Your last action", arguments: [], timeout: GKExchangeTimeoutNone)
+            try await match.sendExchange( to: [curPart], data: exchangeData, localizableMessageKey: "%@ is ready to continue", arguments: [ GameLocalizer.playerAlias(of: player, in: match, preferredDefault: nil, unknownIndexDefault: String(localized: "Player")) ], timeout: GKExchangeTimeoutNone)
             game.objectWillChange.send()
         } catch {
             //debugMsg_("exchange send error")
@@ -50,6 +49,7 @@ extension GameController {
         game.lastShowdownStatus.acknowledge( by: localIdx)
         if game.allJoiningAcknowledged( in: game.lastShowdownStatus) {
             await game.exitPresentingShowdown()
+            await replyToActiveExchanges( in: match, and: game)
             _ = await giveTurnBackAsync(gameModel: game, in: match, with: nil, players: game.actingOrder)
         }
         else {
@@ -95,13 +95,14 @@ extension GameController {
         debugMsg_(match.printOutcomes())
     } //func
     @MainActor func replyToActiveExchanges( in match: GKTurnBasedMatch, and game: HoldemGame) async -> Void {
-        guard game.gameState == .presentingShowdown,
+        guard [GameStateType.round1, GameStateType.finalShow].contains( game.gameState ),
               match.isLocalPlayersTurn() else {
             return
         } //gua
+        debugMsg_("clearing active exc")
         for exchange in match.findActiveExchanges(with: nil) {
-            try? await exchange.reply(withLocalizableMessageKey: "beginning new deal", arguments: [], data: Data())
+            try? await exchange.reply(withLocalizableMessageKey: "Showdown ended", arguments: [], data: Data())
         }
-        debugMsg_("3 " + match.printOutcomes())
+        //debugMsg_("3 " + match.printOutcomes())
     } //func
 } //ext

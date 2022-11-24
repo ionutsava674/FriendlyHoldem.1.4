@@ -16,5 +16,14 @@ enum GlobalPreferences {
         let defaultValue: T
     } //str
 }
-typealias Glop = GlobalPreferences
+typealias GlopOld = GlobalPreferences
 
+class GlobalPreferences2: ObservableObject {
+    @AppStorage("skipWelcome") var skipWelcome = false
+    
+    static let global = GlobalPreferences2()
+    
+    func restoreDefaults() -> Void {
+        skipWelcome = false
+    } //func
+} //class

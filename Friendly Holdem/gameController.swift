@@ -15,14 +15,15 @@ class GameController: ObservableObject {
     
     var busy: Int = 0 {
         didSet {
-            //debugMsg_( "busy \(busy)" )
-            if wasBusyWhile != 0 {
-                //check changes
-                debugMsg_("was busy")
-                Task {
-                    await GCHelper.helper.refreshCurrentMatch()
-                } //tk
-                wasBusyWhile = 0
+            if busy == 0 {
+                if wasBusyWhile != 0 {
+                    //debugMsg_("was busy")
+                    //check changes
+                    Task {
+                        await GCHelper.helper.refreshCurrentMatch()
+                    } //tk
+                    wasBusyWhile = 0
+                } //if
             } //if
         } //ds
     } //busy
@@ -86,7 +87,7 @@ checkMatch === match,
             }
             guard game.raise3( by: player, to: amount) else {
                 GCHelper.helper.displayError(msg: "Could not raise to \(amount) chips.")
-                debugMsg_("Could not raise to \(amount) chips.")
+                //debugMsg_("Could not raise to \(amount) chips.")
                 return
             } //gua
         } //swi
@@ -105,7 +106,7 @@ checkMatch === match,
                     let _ = match.findExchange( from: player.matchParticipantIndex, with: game.lastShowdownStatus.id) else {
                 continue
             }
-            debugMsg_("found ex")
+            //debugMsg_("found ex")
             found = true
             game.lastShowdownStatus.acknowledge( by: player.matchParticipantIndex)
         } //for
@@ -137,7 +138,7 @@ checkMatch === match,
             //player.setNotJoining( reason: .quit)
             //match.participants.get( index: player.matchParticipantIndex)?.matchOutcome = .quit
             //game.playerJustQuit( player: player)
-            debugMsg_("foundtimeout \(player.matchParticipantIndex), \(ParticipantLocalization.didOutcomeString(for: match.participants[player.matchParticipantIndex], isLocal: false) )")
+            debugMsg_("found timeout \(player.matchParticipantIndex), \(ParticipantLocalization.didOutcomeString(for: match.participants[player.matchParticipantIndex], isLocal: false) )")
             debugMsg_("joining \(String.init(describing: player.joiningGame))")
             debugMsg_("in match: \( String(describing: match.participants.get( index: player.matchParticipantIndex)?.status.meansStillInGame(includingWaiting: true)) )")
         } //for
@@ -157,7 +158,9 @@ checkMatch === match,
             changed = true
         }
         if await game.evaluateGame( by: localGamePlayer) {
+            //clear active exc
             changed = true
+            await replyToActiveExchanges( in: match, and: game)
         }
         if changed {
             _ = await giveTurnBackAsync( gameModel: game, in: match, with: nil, players: game.actingOrder)
