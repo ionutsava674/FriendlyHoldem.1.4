@@ -25,6 +25,7 @@ struct NonJoTableView: View {
             ], center: UnitPoint(x: 0.3, y: 0.8), startRadius: 0.2 * 1000.0, endRadius: 0.6 * 1000.0)
                 .brightness(0.012)
         VStack(alignment: .center, spacing: 0) { //main vs //others and tokens
+            /*
             HStack(alignment: .center, spacing: 0) {
                 let otherPlayers = game.allPlayers.nextOthersOf(mpIndex: match.localParticipantIndex() ?? -1, includeAtEnd: false) ?? game.allPlayers
                 ForEach(otherPlayers, id: \.matchParticipantIndex) { otherPlayer in
@@ -32,7 +33,7 @@ struct NonJoTableView: View {
                         let otherAlias = GameLocalizer.playerAlias( of: otherPlayer, in: match)
                         Text(otherAlias)
                             .accessibilityHidden(true)
-                        CardStackView(stack: otherPlayer.hand, anim_ns: cardAnim_ns, desiredCardWidth: 50, desiredXSpacing: 40, desiredYSpacing: 0, fitInRect: true, holdAtAngle: .degrees(-5), asSeenBy: otherPlayer.matchParticipantIndex)
+                        CardStackView(stack: otherPlayer.hand, anim_ns: cardAnim_ns, desiredCardWidth: 50, desiredXSpacing: 40, desiredYSpacing: 0, fitInRect: true, holdAtAngle: .degrees(-5), asSeenBy: viewedBy.matchParticipantIndex)
                             .rotation3DEffect(otherPlayer.dropped ? .degrees(70) : .zero, axis: (x: 1, y: 0, z: 0), anchor: .bottom, anchorZ: 0, perspective: 1)
                             .modifier(StackGlowFlasher2(activeState: game.actingOrder.first == otherPlayer.matchParticipantIndex, radius: 27, color: .white) )
                             //.accessibilityElement(children: .ignore)
@@ -53,6 +54,17 @@ struct NonJoTableView: View {
                 } //fe
             } //top hs
             //.padding([.top])
+            .frame(minHeight: geo.size.height * 0.30, idealHeight: geo.size.height * 0.40, maxHeight: geo.size.height * 0.45, alignment: .top)
+             */
+            HStack(alignment: .center, spacing: 0) {
+                let otherPlayers = game.allPlayers.nextOthersOf( mpIndex: viewedBy.matchParticipantIndex, includeAtEnd: false) ?? game.allPlayers
+                ForEach(otherPlayers, id: \.matchParticipantIndex) { otherPlayer in
+                    OtherPlayerView(otherPlayer: otherPlayer, game: game, viewedBy: viewedBy, match: match, anim_ns: cardAnim_ns, desiredCardWidth: 50)
+                    .accessibilityFocused( $playerAxFocus, equals: 20 + otherPlayer.matchParticipantIndex)
+                } //fe
+            } //top hs
+            .padding(.top, 4)
+            .padding(.bottom)
             .frame(minHeight: geo.size.height * 0.30, idealHeight: geo.size.height * 0.40, maxHeight: geo.size.height * 0.45, alignment: .top)
             Spacer()
             HStack(alignment: .center, spacing: 0) { //mid

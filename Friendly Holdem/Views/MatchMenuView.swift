@@ -39,6 +39,15 @@ struct MatchMenuView: View {
         LeastWidthContainer { leastWidth in
         VStack(alignment: .center, spacing: 16) {
         //List() {
+            /*
+            Button("settings") {
+                if let url = URL(string: UIApplication.openSettingsURLString) {
+                    if UIApplication.shared.canOpenURL(url) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    } //if
+                } //if
+            } //btn
+             */
             Button {
                 //_ = self.gch.downloadAvailableMatches()
                 Task {
