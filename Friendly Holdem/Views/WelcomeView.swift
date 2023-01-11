@@ -16,10 +16,9 @@ struct WelcomeView: View {
     var whenClickedContinue: (() -> Void)?
     static let bg1: Color = Color.gray.bright(amount: 0.45)
     var body: some View {
-        VStack(alignment: .center, spacing: 32) {
+        VStack(alignment: .center, spacing: 8) {
             GeometryReader {geo in
                 VStack(alignment: .center, spacing: 12) {
-                    //Text("\(motion.yaw_y)")
                     Text("Welcome to friendly hold'em.")
                         .font(.largeTitle.bold())
                         .multilineTextAlignment(.center)
@@ -29,16 +28,17 @@ struct WelcomeView: View {
                         .multilineTextAlignment(.center)
                         .padding()
                 } //vs
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                 .accessibilityElement(children: .combine)
                 .background(Self.bg1)
+                //.background(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 //.roundedDoubleBorder(.white, radius: 20, lineWidth: 6, withBackground: .black)
                 .overlay(content: {
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(.white, lineWidth: 3)
+                        .stroke(.white, lineWidth: 5)
                 })
                 .rotation3DEffect(.radians(motion.pitch_x), axis: (x: 1.0, y: 0.0, z: 0.0))
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
             } //geo
             Toggle("Skip this intro from now on", isOn: self.$glop.skipWelcome)
                 .font(.title)

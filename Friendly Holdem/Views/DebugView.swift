@@ -9,8 +9,8 @@ import SwiftUI
 import GameKit
 
 #if DEBUG
-let debugHeaderRow = true
-let debugBuffer = true
+let debugHeaderRow = false
+let debugBuffer = false
 #endif
 
 #if DEBUG
