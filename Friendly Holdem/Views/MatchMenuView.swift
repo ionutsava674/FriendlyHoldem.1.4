@@ -19,6 +19,9 @@ struct MatchMenuView: View {
     @State private var showingNewGameDialog: MatchMakerRequestContainer?
     @State private var showingHowToHelp = false
     @MainActor func FindNewGame( with players: Int) async -> Void {
+        guard await gch.verifyNumberOfActiveMatches() else {
+            return
+        }
         await gch.ClearCurrentMatch()
         await gch.FindNewGame( with: players)
     } //func

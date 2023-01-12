@@ -14,12 +14,16 @@ struct WelcomeView: View {
     @StateObject private var motion = MotionManager.getInstance
 
     var whenClickedContinue: (() -> Void)?
-    static let bg1: Color = Color.gray.bright(amount: 0.45)
+    //static let bg1: Color = Color.gray.bright(amount: 0.45)
+    static let bg1: Color = Color(uiColor: .secondarySystemBackground.blendMed( with: .gray))
     var body: some View {
         VStack(alignment: .center, spacing: 8) {
             GeometryReader {geo in
                 VStack(alignment: .center, spacing: 12) {
-                    Text("Welcome to friendly hold'em.")
+                    VStack(alignment: .center, spacing: 0) {
+                        Text("Welcome to")
+                        Text("Friendly Hold'em.")
+                    }
                         .font(.largeTitle.bold())
                         .multilineTextAlignment(.center)
                         .padding()
@@ -36,10 +40,11 @@ struct WelcomeView: View {
                 //.roundedDoubleBorder(.white, radius: 20, lineWidth: 6, withBackground: .black)
                 .overlay(content: {
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(.white, lineWidth: 5)
+                        .stroke(.secondary, lineWidth: 5)
                 })
                 .rotation3DEffect(.radians(motion.pitch_x), axis: (x: 1.0, y: 0.0, z: 0.0))
             } //geo
+            .padding(.vertical)
             Toggle("Skip this intro from now on", isOn: self.$glop.skipWelcome)
                 .font(.title)
             Button {
@@ -97,3 +102,15 @@ class MotionManager: ObservableObject {
         } //clo
     } //func
 } //cl
+
+extension UIColor {
+    func blendMed(with secondColor: UIColor) -> UIColor {
+        var (r1, g1, b1, a1) = (CGFloat(0), CGFloat(0), CGFloat(0), CGFloat(0))
+        var (r2, g2, b2, a2) = (CGFloat(0), CGFloat(0), CGFloat(0), CGFloat(0))
+        guard getRed(&r1, green: &g1, blue: &b1, alpha: &a1),
+              secondColor.getRed(&r2, green: &g2, blue: &b2, alpha: &a2) else {
+            return self
+        } //gua
+        return UIColor( red: (r1 + r2) / 2, green: (g1 + g2) / 2, blue: (b1 + b2) / 2, alpha: (a1 + a2) / 2)
+    }
+}

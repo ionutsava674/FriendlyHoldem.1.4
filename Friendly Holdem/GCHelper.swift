@@ -10,6 +10,7 @@ import SwiftUI
 
 class GCHelper: NSObject, ObservableObject {
     static let helper = GCHelper()
+    private let MaxNumberOfOpenGames = 30
     static var msgCount:Int = 0
     func incMatchMsg() -> String {
         guard let match = currentMatch else {
@@ -172,6 +173,20 @@ extension GCHelper {
             await self.loadMatchToCurrent( match)
         } //tk
         self.selectingMatch = false
+    } //func
+    @MainActor func verifyNumberOfActiveMatches() async -> Bool {
+        do {
+            let matchList = try await GKTurnBasedMatch.loadMatches().filter({
+                $0.isOpenOrMatching()
+            })
+            if matchList.count >= MaxNumberOfOpenGames {
+                self.displayError(msg: "You have more than \(MaxNumberOfOpenGames) open games.")
+            }
+                                         return matchList.count < MaxNumberOfOpenGames
+                                         } catch {
+                                             self.displayError(msg: error.localizedDescription)
+                return false
+                                         } //try
     } //func
     @MainActor func downloadAvailableMatches() async -> Void {
         guard !retrievingAvailableMatches, !selectingMatch else {
