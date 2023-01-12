@@ -41,9 +41,6 @@
 "%@ finished first" = "%@ a terminat primul";
 
 /* No comment provided by engineer. */
-"%@ is ready to continue" = "%@ e gata să continuăm";
-
-/* No comment provided by engineer. */
 "%@ lost" = "%@ a pierdut";
 
 /* No comment provided by engineer. */
@@ -113,9 +110,6 @@
 "%lld auto selected players" = "%lld jucători auto selectați";
 
 /* No comment provided by engineer. */
-"%lld chips bet by %@" = "%lld cipuri pariate de %@";
-
-/* No comment provided by engineer. */
 "%lld chips pot, %lld x %lld chips bet by %@." = "pot de %lld cipuri, %lld x %lld cipuri pariate de %@.";
 
 /* No comment provided by engineer. */
@@ -147,6 +141,12 @@
 
 /* No comment provided by engineer. */
 "an auto selected player" = "un jucător auto selectat";
+
+/* No comment provided by engineer. */
+"An unexpected error occured." = "A apărut o eroare neașteptată";
+
+/* No comment provided by engineer. */
+"An unexpected problem has occured." = "A apărut o problemă neașteptată";
 
 /* No comment provided by engineer. */
 "and minimum raise of  %@" = "și plusarea minimă de  %@";
@@ -252,9 +252,6 @@
 
 /* clubs suit */
 "diamonds.suit" = "caro";
-
-/* No comment provided by engineer. */
-"Don't show this again" = "Nu mai afișa asta";
 
 /* No comment provided by engineer. */
 "each player starts with %@ chips" = "fiecare jucător începe cu %@ cipuri";
@@ -605,6 +602,9 @@
 "Signing in to game center." = "Se autentifică game center.";
 
 /* No comment provided by engineer. */
+"Skip this intro from now on" = "Sări peste acest intro de acum";
+
+/* No comment provided by engineer. */
 "small and big blind:  %@ and %@," = "pariul mic și mare de:  %@ și %@,";
 
 /* No comment provided by engineer. */
@@ -757,6 +757,9 @@
 "We are sorry. There are restrictions in your account. This game is not available." = "Ne pare rău. Sunt restricții în contul dumneavoastră. Acest joc nu este disponibil.";
 
 /* No comment provided by engineer. */
+"Welcome to" = "Bun venit la";
+
+/* No comment provided by engineer. */
 "welcome, %@" = "bun venit, %@";
 
 /* No comment provided by engineer. */
@@ -831,4 +834,7 @@
 
 /* No comment provided by engineer. */
 "Your last action" = "Ultima ta acțiune";
+
+/* No comment provided by engineer. */
+"Your very accessible game of Texas Hold'em" = "Jocul tău foarte accesibil de Texas Hold'em";
 
