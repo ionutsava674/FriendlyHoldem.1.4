@@ -32,12 +32,15 @@ struct ShowdownView: View {
     func listAliases( of playerList: [PokerPlayer]) -> String {
         GameLocalizer.listAliases(of: playerList, in: match)
     } //func
+    var sdBack: some View {
+        RadialGradient( colors: [
+            Color( red: 0.1, green: 0.2, blue: 0.45),
+            Color( red: 0.1, green: 0.45, blue: 0.2)
+        ], center: UnitPoint(x: 0.3, y: 0.8), startRadius: 0.2 * 1000.0, endRadius: 0.6 * 1000.0)
+    } //view
     var body: some View {
         ZStack {
-            RadialGradient( colors: [
-                Color( red: 0.1, green: 0.2, blue: 0.45),
-                Color( red: 0.1, green: 0.45, blue: 0.2)
-            ], center: UnitPoint(x: 0.3, y: 0.8), startRadius: 0.2 * 1000.0, endRadius: 0.6 * 1000.0)
+            sdBack
                 .brightness(0.09)
             VStack(alignment: .center, spacing: 0) { //main vs //others and tokens
                 /*
@@ -51,14 +54,17 @@ struct ShowdownView: View {
                     ForEach( Array( game.self.lastShowdownStatus.winners.enumerated()), id: \.element.computedId) { (rankIndex, eachRank) in
                         ShowdownItem( resultPlace: eachRank, placeIndex: rankIndex, match: match)
                     } //fe
-                    ForEach( restOfPlayers, id: \.matchParticipantIndex) { remainingPlayer in
+                    .listRowBackground(Color.clear)
+                                        ForEach( restOfPlayers, id: \.matchParticipantIndex) { remainingPlayer in
                         Text( GameLocalizer.LocalizedShowdownStatus( for: remainingPlayer, in: match, withName: true, isLocal: false))
                     } //fe2
+                    .listRowBackground(Color.clear)
                     Section {
                         let multiPots = game.lastShowdownStatus.pots.count > 1
                         if multiPots {
                             Text("The total amount of \( game.lastShowdownStatus.pots.totalAmount() ) chips is made of \( game.lastShowdownStatus.pots.count ) pots:")
-                        }
+                                .listRowBackground(Color.clear)
+                                                        }
                         ForEach(game.lastShowdownStatus.pots, id: \.cutPoint) { eachPot in
                             Text("\(eachPot.shouldAccumulate) chips pot, \(eachPot.contributers.count) x \(eachPot.actualSize) chips bet by \(listAliases( of: eachPot.contributers)).")
                             Text(String(localized: "won by \(listAliases( of: eachPot.recipients ?? [])).") +
@@ -67,10 +73,16 @@ struct ShowdownView: View {
                                   : "") )
                             Divider()
                         } //fe
-                    } header: {
+                        .listRowBackground(Color.clear)
+                                            } header: {
                         Text("Chip recipients")
                     } //sect
                 } //ls
+                .environment(\.defaultMinListRowHeight, 0)
+                //.listRowBackground(Color.clear)
+                .listStyle(PlainListStyle() )
+                //.listRowBackground(sdBack)
+                //.background(sdBack)
                 //Text(game.lastShowdownStatus.printack())
 NeedToAcknowledgeView(game: game, viewedBy: viewedBy, match: match)
                 if viewedBy.joiningGame {

@@ -162,7 +162,8 @@ checkMatch === match,
             changed = true
             await replyToActiveExchanges( in: match, and: game)
         }
-        if changed {
+        if changed
+            || ( game.gameState == .finalShow && match.isOpenOrMatching() ) {
             _ = await giveTurnBackAsync( gameModel: game, in: match, with: nil, players: game.actingOrder)
         }
     } //func

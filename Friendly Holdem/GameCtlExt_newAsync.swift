@@ -17,10 +17,21 @@ extension GameController {
     ]
     @MainActor private func gracefullyWrapUpAsync( in game: HoldemGame, and match: GKTurnBasedMatch) async -> Bool {
         guard match.isLocalPlayersTurn(),
-              game.gameState == .finalShow else {
+              game.gameState == .finalShow
+        else {
             return false
         }
-        debugMsg_("wrapping up")
+        //debugMsg_("wrapping up")
+        guard let dataToSend = GameTransition.gameToSourcelessTransitionData(game) else {
+            return false
+        } //gua
+        do {
+            if let completed = match.completedExchanges {
+                try await match.saveMergedMatch( dataToSend, withResolvedExchanges: completed)
+            }
+        } catch {
+            return false
+        } //catch
         for (index, part) in Array(match.participants.enumerated()) {
             guard part.matchOutcome == .none else {
                 continue
@@ -30,27 +41,15 @@ extension GameController {
                 continue
             }
             part.matchOutcome = Self.noJoinToOutcome[player.notJoiningReason] ?? .lost
-            /*
-            switch player.notJoiningReason {
-            case .won:
-                part.matchOutcome = .won
-            case .quit:
-                part.matchOutcome = .quit
-            case .timeOut:
-                part.matchOutcome = .timeExpired
-            default:
-                part.matchOutcome = .lost
-            } //swi
-             */
         } //for
-        guard let dataToSend = GameTransition.gameToSourcelessTransitionData(game) else {
-            return false
-        }
         do {
             try await match.endMatchInTurn(withMatch: dataToSend)
+            print("endedsucc")
             game.objectWillChange.send()
             match.objectWillChange.send()
         } catch {
+            print("errtry")
+            print(error.localizedDescription)
             return false
         }
         return true

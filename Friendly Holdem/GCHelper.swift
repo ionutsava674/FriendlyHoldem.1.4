@@ -19,7 +19,7 @@ class GCHelper: NSObject, ObservableObject {
         Self.msgCount += 1
         return (match.localParticipant()?.player?.alias ?? "unknown") + "-\(Self.msgCount)"
     }
-    static let refreshSound: GameSound? = try? GameSound(soundFile: "sfx2/bottle_pop_2.wav", maxNrOfPlayers: 5)
+    //static let refreshSound: GameSound? = try? GameSound(soundFile: "sfx2/bottle_pop_2.wav", maxNrOfPlayers: 5)
     
     @Published var userCanPlay = UserCanPlay.notLogged
     @Published var authenticationState: AuthenticationState = .unAuthenticated
@@ -115,7 +115,7 @@ extension GCHelper {
                 return false
             } //gua
             await self.loadMatchToCurrent( newMatch)
-            Self.refreshSound?.prepareAndPlay()
+            //Self.refreshSound?.prepareAndPlay()
             return true
         } catch {
             return false
