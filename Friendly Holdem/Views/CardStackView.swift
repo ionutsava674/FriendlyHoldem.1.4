@@ -83,7 +83,7 @@ struct CardStackView: View {
                 CardView(card: card, cardWidth: willFitInRectSize(width: desiredCardWidth, rectSize: geo.size).width,
                          faceDown: !stack.canBeSeen( by: asSeenBy),
                          backFacingText: backFacingText )
-                    .matchedGeometryEffect( id: card.id, in: anim_ns)
+                    .matchedGeometryEffect( id: "c\(card.id)", in: anim_ns)
                     .rotationEffect( stAng + incAng * Double( index))
                     .accessibilityHidden(onlyLastAccessible && index != (toShowCardsCount - 1))
                     .allowsHitTesting(!onlyLastAccessible || index == (toShowCardsCount - 1))
