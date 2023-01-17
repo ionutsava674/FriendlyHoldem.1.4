@@ -70,6 +70,9 @@ struct Stage3MainMenuView: View {
                             .accessibilityFocused($titleFocused)
                     MatchMenuView()
                         .environmentObject( gch)
+                    Button("Contact") {
+                        //
+                    }
                 } //vs
                 .transition(.scale.applyReduceMotion(reduceMotion: reduceMotion, allowFade: true))
             } //if
