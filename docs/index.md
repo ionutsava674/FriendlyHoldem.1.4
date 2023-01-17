@@ -1,52 +1,31 @@
-# Tab Extractor
+# Friendly Hold'em
 
-**_Very accessible guitar tabs_**
+**_Your very accessible game of Texas Hold'em_**
 
 ### **Overview**
 
-Tab Extractor is an IOS mobile app created to help visually impaired people to read guitar tabs more easily.
+Friendly Holdem is an iOS app that allows users to play the popular game of Texas Holdem Poker.
 
-Usually guitar tabs are very hard to access using screen readers.
+Written in SwiftUI, the app is designed to be user-friendly and accessible for VoiceOver users.
+The app utilizes GameCenter to provide a seamless gaming experience.
 
-Tab extractor makes it easy and fun to read and navigate guitar tabs by laying out the information in a list form, position by position.
+One of the unique features of Friendly Holdem is that all bets are virtual, meaning that no real money is involved. This allows users to enjoy the game without the risk of losing any actual money.
 
-For example, instead of having a tab displayed like:
+The app is completely free to download and use, and it does not include any advertisements. 
+The source code for the app is also available on Github, making it easy for developers to contribute to the project.
+The sounds and images used in Friendly Holdem were taken from the public domain, ensuring that the app is completely legal to use. 
 
-`e|------0---/------------|`
+Overall, Friendly Holdem is a must-have app for anyone who loves the game of poker. 
+With its user-friendly interface, challenging gameplay, and virtual betting system, it offers a unique and enjoyable gaming experience that you won't find anywhere else. And the fact that it's free, with no ads, and open-source makes it a top choice for anyone looking for a poker app. 
 
-`B|----3-2---/----3-2-3-2-|`
-
-`G|----4-2---/----4-2-4-2-|`
-
-`D|---------4/------------|`
-
-`A|-2--------/-2----------|`
-
-`E|----------/------------|`
-
-the notes will be listed like this:
-
-A; 2
-
-B; 3. G; 4
-
-e; 0. B; 2. G; 2
-
-etc
-
-which makes it a lot more easy to read.
-You get the order of the notes, plus, notes that are supposed to be played at the same time, are listed in the same line.
-
-Screen readers are great tools that help us access and also input information.
-
-I have written this entire app with the awesome help of Apple's screen-reader, voiceover®.
+Download Friendly Holdem today and start playing!
 
 ### **Main features**
 
-- automatically detects guitar tabs on a web page
-- lets you save each tab individually or all together
-- lets you customise the way the information is formatted
-- All it requires is that the tabs are correctly formatted and aligned.
+The app is designed to bring the excitement of the casino to your fingertips, without the risk of real money. Enjoy the thrill of the game and improve your poker skills with our virtual bets.
+
+I understand the importance of accessibility and have made sure that the app is fully compatible with VoiceOver. 
+This means that players who are visually impaired can enjoy the game just as much as anyone else.
 
 ### **Get the app**
 
