@@ -21,6 +21,7 @@ struct Stage3MainMenuView: View {
     @AccessibilityFocusState private var titleFocused: Bool
     let appearAnimDelay: TimeInterval = 0.7
 
+    @State private var showingContact = false
     var body: some View {
         ZStack {
             HStack {
@@ -30,6 +31,11 @@ struct Stage3MainMenuView: View {
                 Text("\(self.gch.errorDialog?.msg ?? "")").hidden()
             } //hhs
         VStack {
+            if showingContact {
+                ContactView(isPresented: $showingContact)
+                    .transition(.scale.applyReduceMotion(reduceMotion: reduceMotion, allowFade: true))
+            } //cnt
+            else {
             if gch.currentMatch == nil {
                 VStack(alignment: .center, spacing: 50) {
                     #if DEBUG
@@ -71,8 +77,10 @@ struct Stage3MainMenuView: View {
                     MatchMenuView()
                         .environmentObject( gch)
                     Button("Contact") {
-                        //
-                    }
+                        withAnimation {
+                            self.showingContact = true
+                        }
+                    } //btn
                 } //vs
                 .transition(.scale.applyReduceMotion(reduceMotion: reduceMotion, allowFade: true))
             } //if
@@ -80,6 +88,7 @@ struct Stage3MainMenuView: View {
                 MenuAndMatchView(match: gch.currentMatch!)
                     .environmentObject( gch)
                     .transition(.scale.applyReduceMotion(reduceMotion: reduceMotion, allowFade: true))
+            } //else
             } //else
         } //main vs
         .alert(Text(self.gch.errorDialog?.title ?? ""),

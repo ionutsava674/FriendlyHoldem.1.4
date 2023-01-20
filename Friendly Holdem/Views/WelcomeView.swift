@@ -47,6 +47,7 @@ struct WelcomeView: View {
             .padding(.vertical)
             Toggle("Skip this intro from now on", isOn: self.$glop.skipWelcome)
                 .font(.title)
+                .padding(.horizontal)
             Button {
                 self.whenClickedContinue?()
                 //bbv.toggle()

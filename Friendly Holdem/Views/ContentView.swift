@@ -37,8 +37,8 @@ struct ContentView: View {
                     DispatchQueue.main.async {
                         //glop.restoreDefaults()
                         mainScreen = glop.skipWelcome ? .setup : .welcome
-                    }
-                }
+                    } //dq
+                } //oa
         } //swi
         } //zs
     } //body
