@@ -29,7 +29,7 @@ This means that players who are visually impaired can enjoy the game just as muc
 
 ### **Get the app**
 
-[_NTVGet on the app store_](https://apps.apple.com/app/tab-extractor/id1614273947)
+[_Get on the app store_](https://apps.apple.com/app/friendly-holdem/id1632308313)
 
 ### **App Privacy**
 
