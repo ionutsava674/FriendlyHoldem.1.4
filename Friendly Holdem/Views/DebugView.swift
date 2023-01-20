@@ -33,11 +33,14 @@ func gdebug(_ msg: String) -> Bool {
     return true
 } //func
 func debugMsg_(_ msg: String) {
+#if DEBUG
+    //asdf
     guard debugBuffer else {
         return
     }
     print( msg)
-    GCHelper.helper.outMsg += String.newLine + msg
+    //GCHelper.helper.outMsg += String.newLine + msg
+#endif
 } //msg func
 
 extension GKTurnBasedMatch {
