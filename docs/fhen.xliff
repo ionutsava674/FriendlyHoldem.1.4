@@ -1,0 +1,1533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Friendly Holdem/en.lproj/Friendly Holdem-InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.2" build-num="14C18"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>Friendly Holdem</source>
+        <target>Friendly Holdem</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Friendly Holdem</source>
+        <target>Friendly Holdem</target>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Friendly Holdem/en.lproj/Localizable.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.2" build-num="14C18"/>
+    </header>
+    <body>
+      <trans-unit id=" %@" xml:space="preserve">
+        <source> %@</source>
+        <target> %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id=" %@ " xml:space="preserve">
+        <source> %@ </source>
+        <target> %@ </target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id=" After that, if different variants were proposed, everyone gets to choose again from these Structures." xml:space="preserve">
+        <source> After that, if different variants were proposed, everyone gets to choose again from these Structures.</source>
+        <target> After that, if different variants were proposed, everyone gets to choose again from these Structures.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id=" At first, each one gets to propose a game structure, consisting of initial amount and bet sizes." xml:space="preserve">
+        <source> At first, each one gets to propose a game structure, consisting of initial amount and bet sizes.</source>
+        <target> At first, each one gets to propose a game structure, consisting of initial amount and bet sizes.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id=" Each gets %lld." xml:space="preserve">
+        <source> Each gets %lld.</source>
+        <target> Each gets %lld.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id=" If still there are different choices, the most popular variant is automatically selected." xml:space="preserve">
+        <source> If still there are different choices, the most popular variant is automatically selected.</source>
+        <target> If still there are different choices, the most popular variant is automatically selected.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id=" This game is entertainment only, no actual money is involved." xml:space="preserve">
+        <source> This game is entertainment only, no actual money is involved.</source>
+        <target> This game is entertainment only, no actual money is involved.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@" xml:space="preserve">
+        <source>%@</source>
+        <target>%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ bet %@" xml:space="preserve">
+        <source>%1$@ bet %2$@</source>
+        <target>%1$@ bet %2$@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ bet %lld chips" xml:space="preserve">
+        <source>%@ bet %lld chips</source>
+        <target>%@ bet %lld chips</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ bet %lld chips." xml:space="preserve">
+        <source>%@ bet %lld chips.</source>
+        <target>%@ bet %lld chips.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ called at %@" xml:space="preserve">
+        <source>%1$@ called at %2$@</source>
+        <target>%1$@ called at %2$@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ checked" xml:space="preserve">
+        <source>%@ checked</source>
+        <target>%@ checked</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ did not act in time and was kicked out. %lld chips left" xml:space="preserve">
+        <source>%@ did not act in time and was kicked out. %lld chips left</source>
+        <target>%@ did not act in time and was kicked out. %lld chips left</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ finished first" xml:space="preserve">
+        <source>%@ finished first</source>
+        <target>%@ finished first</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ lost" xml:space="preserve">
+        <source>%@ lost</source>
+        <target>%@ lost</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ lost, with %lld chips left" xml:space="preserve">
+        <source>%@ lost, with %lld chips left</source>
+        <target>%@ lost, with %lld chips left</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ of %@" xml:space="preserve">
+        <source>%@ of %@</source>
+        <target>%@ of %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ place, %@, with %@" xml:space="preserve">
+        <source>%@ place, %@, with %@</source>
+        <target>%@ place, %@, with %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ place, %@, with %lld" xml:space="preserve">
+        <source>%@ place, %@, with %lld</source>
+        <target>%@ place, %@, with %lld</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ placed big blind bet, %@" xml:space="preserve">
+        <source>%1$@ placed big blind bet, %2$@</source>
+        <target>%1$@ placed big blind bet, %2$@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ placed small blind bet, %@" xml:space="preserve">
+        <source>%1$@ placed small blind bet, %2$@</source>
+        <target>%1$@ placed small blind bet, %2$@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ quit" xml:space="preserve">
+        <source>%@ quit</source>
+        <target>%@ quit</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ quit, with %lld chips left" xml:space="preserve">
+        <source>%@ quit, with %lld chips left</source>
+        <target>%@ quit, with %lld chips left</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ raised bet to %@" xml:space="preserve">
+        <source>%1$@ raised bet to %2$@</source>
+        <target>%1$@ raised bet to %2$@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ stays all in with %@" xml:space="preserve">
+        <source>%1$@ stays all in with %2$@</source>
+        <target>%1$@ stays all in with %2$@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ threw the hand" xml:space="preserve">
+        <source>%@ threw the hand</source>
+        <target>%@ threw the hand</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ threw the hand, with %@ chips in the pot" xml:space="preserve">
+        <source>%1$@ threw the hand, with %2$@ chips in the pot</source>
+        <target>%1$@ threw the hand, with %2$@ chips in the pot</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ threw the hand, with %lld chips in the pot" xml:space="preserve">
+        <source>%@ threw the hand, with %lld chips in the pot</source>
+        <target>%@ threw the hand, with %lld chips in the pot</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ threw the hand. Had bet %lld chips." xml:space="preserve">
+        <source>%@ threw the hand. Had bet %lld chips.</source>
+        <target>%@ threw the hand. Had bet %lld chips.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ tied" xml:space="preserve">
+        <source>%@ tied</source>
+        <target>%@ tied</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ timed out" xml:space="preserve">
+        <source>%@ timed out</source>
+        <target>%@ timed out</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ went all in with %@" xml:space="preserve">
+        <source>%1$@ went all in with %2$@</source>
+        <target>%1$@ went all in with %2$@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@ won" xml:space="preserve">
+        <source>%@ won</source>
+        <target>%@ won</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@'s hand. %@" xml:space="preserve">
+        <source>%@'s hand. %@</source>
+        <target>%@'s hand. %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@, %@;" xml:space="preserve">
+        <source>%@, %@;</source>
+        <target>%@, %@;</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@, %lld chips" xml:space="preserve">
+        <source>%@, %lld chips</source>
+        <target>%@, %lld chips</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@, %lld chips left" xml:space="preserve">
+        <source>%@, %lld chips left</source>
+        <target>%@, %lld chips left</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld" xml:space="preserve">
+        <source>%lld</source>
+        <target>%lld</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld auto selected players" xml:space="preserve">
+        <source>%lld auto selected players</source>
+        <target>%lld auto selected players</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld chips pot, %lld x %lld chips bet by %@." xml:space="preserve">
+        <source>%lld chips pot, %lld x %lld chips bet by %@.</source>
+        <target>%lld chips pot, %lld x %lld chips bet by %@.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld chips." xml:space="preserve">
+        <source>%lld chips.</source>
+        <target>%lld chips.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld players" xml:space="preserve">
+        <source>%lld players</source>
+        <target>%lld players</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%lld remaining auto selected players" xml:space="preserve">
+        <source>%lld remaining auto selected players</source>
+        <target>%lld remaining auto selected players</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id=", %@" xml:space="preserve">
+        <source>, %@</source>
+        <target>, %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id=", had %lld chips in the pot" xml:space="preserve">
+        <source>, had %lld chips in the pot</source>
+        <target>, had %lld chips in the pot</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id=", you had %lld chips in the pot" xml:space="preserve">
+        <source>, you had %lld chips in the pot</source>
+        <target>, you had %lld chips in the pot</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Active games, (%lld" xml:space="preserve">
+        <source>Active games, (%lld</source>
+        <target>Active games, (%lld</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="After the new game is opened, you get to choose the game stakes." xml:space="preserve">
+        <source>After the new game is opened, you get to choose the game stakes.</source>
+        <target>After the new game is opened, you get to choose the game stakes.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Alright, we can continue" xml:space="preserve">
+        <source>Alright, we can continue</source>
+        <target>Alright, we can continue</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="An unexpected error occured." xml:space="preserve">
+        <source>An unexpected error occured.</source>
+        <target>An unexpected error occured.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="An unexpected problem has occured." xml:space="preserve">
+        <source>An unexpected problem has occured.</source>
+        <target>An unexpected problem has occured.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="And will put you in that slot." xml:space="preserve">
+        <source>And will put you in that slot.</source>
+        <target>And will put you in that slot.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Are you really really sure you want to quit this game?" xml:space="preserve">
+        <source>Are you really really sure you want to quit this game?</source>
+        <target>Are you really really sure you want to quit this game?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Attention" xml:space="preserve">
+        <source>Attention</source>
+        <target>Attention</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Back" xml:space="preserve">
+        <source>Back</source>
+        <target>Back</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Bet %@ chips, got %@." xml:space="preserve">
+        <source>Bet %@ chips, got %@.</source>
+        <target>Bet %@ chips, got %@.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Bet all in" xml:space="preserve">
+        <source>Bet all in</source>
+        <target>Bet all in</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Big blind bet" xml:space="preserve">
+        <source>Big blind bet</source>
+        <target>Big blind bet</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Call at %@" xml:space="preserve">
+        <source>Call at %@</source>
+        <target>Call at %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Cancel" xml:space="preserve">
+        <source>Cancel</source>
+        <target>Cancel</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Chip recipients" xml:space="preserve">
+        <source>Chip recipients</source>
+        <target>Chip recipients</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Choosing the game stakes" xml:space="preserve">
+        <source>Choosing the game stakes</source>
+        <target>Choosing the game stakes</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Close menu" xml:space="preserve">
+        <source>Close menu</source>
+        <target>Close menu</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Continue a game that was already started" xml:space="preserve">
+        <source>Continue a game that was already started</source>
+        <target>Continue a game that was already started</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Each player will start with" xml:space="preserve">
+        <source>Each player will start with</source>
+        <target>Each player will start with</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Enter below the game stakes you would like to propose" xml:space="preserve">
+        <source>Enter below the game stakes you would like to propose</source>
+        <target>Enter below the game stakes you would like to propose</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Find a new game" xml:space="preserve">
+        <source>Find a new game</source>
+        <target>Find a new game</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Find new game" xml:space="preserve">
+        <source>Find new game</source>
+        <target>Find new game</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Finding a game works like this" xml:space="preserve">
+        <source>Finding a game works like this</source>
+        <target>Finding a game works like this</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Finished games:" xml:space="preserve">
+        <source>Finished games:</source>
+        <target>Finished games:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="First, tap &quot;Find a new game&quot; and then select the number of players you wish the game to have." xml:space="preserve">
+        <source>First, tap "Find a new game" and then select the number of players you wish the game to have.</source>
+        <target>First, tap "Find a new game" and then select the number of players you wish the game to have.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="First, we need to agree on the stakes of the game." xml:space="preserve">
+        <source>First, we need to agree on the stakes of the game.</source>
+        <target>First, we need to agree on the stakes of the game.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="For example, let's say you chose 3" xml:space="preserve">
+        <source>For example, let's say you chose 3</source>
+        <target>For example, let's say you chose 3</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Friendly Hold'em." xml:space="preserve">
+        <source>Friendly Hold'em.</source>
+        <target>Friendly Hold'em.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Game Center will search for a game for 3, with at least one free slot" xml:space="preserve">
+        <source>Game Center will search for a game for 3, with at least one free slot</source>
+        <target>Game Center will search for a game for 3, with at least one free slot</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Game began %@ ago." xml:space="preserve">
+        <source>Game began %@ ago.</source>
+        <target>Game began %@ ago.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Game began: " xml:space="preserve">
+        <source>Game began: </source>
+        <target>Game began: </target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Game over" xml:space="preserve">
+        <source>Game over</source>
+        <target>Game over</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Game stage: Choosing the betting stakes." xml:space="preserve">
+        <source>Game stage: Choosing the betting stakes.</source>
+        <target>Game stage: Choosing the betting stakes.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Games in which you are no longer participating:" xml:space="preserve">
+        <source>Games in which you are no longer participating:</source>
+        <target>Games in which you are no longer participating:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hello, World!" xml:space="preserve">
+        <source>Hello, World!</source>
+        <target>Hello, World!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Hide details" xml:space="preserve">
+        <source>Hide details</source>
+        <target>Hide details</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="How many players" xml:space="preserve">
+        <source>How many players</source>
+        <target>How many players</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="How many players?" xml:space="preserve">
+        <source>How many players?</source>
+        <target>How many players?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="How much do you want to raise the bet to?" xml:space="preserve">
+        <source>How much do you want to raise the bet to?</source>
+        <target>How much do you want to raise the bet to?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="How to begin a game" xml:space="preserve">
+        <source>How to begin a game</source>
+        <target>How to begin a game</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="How to start, step by step" xml:space="preserve">
+        <source>How to start, step by step</source>
+        <target>How to start, step by step</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="If no existing game was found, a new game is created and you will fill the first slot." xml:space="preserve">
+        <source>If no existing game was found, a new game is created and you will fill the first slot.</source>
+        <target>If no existing game was found, a new game is created and you will fill the first slot.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="In %lld turns after %@, it'll be your turn" xml:space="preserve">
+        <source>In %1$lld turns after %2$@, it'll be your turn</source>
+        <target>In %1$lld turns after %2$@, it'll be your turn</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="In your hand." xml:space="preserve">
+        <source>In your hand.</source>
+        <target>In your hand.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="It's %@'s turn" xml:space="preserve">
+        <source>It's %@'s turn</source>
+        <target>It's %@'s turn</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="It's your turn" xml:space="preserve">
+        <source>It's your turn</source>
+        <target>It's your turn</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Jump to latest" xml:space="preserve">
+        <source>Jump to latest</source>
+        <target>Jump to latest</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Last activity: " xml:space="preserve">
+        <source>Last activity: </source>
+        <target>Last activity: </target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Leave game" xml:space="preserve">
+        <source>Leave game</source>
+        <target>Leave game</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Load" xml:space="preserve">
+        <source>Load</source>
+        <target>Load</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Loading" xml:space="preserve">
+        <source>Loading</source>
+        <target>Loading</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Looking for a new game" xml:space="preserve">
+        <source>Looking for a new game</source>
+        <target>Looking for a new game</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Menu" xml:space="preserve">
+        <source>Menu</source>
+        <target>Menu</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Minimum bet raise" xml:space="preserve">
+        <source>Minimum bet raise</source>
+        <target>Minimum bet raise</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Next" xml:space="preserve">
+        <source>Next</source>
+        <target>Next</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No active games" xml:space="preserve">
+        <source>No active games</source>
+        <target>No active games</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Now it's %@'s turn" xml:space="preserve">
+        <source>Now it's %@'s turn</source>
+        <target>Now it's %@'s turn</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="OK" xml:space="preserve">
+        <source>OK</source>
+        <target>OK</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="On the table, facing up" xml:space="preserve">
+        <source>On the table, facing up</source>
+        <target>On the table, facing up</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Only after this, GameCenter will select players for the free slots." xml:space="preserve">
+        <source>Only after this, GameCenter will select players for the free slots.</source>
+        <target>Only after this, GameCenter will select players for the free slots.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Only after you choose the stakes, others can join the game. This is so that, when you join a game, you get to interract immediately." xml:space="preserve">
+        <source>Only after you choose the stakes, others can join the game. This is so that, when you join a game, you get to interract immediately.</source>
+        <target>Only after you choose the stakes, others can join the game. This is so that, when you join a game, you get to interract immediately.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Player" xml:space="preserve">
+        <source>Player</source>
+        <target>Player</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Players:" xml:space="preserve">
+        <source>Players:</source>
+        <target>Players:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Please propose a variant for the game stakes." xml:space="preserve">
+        <source>Please propose a variant for the game stakes.</source>
+        <target>Please propose a variant for the game stakes.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Please select a variant for the game stakes." xml:space="preserve">
+        <source>Please select a variant for the game stakes.</source>
+        <target>Please select a variant for the game stakes.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Please select or propose a variant for the game stakes." xml:space="preserve">
+        <source>Please select or propose a variant for the game stakes.</source>
+        <target>Please select or propose a variant for the game stakes.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Proposal %@:" xml:space="preserve">
+        <source>Proposal %@:</source>
+        <target>Proposal %@:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Proposal %lld:" xml:space="preserve">
+        <source>Proposal %lld:</source>
+        <target>Proposal %lld:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Propose" xml:space="preserve">
+        <source>Propose</source>
+        <target>Propose</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Propose a different structure" xml:space="preserve">
+        <source>Propose a different structure</source>
+        <target>Propose a different structure</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Quit this game" xml:space="preserve">
+        <source>Quit this game</source>
+        <target>Quit this game</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Raise to %@" xml:space="preserve">
+        <source>Raise to %@</source>
+        <target>Raise to %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Received event for a different game" xml:space="preserve">
+        <source>Received event for a different game</source>
+        <target>Received event for a different game</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Retrieving game list" xml:space="preserve">
+        <source>Retrieving game list</source>
+        <target>Retrieving game list</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Save" xml:space="preserve">
+        <source>Save</source>
+        <target>Save</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Select a game from below." xml:space="preserve">
+        <source>Select a game from below.</source>
+        <target>Select a game from below.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Select from below a game structure that has been proposed" xml:space="preserve">
+        <source>Select from below a game structure that has been proposed</source>
+        <target>Select from below a game structure that has been proposed</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Show details" xml:space="preserve">
+        <source>Show details</source>
+        <target>Show details</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Signing in to game center." xml:space="preserve">
+        <source>Signing in to game center.</source>
+        <target>Signing in to game center.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Skip this intro from now on" xml:space="preserve">
+        <source>Skip this intro from now on</source>
+        <target>Skip this intro from now on</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Small blind bet" xml:space="preserve">
+        <source>Small blind bet</source>
+        <target>Small blind bet</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Stay in the game" xml:space="preserve">
+        <source>Stay in the game</source>
+        <target>Stay in the game</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Take action" xml:space="preserve">
+        <source>Take action</source>
+        <target>Take action</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="TestO" xml:space="preserve">
+        <source>TestO</source>
+        <target>TestO</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The bet is now %lld chips." xml:space="preserve">
+        <source>The bet is now %lld chips.</source>
+        <target>The bet is now %lld chips.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The game %@ has received an update. %@. Would you like to switch to it?" xml:space="preserve">
+        <source>The game %@ has received an update. %@. Would you like to switch to it?</source>
+        <target>The game %@ has received an update. %@. Would you like to switch to it?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The total amount of %lld chips is made of %lld pots:" xml:space="preserve">
+        <source>The total amount of %lld chips is made of %lld pots:</source>
+        <target>The total amount of %lld chips is made of %lld pots:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The total pot is %lld chips." xml:space="preserve">
+        <source>The total pot is %lld chips.</source>
+        <target>The total pot is %lld chips.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The winner is %@ with %lld chips" xml:space="preserve">
+        <source>The winner is %@ with %lld chips</source>
+        <target>The winner is %@ with %lld chips</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The winner is %@, with %@" xml:space="preserve">
+        <source>The winner is %@, with %@</source>
+        <target>The winner is %@, with %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The winners are %@, with %@" xml:space="preserve">
+        <source>The winners are %@, with %@</source>
+        <target>The winners are %@, with %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Then, when another player searches for a game for 3, they will be automatically selected to the remaining slots." xml:space="preserve">
+        <source>Then, when another player searches for a game for 3, they will be automatically selected to the remaining slots.</source>
+        <target>Then, when another player searches for a game for 3, they will be automatically selected to the remaining slots.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="There are %lld more free slots for players." xml:space="preserve">
+        <source>There are %lld more free slots for players.</source>
+        <target>There are %lld more free slots for players.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="There is one more free slot for a player." xml:space="preserve">
+        <source>There is one more free slot for a player.</source>
+        <target>There is one more free slot for a player.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="There was a problem loading the game data." xml:space="preserve">
+        <source>There was a problem loading the game data.</source>
+        <target>There was a problem loading the game data.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="This game is with %@." xml:space="preserve">
+        <source>This game is with %@.</source>
+        <target>This game is with %@.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="This is what happened so far in the game:" xml:space="preserve">
+        <source>This is what happened so far in the game:</source>
+        <target>This is what happened so far in the game:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Total pot" xml:space="preserve">
+        <source>Total pot</source>
+        <target>Total pot</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Total pot: %lld chips." xml:space="preserve">
+        <source>Total pot: %lld chips.</source>
+        <target>Total pot: %lld chips.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Total:" xml:space="preserve">
+        <source>Total:</source>
+        <target>Total:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="We are sorry. There are restrictions in your account. This game is not available." xml:space="preserve">
+        <source>We are sorry. There are restrictions in your account. This game is not available.</source>
+        <target>We are sorry. There are restrictions in your account. This game is not available.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Welcome to" xml:space="preserve">
+        <source>Welcome to</source>
+        <target>Welcome to</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="What would you like to do?" xml:space="preserve">
+        <source>What would you like to do?</source>
+        <target>What would you like to do?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="When someone joins your game, or when it's your turn to act, you will be notified." xml:space="preserve">
+        <source>When someone joins your game, or when it's your turn to act, you will be notified.</source>
+        <target>When someone joins your game, or when it's your turn to act, you will be notified.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You are no longer in the game %lld left" xml:space="preserve">
+        <source>You are no longer in the game %lld left</source>
+        <target>You are no longer in the game %lld left</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You are not currently participating in any game." xml:space="preserve">
+        <source>You are not currently participating in any game.</source>
+        <target>You are not currently participating in any game.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You don't have enough to bet this much." xml:space="preserve">
+        <source>You don't have enough to bet this much.</source>
+        <target>You don't have enough to bet this much.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You need to be signed in to Game Center." xml:space="preserve">
+        <source>You need to be signed in to Game Center.</source>
+        <target>You need to be signed in to Game Center.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You need to enter a valid amount of chips." xml:space="preserve">
+        <source>You need to enter a valid amount of chips.</source>
+        <target>You need to enter a valid amount of chips.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You need to raise the bet to at least %@." xml:space="preserve">
+        <source>You need to raise the bet to at least %@.</source>
+        <target>You need to raise the bet to at least %@.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your last action" xml:space="preserve">
+        <source>Your last action</source>
+        <target>Your last action</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your very accessible game of Texas Hold'em" xml:space="preserve">
+        <source>Your very accessible game of Texas Hold'em</source>
+        <target>Your very accessible game of Texas Hold'em</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="a new deal is starting" xml:space="preserve">
+        <source>a new deal is starting</source>
+        <target>a new deal is starting</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="ace.card" xml:space="preserve">
+        <source>ace</source>
+        <target>ace</target>
+        <note>card name</note>
+      </trans-unit>
+      <trans-unit id="agreeing on the betting stakes" xml:space="preserve">
+        <source>agreeing on the betting stakes</source>
+        <target>agreeing on the betting stakes</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="all in" xml:space="preserve">
+        <source>all in</source>
+        <target>all in</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="an auto selected player" xml:space="preserve">
+        <source>an auto selected player</source>
+        <target>an auto selected player</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="and minimum raise of  %@" xml:space="preserve">
+        <source>and minimum raise of  %@</source>
+        <target>and minimum raise of  %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="auto selected player" xml:space="preserve">
+        <source>auto selected player</source>
+        <target>auto selected player</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="bet" xml:space="preserve">
+        <source>bet</source>
+        <target>bet</target>
+        <note>action name</note>
+      </trans-unit>
+      <trans-unit id="bet all" xml:space="preserve">
+        <source>bet all</source>
+        <target>bet all</target>
+        <note>action name</note>
+      </trans-unit>
+      <trans-unit id="big blind bet" xml:space="preserve">
+        <source>big blind bet</source>
+        <target>big blind bet</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="call" xml:space="preserve">
+        <source>call</source>
+        <target>call</target>
+        <note>action name</note>
+      </trans-unit>
+      <trans-unit id="cards" xml:space="preserve">
+        <source>cards</source>
+        <target>cards</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="check" xml:space="preserve">
+        <source>check</source>
+        <target>check</target>
+        <note>action name</note>
+      </trans-unit>
+      <trans-unit id="clear debug lines" xml:space="preserve">
+        <source>clear debug lines</source>
+        <target>clear debug lines</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="clubs.suit" xml:space="preserve">
+        <source>clubs</source>
+        <target>clubs</target>
+        <note>clubs suit</note>
+      </trans-unit>
+      <trans-unit id="dealing flop" xml:space="preserve">
+        <source>dealing flop</source>
+        <target>dealing flop</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="dealing hands" xml:space="preserve">
+        <source>dealing hands</source>
+        <target>dealing hands</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="dealing river" xml:space="preserve">
+        <source>dealing river</source>
+        <target>dealing river</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="dealing the flop cards" xml:space="preserve">
+        <source>dealing the flop cards</source>
+        <target>dealing the flop cards</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="dealing the hand cards" xml:space="preserve">
+        <source>dealing the hand cards</source>
+        <target>dealing the hand cards</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="dealing the river card" xml:space="preserve">
+        <source>dealing the river card</source>
+        <target>dealing the river card</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="dealing the turn card" xml:space="preserve">
+        <source>dealing the turn card</source>
+        <target>dealing the turn card</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="dealing turn" xml:space="preserve">
+        <source>dealing turn</source>
+        <target>dealing turn</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="dealt flop cards" xml:space="preserve">
+        <source>dealt flop cards</source>
+        <target>dealt flop cards</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="dealt river card" xml:space="preserve">
+        <source>dealt river card</source>
+        <target>dealt river card</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="dealt turn card" xml:space="preserve">
+        <source>dealt turn card</source>
+        <target>dealt turn card</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="details" xml:space="preserve">
+        <source>details</source>
+        <target>details</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="diamonds.suit" xml:space="preserve">
+        <source>diamonds</source>
+        <target>diamonds</target>
+        <note>clubs suit</note>
+      </trans-unit>
+      <trans-unit id="each player starts with %@ chips" xml:space="preserve">
+        <source>each player starts with %@ chips</source>
+        <target>each player starts with %@ chips</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="finished first" xml:space="preserve">
+        <source>finished first</source>
+        <target>finished first</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="flop" xml:space="preserve">
+        <source>flop</source>
+        <target>flop</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="flop round" xml:space="preserve">
+        <source>flop round</source>
+        <target>flop round</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="game #%@" xml:space="preserve">
+        <source>game #%@</source>
+        <target>game #%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="game between %1$@. %2$lld initial players" xml:space="preserve">
+        <source>game between %1$@. %2$lld initial players</source>
+        <target>game between %1$@. %2$lld initial players</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="game between %@" xml:space="preserve">
+        <source>game between %@</source>
+        <target>game between %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="game over" xml:space="preserve">
+        <source>game over</source>
+        <target>game over</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="game with %1$@. %2$lld initial players" xml:space="preserve">
+        <source>game with %1$@. %2$lld initial players</source>
+        <target>game with %1$@. %2$lld initial players</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="game with %@" xml:space="preserve">
+        <source>game with %@</source>
+        <target>game with %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="game with 1 remaining player: %1$@. %2$lld initial players" xml:space="preserve">
+        <source>game with 1 remaining player: %1$@. %2$lld initial players</source>
+        <target>game with 1 remaining player: %1$@. %2$lld initial players</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="game with 1 remaining player: %@" xml:space="preserve">
+        <source>game with 1 remaining player: %@</source>
+        <target>game with 1 remaining player: %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="game with no more active players. %lld initial players" xml:space="preserve">
+        <source>game with no more active players. %lld initial players</source>
+        <target>game with no more active players. %lld initial players</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="game with no more opponents. %lld initial players" xml:space="preserve">
+        <source>game with no more opponents. %lld initial players</source>
+        <target>game with no more opponents. %lld initial players</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="game with no opponents." xml:space="preserve">
+        <source>game with no opponents.</source>
+        <target>game with no opponents.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="game without active players." xml:space="preserve">
+        <source>game without active players.</source>
+        <target>game without active players.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="had bet %lld chips." xml:space="preserve">
+        <source>had bet %lld chips.</source>
+        <target>had bet %lld chips.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="hearts.suit" xml:space="preserve">
+        <source>hearts</source>
+        <target>hearts</target>
+        <note>clubs suit</note>
+      </trans-unit>
+      <trans-unit id="ignore" xml:space="preserve">
+        <source>ignore</source>
+        <target>ignore</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="is acting as current dealer" xml:space="preserve">
+        <source>is acting as current dealer</source>
+        <target>is acting as current dealer</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="is now in turn" xml:space="preserve">
+        <source>is now in turn</source>
+        <target>is now in turn</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="it was %1$@'s turn, now it's %2$@'s turn" xml:space="preserve">
+        <source>it was %1$@'s turn, now it's %2$@'s turn</source>
+        <target>it was %1$@'s turn, now it's %2$@'s turn</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="it was %@'s turn, now it's your turn" xml:space="preserve">
+        <source>it was %@'s turn, now it's your turn</source>
+        <target>it was %@'s turn, now it's your turn</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="it was their turn" xml:space="preserve">
+        <source>it was their turn</source>
+        <target>it was their turn</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="it was your turn" xml:space="preserve">
+        <source>it was your turn</source>
+        <target>it was your turn</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="it was your turn, now it's %@'s turn" xml:space="preserve">
+        <source>it was your turn, now it's %@'s turn</source>
+        <target>it was your turn, now it's %@'s turn</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="it's their turn" xml:space="preserve">
+        <source>it's their turn</source>
+        <target>it's their turn</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="it's your turn" xml:space="preserve">
+        <source>it's your turn</source>
+        <target>it's your turn</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="jack.card" xml:space="preserve">
+        <source>jack</source>
+        <target>jack</target>
+        <note>card name</note>
+      </trans-unit>
+      <trans-unit id="joker.card" xml:space="preserve">
+        <source>joker</source>
+        <target>joker</target>
+        <note>card name</note>
+      </trans-unit>
+      <trans-unit id="just started" xml:space="preserve">
+        <source>just started</source>
+        <target>just started</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="king.card" xml:space="preserve">
+        <source>king</source>
+        <target>king</target>
+        <note>card name</note>
+      </trans-unit>
+      <trans-unit id="lost" xml:space="preserve">
+        <source>lost</source>
+        <target>lost</target>
+        <note>has lost
+   you lost</note>
+      </trans-unit>
+      <trans-unit id="lost %@ chips. Now has %@." xml:space="preserve">
+        <source>lost %@ chips. Now has %@.</source>
+        <target>lost %@ chips. Now has %@.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="min raise amount" xml:space="preserve">
+        <source>min raise amount</source>
+        <target>min raise amount</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="new game began" xml:space="preserve">
+        <source>new game began</source>
+        <target>new game began</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="no action" xml:space="preserve">
+        <source>no action</source>
+        <target>no action</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="no limit" xml:space="preserve">
+        <source>no limit</source>
+        <target>no limit</target>
+        <note>no limit</note>
+      </trans-unit>
+      <trans-unit id="no opponents" xml:space="preserve">
+        <source>no opponents</source>
+        <target>no opponents</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="not ready yet" xml:space="preserve">
+        <source>not ready yet</source>
+        <target>not ready yet</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="now it's your turn" xml:space="preserve">
+        <source>now it's your turn</source>
+        <target>now it's your turn</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="ok, we can continue" xml:space="preserve">
+        <source>ok, we can continue</source>
+        <target>ok, we can continue</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="one remaining auto selected player" xml:space="preserve">
+        <source>one remaining auto selected player</source>
+        <target>one remaining auto selected player</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="or, you can" xml:space="preserve">
+        <source>or, you can</source>
+        <target>or, you can</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="or, you can type the value below:" xml:space="preserve">
+        <source>or, you can type the value below:</source>
+        <target>or, you can type the value below:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="player %lld" xml:space="preserve">
+        <source>player %lld</source>
+        <target>player %lld</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="players" xml:space="preserve">
+        <source>players</source>
+        <target>players</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="playing" xml:space="preserve">
+        <source>playing</source>
+        <target>playing</target>
+        <note>is playing
+   you are playing</note>
+      </trans-unit>
+      <trans-unit id="please select an action" xml:space="preserve">
+        <source>please select an action</source>
+        <target>please select an action</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="pre-flop round" xml:space="preserve">
+        <source>pre-flop round</source>
+        <target>pre-flop round</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="preparing for showdown" xml:space="preserve">
+        <source>preparing for showdown</source>
+        <target>preparing for showdown</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="preparing game" xml:space="preserve">
+        <source>preparing game</source>
+        <target>preparing game</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="preparing showdown" xml:space="preserve">
+        <source>preparing showdown</source>
+        <target>preparing showdown</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="queen.card" xml:space="preserve">
+        <source>queen</source>
+        <target>queen</target>
+        <note>card name</note>
+      </trans-unit>
+      <trans-unit id="quit" xml:space="preserve">
+        <source>quit</source>
+        <target>quit</target>
+        <note>he quit
+   you quit</note>
+      </trans-unit>
+      <trans-unit id="raise" xml:space="preserve">
+        <source>raise</source>
+        <target>raise</target>
+        <note>action name</note>
+      </trans-unit>
+      <trans-unit id="raise the bet to" xml:space="preserve">
+        <source>raise the bet to</source>
+        <target>raise the bet to</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="re create game" xml:space="preserve">
+        <source>re create game</source>
+        <target>re create game</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="ready to continue" xml:space="preserve">
+        <source>ready to continue</source>
+        <target>ready to continue</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="river round" xml:space="preserve">
+        <source>river round</source>
+        <target>river round</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="see output" xml:space="preserve">
+        <source>see output</source>
+        <target>see output</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="set for" xml:space="preserve">
+        <source>set for</source>
+        <target>set for</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="showdown" xml:space="preserve">
+        <source>showdown</source>
+        <target>showdown</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="small and big blind:  %@ and %@," xml:space="preserve">
+        <source>small and big blind:  %@ and %@,</source>
+        <target>small and big blind:  %@ and %@,</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="small blind bet" xml:space="preserve">
+        <source>small blind bet</source>
+        <target>small blind bet</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="spades.suit" xml:space="preserve">
+        <source>spades</source>
+        <target>spades</target>
+        <note>clubs suit</note>
+      </trans-unit>
+      <trans-unit id="start chips" xml:space="preserve">
+        <source>start chips</source>
+        <target>start chips</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="starting deal" xml:space="preserve">
+        <source>starting deal</source>
+        <target>starting deal</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="stay all in" xml:space="preserve">
+        <source>stay all in</source>
+        <target>stay all in</target>
+        <note>action name</note>
+      </trans-unit>
+      <trans-unit id="still needs to bet" xml:space="preserve">
+        <source>still needs to bet</source>
+        <target>still needs to bet</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="switch" xml:space="preserve">
+        <source>switch</source>
+        <target>switch</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="the game has ended" xml:space="preserve">
+        <source>the game has ended</source>
+        <target>the game has ended</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="the game is in an unknown state" xml:space="preserve">
+        <source>the game is in an unknown state</source>
+        <target>the game is in an unknown state</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="the game is ready to start" xml:space="preserve">
+        <source>the game is ready to start</source>
+        <target>the game is ready to start</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="the game just started" xml:space="preserve">
+        <source>the game just started</source>
+        <target>the game just started</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="there are %lld common cards facing up, in the flop" xml:space="preserve">
+        <source>there are %lld common cards facing up, in the flop</source>
+        <target>there are %lld common cards facing up, in the flop</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="there are no common cards facing up, on the flop" xml:space="preserve">
+        <source>there are no common cards facing up, on the flop</source>
+        <target>there are no common cards facing up, on the flop</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="this card is in the flop" xml:space="preserve">
+        <source>this card is in the flop</source>
+        <target>this card is in the flop</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="this card is in your hand" xml:space="preserve">
+        <source>this card is in your hand</source>
+        <target>this card is in your hand</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="this is the showdown" xml:space="preserve">
+        <source>this is the showdown</source>
+        <target>this is the showdown</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="threw the hand" xml:space="preserve">
+        <source>threw the hand</source>
+        <target>threw the hand</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="throw" xml:space="preserve">
+        <source>throw</source>
+        <target>throw</target>
+        <note>action name</note>
+      </trans-unit>
+      <trans-unit id="tied" xml:space="preserve">
+        <source>tied</source>
+        <target>tied</target>
+        <note>he tied
+   you tied</note>
+      </trans-unit>
+      <trans-unit id="timed out" xml:space="preserve">
+        <source>timed out</source>
+        <target>timed out</target>
+        <note>he timed out
+   you timed out</note>
+      </trans-unit>
+      <trans-unit id="turn round" xml:space="preserve">
+        <source>turn round</source>
+        <target>turn round</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="unknown" xml:space="preserve">
+        <source>unknown</source>
+        <target>unknown</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="unknown player" xml:space="preserve">
+        <source>unknown player</source>
+        <target>unknown player</target>
+        <note>unknown player alias</note>
+      </trans-unit>
+      <trans-unit id="unknown state" xml:space="preserve">
+        <source>unknown state</source>
+        <target>unknown state</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="waiting for %@" xml:space="preserve">
+        <source>waiting for %@</source>
+        <target>waiting for %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="waiting for %@ to accept" xml:space="preserve">
+        <source>waiting for %@ to accept</source>
+        <target>waiting for %@ to accept</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="we are agreeing on a game betting stakes" xml:space="preserve">
+        <source>we are agreeing on a game betting stakes</source>
+        <target>we are agreeing on a game betting stakes</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="we are in round 1, the pre-flop betting round" xml:space="preserve">
+        <source>we are in round 1, the pre-flop betting round</source>
+        <target>we are in round 1, the pre-flop betting round</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="we are in round 2, the flop betting round" xml:space="preserve">
+        <source>we are in round 2, the flop betting round</source>
+        <target>we are in round 2, the flop betting round</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="we are in round 3, the turn betting round" xml:space="preserve">
+        <source>we are in round 3, the turn betting round</source>
+        <target>we are in round 3, the turn betting round</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="we are in round 4, the river betting round" xml:space="preserve">
+        <source>we are in round 4, the river betting round</source>
+        <target>we are in round 4, the river betting round</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="welcome, %@" xml:space="preserve">
+        <source>welcome, %@</source>
+        <target>welcome, %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="won" xml:space="preserve">
+        <source>won</source>
+        <target>won</target>
+        <note>he won
+   you won</note>
+      </trans-unit>
+      <trans-unit id="won %@ chips. Now has %@." xml:space="preserve">
+        <source>won %@ chips. Now has %@.</source>
+        <target>won %@ chips. Now has %@.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="won by %@." xml:space="preserve">
+        <source>won by %@.</source>
+        <target>won by %@.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="you are next, after %@" xml:space="preserve">
+        <source>you are next, after %@</source>
+        <target>you are next, after %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="you bet %lld chips" xml:space="preserve">
+        <source>you bet %lld chips</source>
+        <target>you bet %lld chips</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="you finished first" xml:space="preserve">
+        <source>you finished first</source>
+        <target>you finished first</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="you have a total of %@ chips, of which you have bet %@" xml:space="preserve">
+        <source>you have a total of %1$@ chips, of which you have bet %2$@</source>
+        <target>you have a total of %1$@ chips, of which you have bet %2$@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="you lost" xml:space="preserve">
+        <source>you lost</source>
+        <target>you lost</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="you quit" xml:space="preserve">
+        <source>you quit</source>
+        <target>you quit</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="you threw the hand" xml:space="preserve">
+        <source>you threw the hand</source>
+        <target>you threw the hand</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="you threw the hand, with %lld chips in the pot" xml:space="preserve">
+        <source>you threw the hand, with %lld chips in the pot</source>
+        <target>you threw the hand, with %lld chips in the pot</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="you tied" xml:space="preserve">
+        <source>you tied</source>
+        <target>you tied</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="you timed out" xml:space="preserve">
+        <source>you timed out</source>
+        <target>you timed out</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="you won" xml:space="preserve">
+        <source>you won</source>
+        <target>you won</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="your bet, %lld chips, of %lld. " xml:space="preserve">
+        <source>your bet, %lld chips, of %lld. </source>
+        <target>your bet, %lld chips, of %lld. </target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="🪙 %lld" xml:space="preserve">
+        <source>🪙 %lld</source>
+        <target>🪙 %lld</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="🪙 %lld / %lld" xml:space="preserve">
+        <source>🪙 %lld / %lld</source>
+        <target>🪙 %lld / %lld</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
